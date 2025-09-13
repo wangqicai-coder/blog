@@ -1,0 +1,31 @@
+baseURL = "https://blog.wangqicai.com/"
+languageCode = "en-us"
+title = "Wang Qicai's Blog"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  defaultTheme = "auto"
+  showReadingTime = true
+  showToc = true
+  hideFooter = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+[[menu.main]]
+  name = "Archive"
+  url = "/archives/"
+  weight = 2
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 3
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 4
