@@ -1,0 +1,29 @@
+baseURL: https://blog.wangqicai.com/
+title: Wang Qicai
+theme: PaperMod
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+
+params:
+  showReadingTime: false
+  showToc: false
+  hideFooter: true
+  defaultTheme: light
+  disableThemeToggle: true
+  DateFormat: "January 2, 2006 at 3:04 PM"
+
+
+outputs:
+  home: [HTML]
+
+menu:
+  main:
+    - name: Archive
+      url: /archives/
+      weight: 2
+    - name: X
+      url: "https://x.com/realWangQicai"
+      weight: 3
