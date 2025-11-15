@@ -27,16 +27,18 @@ Temporary Items
 *.obsidian
 
 # Hugo
-/public/
+# Note: /public/ is NOT excluded because it's used for GitHub Pages deployment
+# /public/
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
 
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Node.js (only if you use Node.js for your Hugo site)
+# Uncomment the following lines if you have node_modules/
+# node_modules/
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
 
 # Logs
 logs
