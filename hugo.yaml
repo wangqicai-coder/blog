@@ -13,7 +13,9 @@ params:
   hideFooter: true
   defaultTheme: light
   disableThemeToggle: true
-  DateFormat: "January 2, 2006 at 3:04 PM"
+  DateFormat: "2006年1月2日"
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
 
 
 outputs:
@@ -21,9 +23,6 @@ outputs:
 
 menu:
   main:
-    - name: Archive
-      url: /archives/
-      weight: 2
     - name: X
       url: "https://x.com/realWangQicai"
-      weight: 3
+      weight: 1

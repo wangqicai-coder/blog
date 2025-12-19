@@ -1,0 +1,24 @@
+{{- define "main" }}
+
+{{- $posts := where site.RegularPages "Section" "posts" }}
+{{- $firstYear := (index (last 1 $posts) 0).Date.Format "2006" }}
+{{- $lastYear := (index (first 1 $posts) 0).Date.Format "2006" }}
+{{- $yearCount := sub (int $lastYear) (int $firstYear) }}
+
+<div class="home-content">
+    <h1 class="home-title">{{ $yearCount }}年投资反思</h1>
+    <p class="home-subtitle">{{ $firstYear }} - {{ $lastYear }}</p>
+
+    <ul class="year-list">
+        {{- range $posts }}
+        <li class="year-item">
+            <a href="{{ .Permalink }}">
+                <span class="year">{{ .Date.Format "2006" }}</span>
+                <span class="title">{{ .Title | replaceRE "^\\d{4}年[：:：]\\s*" "" }}</span>
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+</div>
+
+{{- end }}
