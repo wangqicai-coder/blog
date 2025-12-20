@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>整合 on WANG QICAI</title>
+    <link>http://localhost:1313/categories/%E6%95%B4%E5%90%88/</link>
+    <description>Recent content in 整合 on WANG QICAI</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E6%95%B4%E5%90%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>决策框架：整合所有概念</title>
+      <link>http://localhost:1313/posts/decision-framework/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/decision-framework/</guid>
+      <description>&lt;h2 id=&#34;一个核心问题&#34;&gt;一个核心问题&lt;/h2&gt;
+&lt;p&gt;这个博客的所有文章，都在回答同一个问题：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在不确定的世界里，如何做出好的决策？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们不能预测未来，我们的知识有限，我们的判断会出错。&lt;/p&gt;
+&lt;p&gt;在这种情况下，什么是正确的思维方式？&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;三层框架&#34;&gt;三层框架&lt;/h2&gt;
+&lt;p&gt;这18个概念可以组织成三个层次：&lt;/p&gt;
+&lt;h3 id=&#34;第一层理解现实&#34;&gt;第一层：理解现实&lt;/h3&gt;
+&lt;p&gt;在做任何决策之前，你需要正确理解你面对的世界。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心洞见&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/tail-risk/&#34;&gt;尾部风险&lt;/a&gt;&lt;/strong&gt;：极端事件比你以为的更常见，影响比你以为的更大。传统风险模型（正态分布）严重低估了尾部。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/ergodicity/&#34;&gt;遍历性&lt;/a&gt;&lt;/strong&gt;：时间平均不等于集合平均。在乘性系统中，一次归零就是永远归零。生存是前提，不是目标。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/survivorship-bias/&#34;&gt;幸存者偏差&lt;/a&gt;&lt;/strong&gt;：你看到的成功者是经过选择的样本，他们的经验不能简单复制。失败者的教训往往更有价值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/reflexivity/&#34;&gt;反身性&lt;/a&gt;&lt;/strong&gt;：市场不是被动反映现实，而是主动塑造现实。预期和现实互相影响，形成反馈循环。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/lindy-effect/&#34;&gt;林迪效应&lt;/a&gt;&lt;/strong&gt;：在非生物系统中，存活时间本身是生命力的证据。经典比时尚更可靠。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;这一层的教训&lt;/strong&gt;：世界比你想象的更极端、更不可预测、更具欺骗性。大多数人系统性地低估不确定性。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;第二层构建结构&#34;&gt;第二层：构建结构&lt;/h3&gt;
+&lt;p&gt;理解现实之后，你需要设计能够在这种现实中生存和繁荣的结构。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心原则&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/convexity/&#34;&gt;凸性&lt;/a&gt;&lt;/strong&gt;：追求不对称性——上行大于下行。在变化中获益，而不是受损。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/optionality/&#34;&gt;选择权&lt;/a&gt;&lt;/strong&gt;：保留选项的价值往往超过做出选择的价值。在不确定的世界里，灵活性是资产。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/margin-of-safety/&#34;&gt;安全边际&lt;/a&gt;&lt;/strong&gt;：为错误留出空间。你会犯错，问题是犯错后是否还能生存。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/barbell-strategy/&#34;&gt;杠铃策略&lt;/a&gt;&lt;/strong&gt;：不要在中间找平衡，把风险分离到两端。极端安全 + 极端冒险，没有中间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/opportunity-cost/&#34;&gt;机会成本&lt;/a&gt;&lt;/strong&gt;：每个选择都有代价。说&amp;quot;是&amp;quot;就是对其他选项说&amp;quot;不&amp;quot;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;这一层的教训&lt;/strong&gt;：正确的结构比正确的预测更重要。你无法预测未来，但你可以设计一个在多种未来中都能表现良好的系统。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;第三层执行决策&#34;&gt;第三层：执行决策&lt;/h3&gt;
+&lt;p&gt;有了正确的理解和结构，你需要在具体情境中做出决策。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心工具&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/circle-of-competence/&#34;&gt;能力圈&lt;/a&gt;&lt;/strong&gt;：只在你真正理解的领域做决策。知道自己不知道什么，比知道什么更重要。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/skin-in-the-game/&#34;&gt;利益攸关&lt;/a&gt;&lt;/strong&gt;：只信任有利益攸关的人的建议。没有代价的建议是廉价的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/inversion/&#34;&gt;反向思维&lt;/a&gt;&lt;/strong&gt;：与其问&amp;quot;如何成功&amp;quot;，不如问&amp;quot;如何失败&amp;quot;，然后避开那些事。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/kelly-criterion/&#34;&gt;凯利公式&lt;/a&gt;&lt;/strong&gt;：根据优势和赔率计算最优下注比例。但在现实中，总是下注低于凯利值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/mean-reversion/&#34;&gt;均值回归&lt;/a&gt;&lt;/strong&gt;：极端值会向均值回归。不要把异常表现外推为永恒趋势。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/sunk-cost/&#34;&gt;沉没成本&lt;/a&gt;&lt;/strong&gt;：已付出的成本不应影响未来决策。只看前方，不看后方。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/compound-interest/&#34;&gt;复利&lt;/a&gt;&lt;/strong&gt;：长期持续的小优势，会产生巨大的累积效果。时间是复利的朋友。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/posts/expected-value/&#34;&gt;期望值&lt;/a&gt;&lt;/strong&gt;：决策的质量看期望值，不看单次结果。好决策可能有坏结果，坏决策可能有好结果。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;这一层的教训&lt;/strong&gt;：决策的目标不是&amp;quot;正确&amp;quot;，而是&amp;quot;可重复的期望值为正&amp;quot;。在你有优势的地方下注，在你没有优势的地方克制。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;核心原则&#34;&gt;核心原则&lt;/h2&gt;
+&lt;p&gt;如果把所有概念蒸馏成几条核心原则，它们是：&lt;/p&gt;
+&lt;h3 id=&#34;原则一生存优先&#34;&gt;原则一：生存优先&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;在遍历性问题上，生存是唯一重要的目标。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其他所有目标——回报、成就、声誉——都建立在生存的基础上。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;永远不要让任何单一事件能够摧毁你&lt;/li&gt;
+&lt;li&gt;宁可错过机会，也不要承担灭顶风险&lt;/li&gt;
+&lt;li&gt;在生存无忧的前提下，再考虑优化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;原则二追求凸性&#34;&gt;原则二：追求凸性&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;设计上行大于下行的处境。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不是预测哪个方向会发生，而是确保：如果好事发生，你能获益更多；如果坏事发生，你损失有限。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;买入选择权，而不是卖出选择权&lt;/li&gt;
+&lt;li&gt;保持灵活性和选项&lt;/li&gt;
+&lt;li&gt;用安全边际保护下行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;原则三承认无知&#34;&gt;原则三：承认无知&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;你的知识边界比你以为的更窄。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;待在能力圈内&lt;/li&gt;
+&lt;li&gt;对不理解的事情说&amp;quot;不&amp;quot;&lt;/li&gt;
+&lt;li&gt;让有利益攸关的人教你，而不是没有的人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;原则四反向思考&#34;&gt;原则四：反向思考&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;避免愚蠢比追求聪明更重要。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;列出会毁掉你的事，然后不做&lt;/li&gt;
+&lt;li&gt;从失败案例学习，而不只是成功案例&lt;/li&gt;
+&lt;li&gt;设置不可违反的硬性规则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;原则五重视时间&#34;&gt;原则五：重视时间&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;时间是不确定性的解药，也是不确定性的来源。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;复利需要时间才能显现&lt;/li&gt;
+&lt;li&gt;林迪效应需要时间来验证&lt;/li&gt;
+&lt;li&gt;但时间也在衰减你的选择权&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;决策清单&#34;&gt;决策清单&lt;/h2&gt;
+&lt;p&gt;面对重大决策时，问自己：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
