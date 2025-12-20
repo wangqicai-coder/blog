@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>决策框架 | 不确定性的智慧</title>
+<title>决策框架 | WANG QICAI</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -29,6 +29,18 @@
 
     </style>
 </noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+        ],
+        throwOnError: false
+    });"></script>
+
+
 </head>
 
 <body class="list" id="top">
@@ -36,7 +48,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="不确定性的智慧 (Alt + H)">不确定性的智慧</a>
+            <a href="http://localhost:1313/" accesskey="h" title="WANG QICAI (Alt + H)">WANG QICAI</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -80,9 +92,11 @@
 问题是：有没有一个&#34;最优&#34;的下注比例？
 有。这就是凯利公式。
 凯利公式 对于简单的赢/输赌注，凯利公式是：
-f* = (bp - q) / b 其中：
-f* = 最优下注比例（占总资金的百分比） b = 赔率（赢了能赚多少倍） p = 获胜概率 q = 失败概率（= 1 - p） 对于上面的例子（60%胜率，1:1赔率）：
-f* = (1 × 0.6 - 0.4) / 1 = 0.2 = 20% 你应该每次下注总资金的20%。
+$$f^* = \frac{bp - q}{b}$$
+其中：
+$f^*$ = 最优下注比例（占总资金的百分比） $b$ = 赔率（赢了能赚多少倍） $p$ = 获胜概率 $q$ = 失败概率（$= 1 - p$） 对于上面的例子（60%胜率，1:1赔率）：
+$$f^* = \frac{1 \times 0.6 - 0.4}{1} = 0.2 = 20\%$$
+你应该每次下注总资金的20%。
 凯利公式的直觉 凯利公式在做什么？它在最大化长期财富的几何增长率。
 回忆遍历性那篇文章：投资是乘性的，不是加性的。你的财富是一连串乘法的结果。
 凯利公式找到的是：让这一连串乘法的长期结果最大化的下注比例。

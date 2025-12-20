@@ -175,6 +175,23 @@ body {
     color: #222;
 }
 
+/* 引用块 - 用于强调重要内容 */
+.post-content blockquote {
+    background: #f8f8f8;
+    border-left: 3px solid #333;
+    padding: 1.2rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.post-content blockquote p {
+    margin-bottom: 0.8em;
+}
+
+.post-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
 /* 文章底部导航 */
 .paginav {
     display: flex;
