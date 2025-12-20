@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>凸性：为什么不对称比概率重要 | Wang Qicai</title>
+<title>凸性：为什么不对称比概率重要 | 不确定性的智慧</title>
 <meta name="keywords" content="">
 <meta name="description" content="一个价值连城的不等式
 假设你面对一个投资机会：
@@ -13,14 +13,14 @@
 90%的概率亏10%
 10%的概率赚100%
 
-期望值 = 0.9 × (-10%) &#43; 0.1 × 100% = &#43;1%
+$$期望值 = 0.9 \times (-10%) &#43; 0.1 \times 100% = &#43;1%$$
 期望值是正的，但很小。值得做吗？
 现在换一个：
 
 90%的概率赚10%
 10%的概率亏50%
 
-期望值 = 0.9 × 10% &#43; 0.1 × (-50%) = &#43;4%
+$$期望值 = 0.9 \times 10% &#43; 0.1 \times (-50%) = &#43;4%$$
 期望值更高。这个更值得做？
 错。
 第一个机会远比第二个好。原因不是期望值，而是凸性。
@@ -66,7 +66,7 @@
 9个失败，各亏100%投资额
 1个成功，赚50倍
 
-期望值 = 0.9 × (-100%) &#43; 0.1 × 5000% = &#43;410%">
+$$期望值 = 0.9 \times (-100%) &#43; 0.1 \times 5000% = &#43;410%$$">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/convexity/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3186279669d450af77810193be820f29f69d3d053f1dcb4188d4cf5196dacf93.css" integrity="sha256-MYYnlmnUUK93gQGTvoIPKfadPQU/HctBiNTPUZbaz5M=" rel="preload stylesheet" as="style">
@@ -87,6 +87,22 @@
 
     </style>
 </noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Ber8wXQz9Fl4Nn3G6EhpBWXTvdw3LmJcEp9viPOC" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError : false
+        });
+    });
+</script>
+
+
 </head>
 
 <body class="" id="top">
@@ -94,7 +110,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Wang Qicai (Alt + H)">Wang Qicai</a>
+            <a href="http://localhost:1313/" accesskey="h" title="不确定性的智慧 (Alt + H)">不确定性的智慧</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -128,14 +144,14 @@
 <li>90%的概率亏10%</li>
 <li>10%的概率赚100%</li>
 </ul>
-<p>期望值 = 0.9 × (-10%) + 0.1 × 100% = +1%</p>
+<p>$$期望值 = 0.9 \times (-10%) + 0.1 \times 100% = +1%$$</p>
 <p>期望值是正的，但很小。值得做吗？</p>
 <p>现在换一个：</p>
 <ul>
 <li>90%的概率赚10%</li>
 <li>10%的概率亏50%</li>
 </ul>
-<p>期望值 = 0.9 × 10% + 0.1 × (-50%) = +4%</p>
+<p>$$期望值 = 0.9 \times 10% + 0.1 \times (-50%) = +4%$$</p>
 <p>期望值更高。这个更值得做？</p>
 <p><strong>错。</strong></p>
 <p>第一个机会远比第二个好。原因不是期望值，而是<strong>凸性</strong>。</p>
@@ -171,7 +187,7 @@
 </ul>
 <p>长期来看，谁赢？</p>
 <p>在正态世界（极端事件罕见），卖方赢。
-在肥尾世界（极端事件频繁），买方赢。</p>
+在<a href="/posts/tail-risk/">肥尾世界</a>（极端事件频繁），买方赢。</p>
 <p>我们活在哪个世界？</p>
 <hr>
 <h2 id="风投模式的本质">风投模式的本质<a hidden class="anchor" aria-hidden="true" href="#风投模式的本质">#</a></h2>
@@ -181,7 +197,7 @@
 <li>9个失败，各亏100%投资额</li>
 <li>1个成功，赚50倍</li>
 </ul>
-<p>期望值 = 0.9 × (-100%) + 0.1 × 5000% = +410%</p>
+<p>$$期望值 = 0.9 \times (-100%) + 0.1 \times 5000% = +410%$$</p>
 <p>但这还不是全部。真正的魔法在于：</p>
 <p><strong>你不需要预测哪个会成功。</strong> 你只需要确保：</p>
 <ol>
@@ -190,8 +206,8 @@
 </ol>
 <p>这就是凸性的力量：它把预测问题转化为暴露问题。</p>
 <hr>
-<h2 id="塔勒布的杠铃策略">塔勒布的杠铃策略<a hidden class="anchor" aria-hidden="true" href="#塔勒布的杠铃策略">#</a></h2>
-<p>塔勒布提出的杠铃策略是凸性的极致应用：</p>
+<h2 id="杠铃策略凸性的极致应用">杠铃策略：凸性的极致应用<a hidden class="anchor" aria-hidden="true" href="#杠铃策略凸性的极致应用">#</a></h2>
+<p>塔勒布提出的<a href="/posts/barbell-strategy/">杠铃策略</a>是凸性的极致应用：</p>
 <p><strong>80-90%的资产放在极度安全的地方</strong>（国债、现金）
 <strong>10-20%的资产放在极度冒险的地方</strong>（期权、初创公司）</p>
 <p>不要放在中间。</p>
@@ -273,7 +289,7 @@
 <h3 id="2-开放上行">2. 开放上行<a hidden class="anchor" aria-hidden="true" href="#2-开放上行">#</a></h3>
 <ul>
 <li>不要过早卖出赢家</li>
-<li>保留期权（字面意思和比喻意思）</li>
+<li>保留<a href="/posts/optionality/">选择权</a>（字面意思和比喻意思）</li>
 <li>追随指数级机会</li>
 </ul>
 <h3 id="3-快速失败">3. 快速失败<a hidden class="anchor" aria-hidden="true" href="#3-快速失败">#</a></h3>
@@ -286,25 +302,13 @@
 <ul>
 <li>让赢家继续跑</li>
 <li>不要因为&quot;赚够了&quot;而离场</li>
-<li>理解复利</li>
+<li>理解<a href="/posts/compounding/">复利</a></li>
 </ul>
 <hr>
-<h2 id="最深刻的洞见">最深刻的洞见<a hidden class="anchor" aria-hidden="true" href="#最深刻的洞见">#</a></h2>
-<p>传统决策理论说：计算期望值，选择最高的那个。</p>
-<p>凸性思维说：<strong>塑造回报曲线的形状，让你在不知道概率的情况下依然能赢。</strong></p>
-<p>这是完全不同的游戏。</p>
-<p>在充满不确定性的世界里，凸性是唯一可靠的优势。</p>
-<p>因为概率是可以被改变的——你的判断可能错误，别人可能操纵，世界可能改变。</p>
-<p>但数学性质是不变的——凸函数永远从波动中获益，凹函数永远被波动伤害。</p>
-<p><strong>不要试图预测未来。要构建无论未来如何，你都能受益的位置。</strong></p>
-<p>这就是凸性的真正含义。</p>
-<hr>
-<p><em>参考阅读：</em></p>
-<ul>
-<li>Nassim Taleb: &ldquo;Antifragile&rdquo;</li>
-<li>期权定价理论（Black-Scholes的凸性解释）</li>
-<li>风险投资的幂律分布</li>
-</ul>
+<h2 id="一句话总结">一句话总结<a hidden class="anchor" aria-hidden="true" href="#一句话总结">#</a></h2>
+<p><strong>不要预测概率，要塑造形状。</strong></p>
+<p>凸函数从波动中获益，凹函数被波动伤害——这是数学性质，不依赖于你对概率的判断。</p>
+<p>构建一个&quot;下行有限、上行开放&quot;的位置，然后让不确定性为你工作。</p>
 
 
   </div>

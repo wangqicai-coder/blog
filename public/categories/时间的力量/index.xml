@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>时间的力量 on Wang Qicai</title>
+    <title>时间的力量 on 不确定性的智慧</title>
     <link>http://localhost:1313/categories/%E6%97%B6%E9%97%B4%E7%9A%84%E5%8A%9B%E9%87%8F/</link>
-    <description>Recent content in 时间的力量 on Wang Qicai</description>
+    <description>Recent content in 时间的力量 on 不确定性的智慧</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Dec 2025 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/%E6%97%B6%E9%97%B4%E7%9A%84%E5%8A%9B%E9%87%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>复利：不只是数学，是哲学</title>
       <link>http://localhost:1313/posts/compounding/</link>
-      <pubDate>Sat, 20 Dec 2025 12:00:00 +0800</pubDate>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/compounding/</guid>
       <description>&lt;h2 id=&#34;一个被低估的洞见&#34;&gt;一个被低估的洞见&lt;/h2&gt;
 &lt;p&gt;爱因斯坦（可能）说过：复利是世界第八大奇迹。&lt;/p&gt;
@@ -37,7 +37,7 @@
 &lt;p&gt;&lt;strong&gt;这就是为什么我们系统性地低估复利——我们的大脑不是为指数设计的。&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;时间的不对称性&#34;&gt;时间的不对称性&lt;/h2&gt;
-&lt;p&gt;复利揭示了时间的一个深刻性质：&lt;strong&gt;早期和晚期不等价&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;复利揭示了时间的一个深刻性质：&lt;strong&gt;早期和晚期不等价&lt;/strong&gt;。这也是&lt;a href=&#34;http://localhost:1313/posts/path-dependence/&#34;&gt;路径依赖&lt;/a&gt;的一个表现——你的起点和早期决策对最终结果有不成比例的影响。&lt;/p&gt;
 &lt;p&gt;假设你从25岁开始每年投资1万元，年化10%，到65岁：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;第1年的1万元，变成了45万元&lt;/li&gt;
@@ -93,6 +93,167 @@
 &lt;h3 id=&#34;债务的复利&#34;&gt;债务的复利&lt;/h3&gt;
 &lt;p&gt;信用卡年化18%。
 1万元债务，不还的话：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>林迪效应：为什么老的更可靠</title>
+      <link>http://localhost:1313/posts/lindy-effect/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/lindy-effect/</guid>
+      <description>&lt;h2 id=&#34;一个反直觉的预测方法&#34;&gt;一个反直觉的预测方法&lt;/h2&gt;
+&lt;p&gt;一本书已经在印25年了。它还会在印多久？&lt;/p&gt;
+&lt;p&gt;直觉说：老了，快被淘汰了。
+林迪效应说：&lt;strong&gt;预期再印25年。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一家餐厅开了50年。它还会开多久？&lt;/p&gt;
+&lt;p&gt;直觉说：早晚要关。
+林迪效应说：&lt;strong&gt;预期再开50年。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;林迪效应是纳西姆·塔勒布推广的一个概念：&lt;strong&gt;对于不会自然死亡的事物，预期剩余寿命与已经存在的时间成正比。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这听起来荒谬。但它有深刻的数学和实证基础。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;林迪效应的起源&#34;&gt;林迪效应的起源&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;林迪&amp;quot;来自纽约的一家餐厅（Lindy&amp;rsquo;s），喜剧演员们常在那里讨论百老汇节目的寿命。&lt;/p&gt;
+&lt;p&gt;他们发现一个规律：&lt;strong&gt;已经演了很久的节目，往往会继续演很久。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;新节目很快下架。老节目一直在。&lt;/p&gt;
+&lt;p&gt;这不是因为老节目&amp;quot;更好&amp;rdquo;（虽然可能是）。这是因为：&lt;strong&gt;存活本身就是信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么林迪效应有效&#34;&gt;为什么林迪效应有效&lt;/h2&gt;
+&lt;h3 id=&#34;1-生存过滤&#34;&gt;1. 生存过滤&lt;/h3&gt;
+&lt;p&gt;一本书活了100年，意味着它经历了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;100年的读者检验&lt;/li&gt;
+&lt;li&gt;100年的市场竞争&lt;/li&gt;
+&lt;li&gt;100年的文化变迁&lt;/li&gt;
+&lt;li&gt;100年的淘汰过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;它仍然存在，说明它有某种&amp;quot;适应性&amp;quot;——不管是智慧、美感还是实用性。&lt;/p&gt;
+&lt;p&gt;新书没有经历这个过滤。它可能很好，也可能很快被淘汰。你不知道。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;老的东西已经证明了自己。新的东西还没有。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-幂律分布&#34;&gt;2. 幂律分布&lt;/h3&gt;
+&lt;p&gt;很多事物的寿命服从幂律分布，而不是正态分布。&lt;/p&gt;
+&lt;p&gt;在幂律分布中，存活时间越长的事物，预期剩余寿命越长。&lt;/p&gt;
+&lt;p&gt;这不是神秘的。这是数学性质。&lt;/p&gt;
+&lt;h3 id=&#34;3-适应性累积&#34;&gt;3. 适应性累积&lt;/h3&gt;
+&lt;p&gt;长寿的事物往往积累了适应性改进。&lt;/p&gt;
+&lt;p&gt;一个50年的配方，经历了无数次调整、优化、适应。
+一个新配方，还没有经历这个过程。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;林迪效应适用于什么&#34;&gt;林迪效应适用于什么&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;适用&lt;/strong&gt;：不会自然死亡的事物&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;想法、书籍、技术、制度、配方、传统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;不适用&lt;/strong&gt;：会自然死亡的事物&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;人、动物、机器、有保质期的东西&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一个人活到80岁，不意味着预期再活80年。人有生物学的寿命上限。&lt;/p&gt;
+&lt;p&gt;但一个想法&amp;quot;活&amp;quot;了2000年（比如欧几里得几何），可以预期再活2000年。想法没有生物学死亡。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;实践应用&#34;&gt;实践应用&lt;/h2&gt;
+&lt;h3 id=&#34;1-阅读选择&#34;&gt;1. 阅读选择&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;读老书。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;已经存在了100年的书，很可能再存在100年。
+今年出版的畅销书，很可能明年就被遗忘。&lt;/p&gt;
+&lt;p&gt;你的时间有限。为什么要赌在未经检验的新书上？这里存在巨大的&lt;a href=&#34;http://localhost:1313/posts/survivorship-bias/&#34;&gt;幸存者偏差&lt;/a&gt;——今年出版的1000本书，10年后可能只有10本还被记得。&lt;/p&gt;
+&lt;p&gt;这不是说新书没价值。而是说：&lt;strong&gt;如果你要读书，先读经典的风险收益比更好。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;《国富论》已经活了250年。《思考快与慢》活了15年。如果你只能读一本，选哪本？&lt;/p&gt;
+&lt;h3 id=&#34;2-技术选型&#34;&gt;2. 技术选型&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;选择老技术。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一个存在30年的编程语言（C），很可能再存在30年。
+一个存在3年的新框架，很可能3年后就消失了。&lt;/p&gt;
+&lt;p&gt;这不是保守主义。这是风险管理。你在老技术上投入的学习时间会持续&lt;a href=&#34;http://localhost:1313/posts/compounding/&#34;&gt;复利&lt;/a&gt;更长时间。&lt;/p&gt;
+&lt;p&gt;如果你在新框架上投入大量学习时间，而它3年后消失，你的投资归零。
+如果你在老技术上投入时间，你的投资大概率长期有效。&lt;/p&gt;
+&lt;h3 id=&#34;3-餐厅选择&#34;&gt;3. 餐厅选择&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;选择老餐厅。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;开了30年的餐厅，说明它经历了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;租金上涨&lt;/li&gt;
+&lt;li&gt;口味变迁&lt;/li&gt;
+&lt;li&gt;竞争对手&lt;/li&gt;
+&lt;li&gt;经济周期&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;它仍然存在，意味着它有某种持续的价值（可能是味道、可能是位置、可能是服务）。&lt;/p&gt;
+&lt;p&gt;新餐厅？你不知道。&lt;/p&gt;
+&lt;h3 id=&#34;4-投资决策&#34;&gt;4. 投资决策&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;警惕&amp;quot;创新&amp;quot;。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>路径依赖：为什么历史不可逆</title>
+      <link>http://localhost:1313/posts/path-dependence/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/path-dependence/</guid>
+      <description>&lt;h2 id=&#34;为什么我们用qwerty键盘&#34;&gt;为什么我们用QWERTY键盘&lt;/h2&gt;
+&lt;p&gt;你面前的键盘，字母排列是QWERTY。&lt;/p&gt;
+&lt;p&gt;这是最优排列吗？不是。研究表明，Dvorak排列打字效率更高，手指移动更少。&lt;/p&gt;
+&lt;p&gt;那为什么我们用QWERTY？&lt;/p&gt;
+&lt;p&gt;因为1873年，打字机发明者为了防止机械卡键，故意把常用字母分开。这个设计是为了机械限制，不是为了人体工程学。&lt;/p&gt;
+&lt;p&gt;但一旦人们学会了QWERTY，打字机制造商采用了QWERTY，打字学校教授QWERTY，社会就被锁定在这个标准上。&lt;/p&gt;
+&lt;p&gt;150年后，机械卡键问题早已消失。但我们仍然用QWERTY。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这就是路径依赖：早期的偶然选择，锁定了长期的结果。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是路径依赖&#34;&gt;什么是路径依赖&lt;/h2&gt;
+&lt;p&gt;路径依赖意味着：&lt;strong&gt;当前的状态不仅取决于当前的条件，还取决于到达这个状态的历史路径。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;换句话说：历史重要。起点重要。顺序重要。&lt;/p&gt;
+&lt;p&gt;在一个路径依赖的系统中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同样的条件可能导致完全不同的结果（取决于历史）&lt;/li&gt;
+&lt;li&gt;早期的小差异可能被放大成巨大差异&lt;/li&gt;
+&lt;li&gt;改变变得越来越困难&lt;/li&gt;
+&lt;li&gt;锁定效应使得次优解可能长期持续&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;路径依赖的机制&#34;&gt;路径依赖的机制&lt;/h2&gt;
+&lt;h3 id=&#34;1-正反馈收益递增&#34;&gt;1. 正反馈（收益递增）&lt;/h3&gt;
+&lt;p&gt;越多人使用某个标准，使用它的价值越高。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;越多人用微信，微信的价值越大&lt;/li&gt;
+&lt;li&gt;越多人学英语，英语的价值越大&lt;/li&gt;
+&lt;li&gt;越多人用美元，美元的价值越大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这导致&amp;quot;赢者通吃&amp;quot;：早期的小优势被放大成绝对优势。&lt;/p&gt;
+&lt;h3 id=&#34;2-学习效应&#34;&gt;2. 学习效应&lt;/h3&gt;
+&lt;p&gt;投入学习成本后，切换到其他选项的成本变高。这也是&lt;a href=&#34;http://localhost:1313/posts/compounding/&#34;&gt;复利&lt;/a&gt;的阴暗面——你在某条路径上积累的越多，偏离的&lt;a href=&#34;http://localhost:1313/posts/opportunity-cost/&#34;&gt;机会成本&lt;/a&gt;越高。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你花了1000小时学Python，切换到Go的成本不只是学习Go，还包括放弃Python的沉没成本&lt;/li&gt;
+&lt;li&gt;公司花了3年建立某个系统，切换的成本不只是新系统，还包括迁移、重新培训、风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-协调效应&#34;&gt;3. 协调效应&lt;/h3&gt;
+&lt;p&gt;当多方需要协调时，已有的标准获得额外优势。&lt;/p&gt;
+&lt;p&gt;改变键盘布局，需要：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所有键盘制造商改变&lt;/li&gt;
+&lt;li&gt;所有用户重新学习&lt;/li&gt;
+&lt;li&gt;所有培训机构更新课程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;没有人愿意第一个改变，因为改变只有在大家都改变时才有价值。&lt;/p&gt;
+&lt;h3 id=&#34;4-适应性预期&#34;&gt;4. 适应性预期&lt;/h3&gt;
+&lt;p&gt;人们基于&amp;quot;这个会继续存在&amp;quot;的预期做决策，这个预期本身强化了它的存在。&lt;/p&gt;
+&lt;p&gt;你学英语是因为预期它继续是国际语言。这个预期导致更多人学英语，使它真的继续是国际语言。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;历史的分叉点&#34;&gt;历史的分叉点&lt;/h2&gt;
+&lt;p&gt;路径依赖意味着历史有&amp;quot;分叉点&amp;quot;——某些关键时刻的决定，锁定了长期路径。&lt;/p&gt;
+&lt;h3 id=&#34;vhs-vs-betamax&#34;&gt;VHS vs Betamax&lt;/h3&gt;
+&lt;p&gt;1980年代，两种录像带格式竞争。Betamax技术上更好，但VHS赢了。&lt;/p&gt;
+&lt;p&gt;为什么？JVC愿意授权VHS给其他制造商，索尼不愿意授权Betamax。更多制造商 → 更低价格 → 更多内容 → 更多用户 → 锁定。&lt;/p&gt;
+&lt;p&gt;技术优势输给了网络效应。&lt;/p&gt;
+&lt;h3 id=&#34;美国的铁路轨距&#34;&gt;美国的铁路轨距&lt;/h3&gt;
+&lt;p&gt;美国铁路轨距是4英尺8.5英寸。为什么是这个奇怪的数字？&lt;/p&gt;
+&lt;p&gt;因为英国铁路是这个轨距。为什么英国是这个？因为建铁路的人之前建电车，电车是这个轨距。为什么电车是这个？因为建电车的人用的是马车的轮距。为什么马车是这个？因为路上的车辙是这个宽度。为什么车辙是这个？因为古罗马战车是这个宽度。&lt;/p&gt;
+&lt;p&gt;一个2000年前的罗马决定，影响了今天的美国铁路。&lt;/p&gt;
+&lt;h3 id=&#34;社会制度的路径依赖&#34;&gt;社会制度的路径依赖&lt;/h3&gt;
+&lt;p&gt;为什么英国是君主立宪，美国是总统制，瑞士是直接民主？&lt;/p&gt;
+&lt;p&gt;不是因为这些制度对这些国家&amp;quot;最优&amp;quot;。而是因为历史的偶然——殖民历史、革命方式、地理条件——在关键时刻把这些国家推向了不同的路径。&lt;/p&gt;
+&lt;p&gt;一旦走上某条路径，制度会自我强化：利益集团形成、文化适应、法律建立。改变变得越来越难。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;投资中的路径依赖&#34;&gt;投资中的路径依赖&lt;/h2&gt;
+&lt;h3 id=&#34;1-市场的路径依赖&#34;&gt;1. 市场的路径依赖&lt;/h3&gt;
+&lt;p&gt;今天的股价不只取决于基本面，还取决于昨天的股价。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;恐慌导致卖出&lt;/li&gt;
+&lt;li&gt;卖出导致更低价格&lt;/li&gt;
+&lt;li&gt;更低价格导致更多恐慌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;同样的基本面，不同的历史路径，可能导致完全不同的价格。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

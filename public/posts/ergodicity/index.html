@@ -5,14 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>遍历性：为什么你的投资直觉是错的 | Wang Qicai</title>
+<title>遍历性：为什么你的投资直觉是错的 | 不确定性的智慧</title>
 <meta name="keywords" content="">
 <meta name="description" content="一个改变一切的问题
 假设有一个游戏：
 掷硬币。正面，你的财富增加50%。反面，你的财富减少40%。
 你会玩吗？
 大多数人会计算&quot;期望值&quot;：
-期望值 = 0.5 × (&#43;50%) &#43; 0.5 × (-40%) = &#43;5%
+$$期望值 = 0.5 \times (&#43;50%) &#43; 0.5 \times (-40%) = &#43;5%$$
 期望值是正的！每次游戏平均赚5%。应该玩，而且应该一直玩。
 这是错的。
 如果你反复玩这个游戏，你几乎必然破产。
@@ -24,18 +24,15 @@
 但你不是100万人。你是一个人，要反复玩这个游戏。
 对你来说，重要的是时间平均：一个人反复玩这个游戏，长期结果是什么？
 让我们算：
-假设你有100元，玩两次。
-一次正面一次反面（顺序无关）：
-100 × 1.5 × 0.6 = 90元
-你亏了10%。
-再玩两次：
-90 × 1.5 × 0.6 = 81元
-又亏了10%。
-每两次游戏，你的财富乘以 1.5 × 0.6 = 0.9。
-长期来看，你必然归零。
-但等等，期望值明明是正的？
-问题在于：期望值假设你能无限次重复，并且每次独立。但财富是乘性的，不是加性的。
-上一把的结果会影响下一把的本金。这改变了一切。
+假设你有100元，玩两次，一次正面一次反面（顺序无关）：
+$$100 \times 1.5 \times 0.6 = 90元$$
+你亏了10%。关键在于几何平均：
+$$每次的平均增长率 = \sqrt{1.5 \times 0.6} = \sqrt{0.9} \approx 0.949$$
+每次游戏，你的财富平均缩水5%。玩100次：
+$$100 \times 0.949^{100} \approx 0.6元$$
+玩1000次？你的财富是初始值的 $10^{-23}$ 次方——比一个原子还小。
+期望值是正的，但你必然归零。
+这就是加法和乘法的区别。期望值是加法思维，但财富是乘法累积的——上一把的结果就是下一把的本金。
 
 遍历性：一个被忽视的关键概念
 当&quot;集合平均&quot;等于&quot;时间平均&quot;时，系统是遍历的（ergodic）。
@@ -51,11 +48,7 @@
 
 为什么这解释了一切
 1. 为什么&quot;永远不要亏光&quot;是第一原则
-不是因为&quot;活着才有机会&quot;这种鸡汤。
-而是因为数学：在非遍历系统中，任何有破产概率的策略，长期期望值都是负无穷。
-不管你的&quot;期望收益&quot;有多高，只要存在归零可能，长期必败。
-2. 为什么凯利公式有效
-凯利公式不是最大化期望收益，而是最大化几何平均收益——也就是时间平均。">
+不是因为&quot;活着才有机会&quot;这种鸡汤。">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/ergodicity/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3186279669d450af77810193be820f29f69d3d053f1dcb4188d4cf5196dacf93.css" integrity="sha256-MYYnlmnUUK93gQGTvoIPKfadPQU/HctBiNTPUZbaz5M=" rel="preload stylesheet" as="style">
@@ -76,6 +69,22 @@
 
     </style>
 </noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Ber8wXQz9Fl4Nn3G6EhpBWXTvdw3LmJcEp9viPOC" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError : false
+        });
+    });
+</script>
+
+
 </head>
 
 <body class="" id="top">
@@ -83,7 +92,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Wang Qicai (Alt + H)">Wang Qicai</a>
+            <a href="http://localhost:1313/" accesskey="h" title="不确定性的智慧 (Alt + H)">不确定性的智慧</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -116,8 +125,8 @@
 <p>掷硬币。正面，你的财富增加50%。反面，你的财富减少40%。</p>
 <p>你会玩吗？</p>
 <p>大多数人会计算&quot;期望值&quot;：</p>
-<pre tabindex="0"><code>期望值 = 0.5 × (+50%) + 0.5 × (-40%) = +5%
-</code></pre><p>期望值是正的！每次游戏平均赚5%。应该玩，而且应该一直玩。</p>
+<p>$$期望值 = 0.5 \times (+50%) + 0.5 \times (-40%) = +5%$$</p>
+<p>期望值是正的！每次游戏平均赚5%。应该玩，而且应该一直玩。</p>
 <p>这是错的。</p>
 <p>如果你反复玩这个游戏，你几乎必然破产。</p>
 <p>这不是悖论，这是数学。理解这一点，可能会彻底改变你对投资的认知。</p>
@@ -128,18 +137,15 @@
 <p>但你不是100万人。你是一个人，要反复玩这个游戏。</p>
 <p>对你来说，重要的是<strong>时间平均</strong>：一个人反复玩这个游戏，长期结果是什么？</p>
 <p>让我们算：</p>
-<p>假设你有100元，玩两次。</p>
-<p>一次正面一次反面（顺序无关）：</p>
-<pre tabindex="0"><code>100 × 1.5 × 0.6 = 90元
-</code></pre><p>你亏了10%。</p>
-<p>再玩两次：</p>
-<pre tabindex="0"><code>90 × 1.5 × 0.6 = 81元
-</code></pre><p>又亏了10%。</p>
-<p>每两次游戏，你的财富乘以 1.5 × 0.6 = 0.9。</p>
-<p><strong>长期来看，你必然归零。</strong></p>
-<p>但等等，期望值明明是正的？</p>
-<p>问题在于：<strong>期望值假设你能无限次重复，并且每次独立。但财富是乘性的，不是加性的。</strong></p>
-<p>上一把的结果会影响下一把的本金。这改变了一切。</p>
+<p>假设你有100元，玩两次，一次正面一次反面（顺序无关）：</p>
+<p>$$100 \times 1.5 \times 0.6 = 90元$$</p>
+<p>你亏了10%。关键在于<strong>几何平均</strong>：</p>
+<p>$$每次的平均增长率 = \sqrt{1.5 \times 0.6} = \sqrt{0.9} \approx 0.949$$</p>
+<p>每次游戏，你的财富平均缩水5%。玩100次：</p>
+<p>$$100 \times 0.949^{100} \approx 0.6元$$</p>
+<p>玩1000次？你的财富是初始值的 $10^{-23}$ 次方——比一个原子还小。</p>
+<p><strong>期望值是正的，但你必然归零。</strong></p>
+<p>这就是加法和乘法的区别。期望值是加法思维，但财富是乘法累积的——上一把的结果就是下一把的本金。</p>
 <hr>
 <h2 id="遍历性一个被忽视的关键概念">遍历性：一个被忽视的关键概念<a hidden class="anchor" aria-hidden="true" href="#遍历性一个被忽视的关键概念">#</a></h2>
 <p>当&quot;集合平均&quot;等于&quot;时间平均&quot;时，系统是<strong>遍历的（ergodic）</strong>。</p>
@@ -159,13 +165,13 @@
 <p>而是因为数学：在非遍历系统中，任何有破产概率的策略，长期期望值都是负无穷。</p>
 <p>不管你的&quot;期望收益&quot;有多高，只要存在归零可能，长期必败。</p>
 <h3 id="2-为什么凯利公式有效">2. 为什么凯利公式有效<a hidden class="anchor" aria-hidden="true" href="#2-为什么凯利公式有效">#</a></h3>
-<p>凯利公式不是最大化期望收益，而是最大化<strong>几何平均收益</strong>——也就是时间平均。</p>
-<p>凯利公式自动考虑了遍历性问题，所以它永远不会让你全押。</p>
+<p><a href="/posts/kelly-criterion/">凯利公式</a>不是最大化期望收益，而是最大化<strong>几何平均收益</strong>——也就是时间平均。</p>
+<p>凯利公式自动考虑了遍历性问题，所以它永远不会让你全押。这也是为什么实践中要使用&quot;半凯利&rdquo;——因为你对概率的估计可能是错的，需要额外的<a href="/posts/margin-of-safety/">安全边际</a>。</p>
 <h3 id="3-为什么分散投资有效">3. 为什么分散投资有效<a hidden class="anchor" aria-hidden="true" href="#3-为什么分散投资有效">#</a></h3>
 <p>不是因为&quot;不把鸡蛋放在一个篮子里&quot;这种道理。</p>
 <p>而是因为：分散投资把乘性风险转化为加性风险，让系统更接近遍历。</p>
 <h3 id="4-为什么杠杆如此危险">4. 为什么杠杆如此危险<a hidden class="anchor" aria-hidden="true" href="#4-为什么杠杆如此危险">#</a></h3>
-<p>杠杆放大了乘性效应。在非遍历系统中使用杠杆，是在加速归零。</p>
+<p>杠杆放大了乘性效应。在非遍历系统中使用杠杆，是在加速归零。这就是<a href="/posts/tail-risk/">尾部风险</a>如此致命的原因——一次极端事件就足以摧毁一切。</p>
 <h3 id="5-为什么长期持有有前提">5. 为什么&quot;长期持有&quot;有前提<a hidden class="anchor" aria-hidden="true" href="#5-为什么长期持有有前提">#</a></h3>
 <p>&ldquo;长期持有&quot;只对那些不会归零的资产有效。</p>
 <p>持有一个可能归零的股票，时间越长，归零概率越高。</p>
@@ -178,7 +184,7 @@
 <p>这就是为什么塔勒布说&quot;波动率不是风险，破产才是风险&rdquo;。</p>
 <hr>
 <h2 id="实践含义">实践含义<a hidden class="anchor" aria-hidden="true" href="#实践含义">#</a></h2>
-<h3 id="1-任何决策先问最坏情况会不会让我出局">1. 任何决策，先问&quot;最坏情况会不会让我出局&rdquo;<a hidden class="anchor" aria-hidden="true" href="#1-任何决策先问最坏情况会不会让我出局">#</a></h3>
+<h3 id="1-任何决策先问最坏情况会不会让我出局">1. 任何决策，先问&quot;最坏情况会不会让我出局&quot;<a hidden class="anchor" aria-hidden="true" href="#1-任何决策先问最坏情况会不会让我出局">#</a></h3>
 <p>如果会，不管期望值多高，都不做。</p>
 <h3 id="2-理解长期的真正含义">2. 理解&quot;长期&quot;的真正含义<a hidden class="anchor" aria-hidden="true" href="#2-理解长期的真正含义">#</a></h3>
 <p>长期不是&quot;只要持有足够久就会赚钱&quot;。</p>
@@ -203,7 +209,7 @@
 <ul>
 <li>巴菲特的第一规则&quot;永远不要亏钱&quot;——不是废话，是数学</li>
 <li>索罗斯的&quot;先生存，再赚钱&quot;——不是保守，是理性</li>
-<li>塔勒布的&quot;杠铃策略&quot;——不是奇技淫巧，是对非遍历性的正确应对</li>
+<li>塔勒布的&quot;<a href="/posts/barbell-strategy/">杠铃策略</a>&quot;——不是奇技淫巧，是对非遍历性的正确应对</li>
 </ul>
 <hr>
 <h2 id="一个思想实验">一个思想实验<a hidden class="anchor" aria-hidden="true" href="#一个思想实验">#</a></h2>
@@ -214,19 +220,10 @@
 <p><strong>你的决策框架，必须基于你的存在方式。</strong></p>
 <p>这就是遍历性问题的核心。</p>
 <hr>
-<h2 id="最后">最后<a hidden class="anchor" aria-hidden="true" href="#最后">#</a></h2>
-<p>这篇文章只讨论了一个概念。</p>
-<p>但如果你真正理解了它，你对投资的很多认知会被重构。</p>
-<p>真正的深度不是知道100个原则，而是理解一个原则背后的原理。</p>
-<p>遍历性不是我发明的。Ole Peters、Nassim Taleb 等人在这方面有深入研究。我只是试图用最清晰的方式呈现它。</p>
-<p>如果这篇文章让你开始用不同的方式思考风险和时间的关系，它就达到了目的。</p>
-<hr>
-<p><em>参考阅读：</em></p>
-<ul>
-<li>Ole Peters: &ldquo;The ergodicity problem in economics&rdquo;</li>
-<li>Nassim Taleb: &ldquo;Skin in the Game&rdquo; 中关于遍历性的章节</li>
-<li>凯利公式的数学推导</li>
-</ul>
+<h2 id="一句话总结">一句话总结<a hidden class="anchor" aria-hidden="true" href="#一句话总结">#</a></h2>
+<p><strong>期望值是上帝视角，但你活在时间里。</strong></p>
+<p>在乘法世界中，一次归零就是永远归零。这不是悲观，这是数学。</p>
+<p>理解这一点，投资的第一原则就不再是&quot;最大化收益&quot;，而是&quot;确保不出局&quot;。</p>
 
 
   </div>

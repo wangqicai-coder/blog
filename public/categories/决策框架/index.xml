@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>决策框架 on Wang Qicai</title>
+    <title>决策框架 on 不确定性的智慧</title>
     <link>http://localhost:1313/categories/%E5%86%B3%E7%AD%96%E6%A1%86%E6%9E%B6/</link>
-    <description>Recent content in 决策框架 on Wang Qicai</description>
+    <description>Recent content in 决策框架 on 不确定性的智慧</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Dec 2025 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/%E5%86%B3%E7%AD%96%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>凯利公式：如何下注</title>
       <link>http://localhost:1313/posts/kelly-criterion/</link>
-      <pubDate>Sat, 20 Dec 2025 12:00:00 +0800</pubDate>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/kelly-criterion/</guid>
       <description>&lt;h2 id=&#34;一个改变赌博和投资的公式&#34;&gt;一个改变赌博和投资的公式&lt;/h2&gt;
 &lt;p&gt;1956年，贝尔实验室的物理学家约翰·凯利发表了一篇论文，标题是《信息率的新解释》。&lt;/p&gt;
@@ -63,6 +63,275 @@
 &lt;p&gt;为什么？因为全押有归零风险，而归零在乘性系统中是无法恢复的。&lt;/p&gt;
 &lt;h3 id=&#34;2-没有优势时建议不下注&#34;&gt;2. 没有优势时建议不下注&lt;/h3&gt;
 &lt;p&gt;如果 bp ≤ q（期望值为负或零），凯利公式建议 f* ≤ 0。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>杠铃策略：如何反脆弱</title>
+      <link>http://localhost:1313/posts/barbell-strategy/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/barbell-strategy/</guid>
+      <description>&lt;h2 id=&#34;一个反常识的配置方法&#34;&gt;一个反常识的配置方法&lt;/h2&gt;
+&lt;p&gt;传统智慧说：分散投资，不要把所有鸡蛋放在一个篮子里。&lt;/p&gt;
+&lt;p&gt;所以大多数人的投资组合是&amp;quot;中等风险&amp;quot;：一些股票、一些债券、也许一些房产。什么都有一点，风险&amp;quot;平衡&amp;quot;。&lt;/p&gt;
+&lt;p&gt;塔勒布说这是错的。&lt;/p&gt;
+&lt;p&gt;他提出了一个反直觉的配置方法：&lt;strong&gt;杠铃策略&lt;/strong&gt;——把资产分成两个极端，没有中间。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;80-90%放在极度安全的资产&lt;/strong&gt;（国债、现金）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10-20%放在极度高风险的资产&lt;/strong&gt;（期权、初创公司、高风险投机）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;不要放在中间。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么避开中间&#34;&gt;为什么避开中间&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;中等风险&amp;quot;的资产看起来很理性：承担一些风险，获取一些回报。&lt;/p&gt;
+&lt;p&gt;但塔勒布指出：&lt;strong&gt;中等风险可能是最差的位置&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;为什么？&lt;/p&gt;
+&lt;h3 id=&#34;1-隐藏的尾部风险&#34;&gt;1. 隐藏的尾部风险&lt;/h3&gt;
+&lt;p&gt;很多看起来&amp;quot;中等风险&amp;quot;的资产，其实有隐藏的尾部风险。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;稳健成长股&amp;rdquo;——听起来很安全。但在2008年，这些股票跌了50%。
+&amp;ldquo;投资级债券&amp;rdquo;——听起来很稳。但在极端情况下可能违约。
+&amp;ldquo;分散的股票组合&amp;rdquo;——似乎降低了风险。但在系统性崩盘时，相关性趋近于1，分散失效。&lt;/p&gt;
+&lt;p&gt;你以为自己在承担中等风险，其实你在承担隐藏的极端风险。&lt;/p&gt;
+&lt;h3 id=&#34;2-回报不够补偿风险&#34;&gt;2. 回报不够补偿风险&lt;/h3&gt;
+&lt;p&gt;中等风险的回报通常是中等的。&lt;/p&gt;
+&lt;p&gt;但如果你承担的是隐藏的尾部风险，中等回报不足以补偿这个风险。&lt;/p&gt;
+&lt;p&gt;你需要的是：&lt;strong&gt;确定性很高的安全，或者回报足够大来补偿风险的高风险&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;中间地带两者都没有。&lt;/p&gt;
+&lt;h3 id=&#34;3-凸性缺失&#34;&gt;3. 凸性缺失&lt;/h3&gt;
+&lt;p&gt;中间地带通常是凹的——上行有限，下行可能很大。&lt;/p&gt;
+&lt;p&gt;极端组合可以是凸的——安全部分限制下行，高风险部分提供上行。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;杠铃策略的逻辑&#34;&gt;杠铃策略的逻辑&lt;/h2&gt;
+&lt;p&gt;杠铃策略的核心是&lt;strong&gt;分离风险&lt;/strong&gt;。它是&lt;a href=&#34;http://localhost:1313/posts/convexity/&#34;&gt;凸性&lt;/a&gt;思想的直接应用：构建一个下行有限、上行开放的整体结构。&lt;/p&gt;
+&lt;h3 id=&#34;安全部分80-90&#34;&gt;安全部分（80-90%）&lt;/h3&gt;
+&lt;p&gt;这部分的目标是：&lt;strong&gt;绝对生存&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;不是&amp;quot;可能安全&amp;rdquo;，是&amp;quot;确定安全&amp;quot;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;短期国债（政府违约风险最低）&lt;/li&gt;
+&lt;li&gt;现金（虽然有通胀风险，但没有名义亏损风险）&lt;/li&gt;
+&lt;li&gt;也许是黄金（作为终极避险）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这部分不追求回报。它的作用是：&lt;strong&gt;确保无论发生什么，你都不会出局&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;高风险部分10-20&#34;&gt;高风险部分（10-20%）&lt;/h3&gt;
+&lt;p&gt;这部分的目标是：&lt;strong&gt;捕捉极端上行&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;因为你只用了10-20%的资金，最坏情况是亏掉这部分。你的安全部分确保你能活下来。&lt;/p&gt;
+&lt;p&gt;但上行呢？是开放的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;期权（最大亏损是期权费，最大收益无限）&lt;/li&gt;
+&lt;li&gt;初创公司投资（最大亏损是投入资金，最大收益可能是100倍）&lt;/li&gt;
+&lt;li&gt;高波动投机（在确保不会破产的前提下）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这部分本质上是一组&lt;a href=&#34;http://localhost:1313/posts/optionality/&#34;&gt;选择权&lt;/a&gt;：有限的下行，无限的上行。&lt;/p&gt;
+&lt;h3 id=&#34;组合效果&#34;&gt;组合效果&lt;/h3&gt;
+&lt;p&gt;整体组合变成了什么？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下行：最多亏掉10-20%（高风险部分全部损失）&lt;/li&gt;
+&lt;li&gt;上行：无限（高风险部分可能暴涨）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这是一个凸的组合。&lt;/p&gt;
+&lt;p&gt;即使高风险部分全部归零，你还有80-90%的安全资产。你活着。&lt;/p&gt;
+&lt;p&gt;但如果高风险部分有一个成功了（比如10倍），你的整体组合翻倍。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;与传统分散的对比&#34;&gt;与传统分散的对比&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;传统分散&lt;/th&gt;
+          &lt;th&gt;杠铃策略&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;配置&lt;/td&gt;
+          &lt;td&gt;均匀分布在各种风险水平&lt;/td&gt;
+          &lt;td&gt;集中在两个极端&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;下行&lt;/td&gt;
+          &lt;td&gt;可能很大（隐藏的尾部风险）&lt;/td&gt;
+          &lt;td&gt;有限（只有高风险部分）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;上行&lt;/td&gt;
+          &lt;td&gt;有限（中等回报）&lt;/td&gt;
+          &lt;td&gt;开放（高风险部分可能暴涨）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;凸性&lt;/td&gt;
+          &lt;td&gt;凹（或中性）&lt;/td&gt;
+          &lt;td&gt;凸&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;生存&lt;/td&gt;
+          &lt;td&gt;不确定&lt;/td&gt;
+          &lt;td&gt;确定（安全部分）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;传统分散是&amp;quot;不把鸡蛋放在一个篮子里&amp;quot;。
+杠铃策略是&amp;quot;把大部分鸡蛋放在最安全的篮子里，小部分放在可能孵出凤凰的篮子里&amp;quot;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>机会成本：看不见的代价</title>
+      <link>http://localhost:1313/posts/opportunity-cost/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/opportunity-cost/</guid>
+      <description>&lt;h2 id=&#34;经济学最重要的概念&#34;&gt;经济学最重要的概念&lt;/h2&gt;
+&lt;p&gt;如果让经济学家只选一个概念教给所有人，很多人会选择：机会成本。&lt;/p&gt;
+&lt;p&gt;机会成本的定义很简单：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;做某事的机会成本，是你为此放弃的最佳替代选择的价值。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;听起来显而易见。但这个&amp;quot;显而易见&amp;quot;的概念，大多数人在大多数时候都会忽略。&lt;/p&gt;
+&lt;p&gt;这种忽略的代价是巨大的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一个思想实验&#34;&gt;一个思想实验&lt;/h2&gt;
+&lt;p&gt;你花100元买了一张电影票。电影开场后，你发现电影非常无聊。&lt;/p&gt;
+&lt;p&gt;你应该继续看下去，还是离开？&lt;/p&gt;
+&lt;p&gt;很多人会想：&amp;ldquo;我已经花了100元，不看完就浪费了。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;这是错的。&lt;/p&gt;
+&lt;p&gt;那100元已经花了，无论你看不看电影，都拿不回来。这是&amp;quot;沉没成本&amp;quot;。&lt;/p&gt;
+&lt;p&gt;真正的问题是：&lt;strong&gt;接下来的2小时，你可以做什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果你继续看无聊电影，你失去的是这2小时本可以做的其他事情——睡觉、和朋友聊天、做有意义的工作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机会成本关注的不是你已经付出什么，而是你正在放弃什么。&lt;/strong&gt; 沉没成本是过去，机会成本是未来。混淆两者是常见的决策错误。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么机会成本难以看见&#34;&gt;为什么机会成本难以看见&lt;/h2&gt;
+&lt;p&gt;机会成本的问题在于：它是&lt;strong&gt;看不见的&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;当你花100元买票，你看见了100元的支出。
+但当你看无聊电影的2小时，你没有看见那2小时本可以创造的价值。&lt;/p&gt;
+&lt;p&gt;当你买了一辆车，你看见了车的价格。
+但你没有看见这笔钱如果投资，20年后可能变成多少。&lt;/p&gt;
+&lt;p&gt;当你选择一份工作，你看见了工资。
+但你没有看见你放弃的其他工作机会，或者创业机会。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们的大脑天生对可见的成本敏感，对不可见的成本迟钝。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是一种系统性的认知偏差。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;时间的机会成本&#34;&gt;时间的机会成本&lt;/h2&gt;
+&lt;p&gt;时间可能是机会成本被低估最严重的资源。&lt;/p&gt;
+&lt;p&gt;你花1小时刷社交媒体。这1小时的机会成本是什么？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;读30页书&lt;/li&gt;
+&lt;li&gt;学习新技能&lt;/li&gt;
+&lt;li&gt;和重要的人交流&lt;/li&gt;
+&lt;li&gt;深度思考一个问题&lt;/li&gt;
+&lt;li&gt;休息恢复精力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你选择刷社交媒体，意味着你放弃了上述所有。&lt;/p&gt;
+&lt;p&gt;如果你把&amp;quot;刷1小时社交媒体&amp;quot;标价——比如说，这1小时本可以用来工作赚100元——你可能会更谨慎。&lt;/p&gt;
+&lt;p&gt;但因为时间的机会成本是不可见的，我们浪费它时毫无痛感。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;投资中的机会成本&#34;&gt;投资中的机会成本&lt;/h2&gt;
+&lt;h3 id=&#34;持有现金的机会成本&#34;&gt;持有现金的机会成本&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;我把钱放在银行，很安全。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;安全是真的。但机会成本是什么？（不过要记住，现金也是&lt;a href=&#34;http://localhost:1313/posts/optionality/&#34;&gt;选择权&lt;/a&gt;——当危机来临时，有现金的人可以买入廉价资产。）&lt;/p&gt;
+&lt;p&gt;假设银行利率1%，股市长期平均8%。
+持有现金的机会成本是每年7%的预期差异。&lt;/p&gt;
+&lt;p&gt;10万元放银行30年，变成13万。
+10万元投资股市30年（8%），变成100万。&lt;/p&gt;
+&lt;p&gt;差距87万。这是你&amp;quot;安全&amp;quot;的代价。&lt;/p&gt;
+&lt;p&gt;当然，这不意味着你应该全投股市。但你应该&lt;strong&gt;意识到&lt;/strong&gt;安全是有代价的，然后做出知情的选择。&lt;/p&gt;
+&lt;h3 id=&#34;持有亏损股票的机会成本&#34;&gt;持有亏损股票的机会成本&lt;/h3&gt;
+&lt;p&gt;你买了一只股票，亏了30%。你不想卖，因为&amp;quot;卖了就真的亏了&amp;quot;。&lt;/p&gt;
+&lt;p&gt;但那只股票的未来表现，和你是否亏损无关。&lt;/p&gt;
+&lt;p&gt;真正的问题是：&lt;strong&gt;这笔钱如果投到其他地方，预期回报是多少？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果其他机会的预期回报更高，你应该切换。你的买入成本是沉没成本，不应该影响决策。&lt;/p&gt;
+&lt;p&gt;你持有亏损股票的每一天，你都在支付机会成本——这笔钱本可以投到更好的地方。&lt;/p&gt;
+&lt;h3 id=&#34;优秀公司的机会成本&#34;&gt;优秀公司的机会成本&lt;/h3&gt;
+&lt;p&gt;你持有一只年化15%的好股票。应该卖吗？&lt;/p&gt;
+&lt;p&gt;机会成本思维问：有没有更好的选择？&lt;/p&gt;
+&lt;p&gt;如果市场上有年化20%的机会，你持有15%的股票就是在支付5%的机会成本。&lt;/p&gt;
+&lt;p&gt;但要注意：这里&amp;quot;更好的选择&amp;quot;必须是&lt;strong&gt;风险调整后&lt;/strong&gt;更好。更高回报伴随更高风险可能不是真正的&amp;quot;更好&amp;quot;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;职业中的机会成本&#34;&gt;职业中的机会成本&lt;/h2&gt;
+&lt;h3 id=&#34;工作-vs-学习&#34;&gt;工作 vs 学习&lt;/h3&gt;
+&lt;p&gt;你现在可以工作赚钱，或者花时间学习提升技能。&lt;/p&gt;
+&lt;p&gt;工作的直接收益是工资。
+学习的直接收益是零（甚至是负的，如果有学费）。&lt;/p&gt;
+&lt;p&gt;但学习可能提高你未来的收入。机会成本分析需要考虑这个长期影响。&lt;/p&gt;
+&lt;p&gt;年轻时学习的机会成本相对低（收入本来就不高），潜在收益高（有更多时间享受技能提升带来的回报）。&lt;/p&gt;
+&lt;p&gt;这是为什么早期投资学习通常是值得的。&lt;/p&gt;
+&lt;h3 id=&#34;稳定-vs-风险&#34;&gt;稳定 vs 风险&lt;/h3&gt;
+&lt;p&gt;稳定工作的机会成本是：放弃的创业机会、跳槽机会、冒险机会。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>安全边际：为什么&#34;差不多对&#34;还不够</title>
+      <link>http://localhost:1313/posts/margin-of-safety/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/margin-of-safety/</guid>
+      <description>&lt;h2 id=&#34;一个改变投资史的概念&#34;&gt;一个改变投资史的概念&lt;/h2&gt;
+&lt;p&gt;1934年，本杰明·格雷厄姆在大萧条的废墟中写下了《证券分析》。&lt;/p&gt;
+&lt;p&gt;他提出了一个简单但深刻的概念：&lt;strong&gt;安全边际&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;什么是安全边际？&lt;/p&gt;
+&lt;p&gt;如果你估算一座桥能承重10吨，你不会开一辆9.5吨的卡车过去。你会留有余地——也许只开5吨的车。&lt;/p&gt;
+&lt;p&gt;那5吨的差距就是安全边际。&lt;/p&gt;
+&lt;p&gt;投资也一样：如果你估算一只股票值100元，你不应该在99元买入。你应该等到它跌到60元或70元。&lt;/p&gt;
+&lt;p&gt;那30-40元的差距就是安全边际。&lt;/p&gt;
+&lt;p&gt;这听起来显而易见。但大多数人不这样做——他们在价格&amp;quot;差不多合理&amp;quot;时就买入。&lt;/p&gt;
+&lt;p&gt;格雷厄姆认为这是灾难的配方。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么需要安全边际&#34;&gt;为什么需要安全边际&lt;/h2&gt;
+&lt;h3 id=&#34;1-你的估值一定是错的&#34;&gt;1. 你的估值一定是错的&lt;/h3&gt;
+&lt;p&gt;没有人能准确估算一家公司的&amp;quot;真实价值&amp;quot;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;未来收益是预测，预测必然有误差&lt;/li&gt;
+&lt;li&gt;折现率是假设，假设可能是错的&lt;/li&gt;
+&lt;li&gt;竞争格局会变化，你无法完全预见&lt;/li&gt;
+&lt;li&gt;管理层可能犯错、欺骗或离职&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你的估值不是一个点，是一个范围。而且你不知道范围有多宽。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安全边际承认了这个事实：既然估值必然有误差，就应该只在价格远低于估值时行动。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-坏事比你想象的更常发生&#34;&gt;2. 坏事比你想象的更常发生&lt;/h3&gt;
+&lt;p&gt;这和&lt;a href=&#34;http://localhost:1313/posts/tail-risk/&#34;&gt;尾部风险&lt;/a&gt;那篇文章的洞见一致：极端事件比正态分布预测的更常见。&lt;/p&gt;
+&lt;p&gt;公司可能遭遇：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;意外的监管打击&lt;/li&gt;
+&lt;li&gt;关键客户流失&lt;/li&gt;
+&lt;li&gt;技术颠覆&lt;/li&gt;
+&lt;li&gt;财务欺诈曝光&lt;/li&gt;
+&lt;li&gt;黑天鹅事件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些不是&amp;quot;不可能&amp;quot;的事件，而是你的模型没有考虑的事件。&lt;/p&gt;
+&lt;p&gt;安全边际是对这些未知风险的缓冲。&lt;/p&gt;
+&lt;h3 id=&#34;3-时机永远无法精确&#34;&gt;3. 时机永远无法精确&lt;/h3&gt;
+&lt;p&gt;即使你对价值的判断是对的，你也无法预测价格什么时候会回归价值。&lt;/p&gt;
+&lt;p&gt;可能需要几个月，也可能需要几年。在这期间，你需要有耐心持有——而安全边际给了你这个耐心。&lt;/p&gt;
+&lt;p&gt;如果你在&amp;quot;差不多对&amp;quot;的价格买入，小幅下跌就会让你怀疑自己。如果你在远低于价值的价格买入，即使继续下跌，你也知道自己的判断有足够的缓冲。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;安全边际与其他概念的联系&#34;&gt;安全边际与其他概念的联系&lt;/h2&gt;
+&lt;h3 id=&#34;与遍历性&#34;&gt;与遍历性&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/ergodicity/&#34;&gt;遍历性&lt;/a&gt;告诉我们：在乘性系统中，一次归零就是永远归零。&lt;/p&gt;
+&lt;p&gt;安全边际是对这个洞见的实践应用：&lt;strong&gt;永远不要让自己处于&amp;quot;只要估值稍微错一点就会破产&amp;quot;的位置。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;凯利公式建议不要全押，安全边际建议不要在&amp;quot;刚好合理&amp;quot;的价格买入。两者都是在为误差留空间。&lt;/p&gt;
+&lt;h3 id=&#34;与凯利公式&#34;&gt;与凯利公式&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/kelly-criterion/&#34;&gt;凯利公式&lt;/a&gt;的核心洞见是：过度激进比过度保守更危险。&lt;/p&gt;
+&lt;p&gt;安全边际是同样的精神：宁可错过&amp;quot;差不多&amp;quot;的机会，也不要在缓冲不足时冒险。&lt;/p&gt;
+&lt;p&gt;实践中的&amp;quot;半凯利&amp;quot;和&amp;quot;只在安全边际足够时买入&amp;quot;，是同一个原则的两种表达。&lt;/p&gt;
+&lt;h3 id=&#34;与尾部风险&#34;&gt;与尾部风险&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/tail-risk/&#34;&gt;尾部风险&lt;/a&gt;告诉我们：极端事件比模型预测的更常见。&lt;/p&gt;
+&lt;p&gt;安全边际是对尾部风险的防御：既然最坏情况比你想象的更可能发生，就应该确保即使最坏情况发生，你也不会出局。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;安全边际的数学&#34;&gt;安全边际的数学&lt;/h2&gt;
+&lt;p&gt;假设你估算一只股票的内在价值在80-120元之间（你不确定具体数字）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;没有安全边际&lt;/strong&gt;：在100元买入。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果真实价值是120元，你赚20%&lt;/li&gt;
+&lt;li&gt;如果真实价值是80元，你亏20%&lt;/li&gt;
+&lt;li&gt;如果真实价值是60元（你估错了），你亏40%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;有安全边际&lt;/strong&gt;：只在60元买入。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果真实价值是120元，你赚100%&lt;/li&gt;
+&lt;li&gt;如果真实价值是80元，你赚33%&lt;/li&gt;
+&lt;li&gt;如果真实价值是60元（你估错了），你不赚不亏&lt;/li&gt;
+&lt;li&gt;如果真实价值是40元（严重估错），你亏33%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安全边际把你的赔率从对称变成不对称：上行空间大，下行空间小。&lt;/p&gt;
+&lt;p&gt;这正是&lt;a href=&#34;http://localhost:1313/posts/convexity/&#34;&gt;凸性&lt;/a&gt;的定义。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么大多数人不用安全边际&#34;&gt;为什么大多数人不用安全边际&lt;/h2&gt;
+&lt;h3 id=&#34;1-等待是痛苦的&#34;&gt;1. 等待是痛苦的&lt;/h3&gt;
+&lt;p&gt;安全边际意味着很多时候你什么都不做。&lt;/p&gt;
+&lt;p&gt;当别人在赚钱，你在等待。当市场&amp;quot;感觉&amp;quot;很好，你在等待。当机会&amp;quot;差不多&amp;quot;够好，你还在等待。&lt;/p&gt;
+&lt;p&gt;这在心理上极其困难。&lt;/p&gt;
+&lt;h3 id=&#34;2-机会成本的幻觉&#34;&gt;2. 机会成本的幻觉&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;如果我等待更低的价格，可能永远等不到。&amp;rdquo;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

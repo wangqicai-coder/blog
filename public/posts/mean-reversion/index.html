@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>均值回归：最被误解的统计概念 | Wang Qicai</title>
+<title>均值回归：最被误解的统计概念 | 不确定性的智慧</title>
 <meta name="keywords" content="">
 <meta name="description" content="一个让天才困惑的现象
 弗朗西斯·高尔顿（Francis Galton）是达尔文的表弟，统计学的奠基人之一。
@@ -103,6 +103,22 @@
 
     </style>
 </noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Ber8wXQz9Fl4Nn3G6EhpBWXTvdw3LmJcEp9viPOC" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError : false
+        });
+    });
+</script>
+
+
 </head>
 
 <body class="" id="top">
@@ -110,7 +126,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Wang Qicai (Alt + H)">Wang Qicai</a>
+            <a href="http://localhost:1313/" accesskey="h" title="不确定性的智慧 (Alt + H)">不确定性的智慧</a>
             <div class="logo-switches">
             </div>
         </div>
@@ -224,7 +240,7 @@
 <h3 id="陷阱3回归的时间尺度">陷阱3：回归的时间尺度<a hidden class="anchor" aria-hidden="true" href="#陷阱3回归的时间尺度">#</a></h3>
 <p>均值回归会发生，但<strong>什么时候</strong>发生？</p>
 <p>一个极端值可能需要几个月、几年、甚至几十年才能回归。在这期间，你可能已经破产。</p>
-<p>凯恩斯说：&ldquo;市场保持非理性的时间，可能比你保持偿付能力的时间更长。&rdquo;</p>
+<p>凯恩斯说：&ldquo;市场保持非理性的时间，可能比你保持偿付能力的时间更长。&ldquo;这也是为什么<a href="/posts/margin-of-safety/">安全边际</a>如此重要——你需要足够的缓冲来等待回归发生。</p>
 <hr>
 <h2 id="如何正确使用均值回归">如何正确使用均值回归<a hidden class="anchor" aria-hidden="true" href="#如何正确使用均值回归">#</a></h2>
 <h3 id="1-作为思维框架而非交易策略">1. 作为思维框架，而非交易策略<a hidden class="anchor" aria-hidden="true" href="#1-作为思维框架而非交易策略">#</a></h3>
@@ -261,37 +277,17 @@
 <li>你注意到最极端的预测者（因为他们被关注）</li>
 </ul>
 <p>这些被选择出来的样本，<strong>在统计上注定要向平均回归</strong>。</p>
-<p>这不是诅咒，这是数学。</p>
+<p>这不是诅咒，这是数学。这也与<a href="/posts/survivorship-bias/">幸存者偏差</a>相关——我们关注的极端成功案例，不仅被选择性地呈现，而且在统计上注定会回归。</p>
 <hr>
-<h2 id="最后">最后<a hidden class="anchor" aria-hidden="true" href="#最后">#</a></h2>
-<p>均值回归是最简单也最被误解的统计概念。</p>
-<p>它被误解为：</p>
-<ul>
-<li>一种神秘力量，拉动事物向中间靠拢</li>
-<li>一种交易策略，自动反向押注极端值</li>
-<li>一种必然规律，极端值一定会立即回归</li>
-</ul>
-<p>它真正的含义是：</p>
-<ul>
-<li>极端观察值更可能包含极端随机成分</li>
-<li>随机成分在下一次观察时被重新抽样</li>
-<li>因此在统计上，下一次观察更可能接近平均值</li>
-</ul>
-<p>理解这个区别，你就能：</p>
-<ul>
-<li>避免把随机波动当成因果关系</li>
-<li>对极端值保持适度怀疑</li>
-<li>不被&quot;封面魔咒&quot;之类的迷信愚弄</li>
-<li>在投资中保持合理的期望管理</li>
-</ul>
-<p><strong>均值回归不是预测工具，是认知工具。它帮你理解为什么世界看起来有某些模式——而这些模式可能只是统计幻觉。</strong></p>
+<h2 id="关键区分">关键区分<a hidden class="anchor" aria-hidden="true" href="#关键区分">#</a></h2>
+<p><strong>统计上的均值回归</strong>：极端观察值中的随机成分在下次测量时被重新抽样，因此结果更接近平均值。这是数学必然。</p>
+<p><strong>交易策略的均值回归</strong>：押注价格会回到历史平均。这需要假设&quot;真实价值&quot;不变，而这个假设经常是错的。</p>
+<p>两者使用同一个名字，但完全不同。混淆它们是危险的。</p>
 <hr>
-<p><em>参考阅读：</em></p>
-<ul>
-<li>Francis Galton 的原始研究</li>
-<li>Daniel Kahneman: &ldquo;Thinking, Fast and Slow&rdquo;（第17章专门讲均值回归）</li>
-<li>Michael Mauboussin: &ldquo;The Success Equation&rdquo;</li>
-</ul>
+<h2 id="一句话总结">一句话总结<a hidden class="anchor" aria-hidden="true" href="#一句话总结">#</a></h2>
+<p><strong>极端表现包含极端运气，而运气会被重新抽样。</strong></p>
+<p>这不是预测工具——你不知道均值在哪里，也不知道回归需要多久。</p>
+<p>这是认知工具——帮你理解为什么&quot;封面魔咒&quot;不是诅咒，为什么训斥不比表扬有效。</p>
 
 
   </div>

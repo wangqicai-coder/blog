@@ -17,6 +17,7 @@ params:
   ShowPostNavLinks: false
   ShowBreadCrumbs: false
   hideMeta: true
+  math: true
 
 
 outputs:

@@ -1,17 +1,244 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Wang Qicai</title>
+    <title>Posts on 不确定性的智慧</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Wang Qicai</description>
+    <description>Recent content in Posts on 不确定性的智慧</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Dec 2025 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>凯利公式：如何下注</title>
+      <link>http://localhost:1313/posts/kelly-criterion/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/kelly-criterion/</guid>
+      <description>&lt;h2 id=&#34;一个改变赌博和投资的公式&#34;&gt;一个改变赌博和投资的公式&lt;/h2&gt;
+&lt;p&gt;1956年，贝尔实验室的物理学家约翰·凯利发表了一篇论文，标题是《信息率的新解释》。&lt;/p&gt;
+&lt;p&gt;这篇论文本来是关于信息论的。但它包含了一个公式，后来改变了职业赌徒和专业投资者的思考方式。&lt;/p&gt;
+&lt;p&gt;这个公式回答了一个简单但深刻的问题：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当你有优势时，应该下注多少？&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么这个问题重要&#34;&gt;为什么这个问题重要&lt;/h2&gt;
+&lt;p&gt;假设你发现了一个有利可图的机会：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;60%的概率赢，赢了翻倍&lt;/li&gt;
+&lt;li&gt;40%的概率输，输了归零&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你有100元。你应该下注多少？&lt;/p&gt;
+&lt;p&gt;直觉可能说：机会这么好，全押！&lt;/p&gt;
+&lt;p&gt;但如果你全押，只要输一次，你就出局了。即使你有60%的胜率，连续玩10次全押，归零的概率是99.99%。&lt;/p&gt;
+&lt;p&gt;那下注1元？太保守了。你有优势，应该利用它。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题是：有没有一个&amp;quot;最优&amp;quot;的下注比例？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;有。这就是凯利公式。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;凯利公式&#34;&gt;凯利公式&lt;/h2&gt;
+&lt;p&gt;对于简单的赢/输赌注，凯利公式是：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;f* = (bp - q) / b
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;f* = 最优下注比例（占总资金的百分比）&lt;/li&gt;
+&lt;li&gt;b = 赔率（赢了能赚多少倍）&lt;/li&gt;
+&lt;li&gt;p = 获胜概率&lt;/li&gt;
+&lt;li&gt;q = 失败概率（= 1 - p）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对于上面的例子（60%胜率，1:1赔率）：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;f* = (1 × 0.6 - 0.4) / 1 = 0.2 = 20%
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你应该每次下注总资金的20%。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;凯利公式的直觉&#34;&gt;凯利公式的直觉&lt;/h2&gt;
+&lt;p&gt;凯利公式在做什么？它在&lt;strong&gt;最大化长期财富的几何增长率&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;回忆遍历性那篇文章：投资是乘性的，不是加性的。你的财富是一连串乘法的结果。&lt;/p&gt;
+&lt;p&gt;凯利公式找到的是：&lt;strong&gt;让这一连串乘法的长期结果最大化的下注比例&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;它自动平衡了两个力量：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;利用优势&lt;/strong&gt;：下注太少，优势没有被充分利用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免毁灭&lt;/strong&gt;：下注太多，一次失败可能摧毁你&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;凯利比例是这两个力量的最优平衡点。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;凯利公式的数学性质&#34;&gt;凯利公式的数学性质&lt;/h2&gt;
+&lt;h3 id=&#34;1-永远不会让你全押&#34;&gt;1. 永远不会让你全押&lt;/h3&gt;
+&lt;p&gt;不管优势多大，凯利公式永远不会建议100%下注（除非胜率是100%）。&lt;/p&gt;
+&lt;p&gt;为什么？因为全押有归零风险，而归零在乘性系统中是无法恢复的。&lt;/p&gt;
+&lt;h3 id=&#34;2-没有优势时建议不下注&#34;&gt;2. 没有优势时建议不下注&lt;/h3&gt;
+&lt;p&gt;如果 bp ≤ q（期望值为负或零），凯利公式建议 f* ≤ 0。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>反身性：信念如何创造现实</title>
+      <link>http://localhost:1313/posts/reflexivity/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/reflexivity/</guid>
+      <description>&lt;h2 id=&#34;一个让经济学失效的现象&#34;&gt;一个让经济学失效的现象&lt;/h2&gt;
+&lt;p&gt;1992年9月16日，乔治·索罗斯做空英镑，一天赚了10亿美元。&lt;/p&gt;
+&lt;p&gt;他是怎么知道英镑会崩溃的？&lt;/p&gt;
+&lt;p&gt;传统金融理论说：市场价格反映所有可用信息，价格会回归&amp;quot;基本面&amp;quot;。如果英镑被高估，套利者会逐渐把价格拉回合理水平。&lt;/p&gt;
+&lt;p&gt;但索罗斯的理论完全不同：&lt;strong&gt;价格不是被动反映现实，价格主动创造现实。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当足够多的人相信英镑会贬值，他们会卖出英镑。卖出行为导致英镑真的贬值。贬值证实了预期，引发更多卖出。这个循环可以自我强化，直到系统崩溃。&lt;/p&gt;
+&lt;p&gt;索罗斯不是在预测&amp;quot;真实价值&amp;quot;。他是在识别一个&lt;strong&gt;反身性过程&lt;/strong&gt;——一个信念自我实现的循环。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是反身性&#34;&gt;什么是反身性&lt;/h2&gt;
+&lt;p&gt;反身性（Reflexivity）是索罗斯哲学的核心概念：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在有思考参与者的系统中，认知和现实之间存在双向反馈。&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;认知 → 影响行动 → 改变现实 → 改变认知 → ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这打破了传统科学的基本假设：观察者独立于被观察对象。&lt;/p&gt;
+&lt;p&gt;在物理学中，你观察一个苹果不会改变苹果。
+在金融市场中，你观察（并交易）一只股票会改变这只股票的价格。&lt;/p&gt;
+&lt;p&gt;这不是缺陷，这是社会现实的本质特征。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;自我实现与自我挫败&#34;&gt;自我实现与自我挫败&lt;/h2&gt;
+&lt;p&gt;反身性可以走两个方向：&lt;/p&gt;
+&lt;h3 id=&#34;自我实现的预言&#34;&gt;自我实现的预言&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;银行挤兑&lt;/strong&gt;是经典案例：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;谣言说银行可能倒闭&lt;/li&gt;
+&lt;li&gt;担忧的储户提取存款&lt;/li&gt;
+&lt;li&gt;银行因流动性危机真的陷入困境&lt;/li&gt;
+&lt;li&gt;更多人恐慌提款&lt;/li&gt;
+&lt;li&gt;银行真的倒闭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;银行原本可能是健康的。但预言本身创造了它预言的结果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;股票泡沫&lt;/strong&gt;是另一个案例：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;人们相信某股票会涨&lt;/li&gt;
+&lt;li&gt;买入推高价格&lt;/li&gt;
+&lt;li&gt;上涨&amp;quot;证明&amp;quot;了预期正确&lt;/li&gt;
+&lt;li&gt;更多人买入&lt;/li&gt;
+&lt;li&gt;价格远超基本面&lt;/li&gt;
+&lt;li&gt;直到信念崩塌&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;自我挫败的预言&#34;&gt;自我挫败的预言&lt;/h3&gt;
+&lt;p&gt;有时候，预言本身会阻止它预言的事情发生。&lt;/p&gt;
+&lt;p&gt;如果所有人都预测明天会堵车，一些人会提前出发或选择其他路线。结果，堵车可能没有发生。&lt;/p&gt;
+&lt;p&gt;在金融市场中，如果一个套利机会被广泛知晓，套利行为本身会消除这个机会。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;反身性的结构&#34;&gt;反身性的结构&lt;/h2&gt;
+&lt;p&gt;索罗斯区分了两个功能：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;认知功能&lt;/strong&gt;：参与者试图理解现实
+&lt;strong&gt;参与功能&lt;/strong&gt;：参与者试图改变现实&lt;/p&gt;
+&lt;p&gt;在反身性过程中，这两个功能同时作用并相互干扰：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你对市场的理解影响你的行动&lt;/li&gt;
+&lt;li&gt;你的行动影响市场&lt;/li&gt;
+&lt;li&gt;市场的变化改变你的理解&lt;/li&gt;
+&lt;li&gt;你的新理解又影响你的新行动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这创造了一个&lt;strong&gt;不稳定的动态系统&lt;/strong&gt;，而不是趋向均衡的稳定系统。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;繁荣-萧条周期&#34;&gt;繁荣-萧条周期&lt;/h2&gt;
+&lt;p&gt;反身性最重要的应用是解释市场周期。&lt;/p&gt;
+&lt;h3 id=&#34;繁荣阶段自我强化的上升&#34;&gt;繁荣阶段（自我强化的上升）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;启动&lt;/strong&gt;：某种基本面改善（真实的）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;认知&lt;/strong&gt;：投资者注意到改善&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;行动&lt;/strong&gt;：买入推高价格&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;强化&lt;/strong&gt;：价格上涨改善基本面（公司更容易融资、信心提升、消费增加）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加速&lt;/strong&gt;：更高的价格吸引更多买家&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;泡沫&lt;/strong&gt;：价格增长远超基本面&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高峰&lt;/strong&gt;：需要越来越大的信念才能支撑价格&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;萧条阶段自我强化的下降&#34;&gt;萧条阶段（自我强化的下降）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;触发&lt;/strong&gt;：某个事件动摇信念&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;质疑&lt;/strong&gt;：投资者开始怀疑&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;卖出&lt;/strong&gt;：价格下跌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;恶化&lt;/strong&gt;：价格下跌恶化基本面（融资困难、信心崩溃、消费收缩）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;恐慌&lt;/strong&gt;：更低的价格引发更多卖出&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;崩溃&lt;/strong&gt;：价格远低于基本面&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;底部&lt;/strong&gt;：需要极端的悲观才能继续下跌&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注意这个过程的关键特征：&lt;strong&gt;价格不是被动反映基本面，价格主动改变基本面。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>复利：不只是数学，是哲学</title>
+      <link>http://localhost:1313/posts/compounding/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/compounding/</guid>
+      <description>&lt;h2 id=&#34;一个被低估的洞见&#34;&gt;一个被低估的洞见&lt;/h2&gt;
+&lt;p&gt;爱因斯坦（可能）说过：复利是世界第八大奇迹。&lt;/p&gt;
+&lt;p&gt;这句话被引用太多次，以至于失去了力量。&lt;/p&gt;
+&lt;p&gt;让我换一种方式说：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;大多数人在智力上理解复利，但几乎没有人在直觉上真正理解它。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果你真正理解复利，你的行为会完全不同。你会：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更早开始&lt;/li&gt;
+&lt;li&gt;更少中断&lt;/li&gt;
+&lt;li&gt;更有耐心&lt;/li&gt;
+&lt;li&gt;更关注持续性而非爆发性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但大多数人不这样做。因为复利的数学是违反直觉的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;复利的数学为什么我们低估它&#34;&gt;复利的数学：为什么我们低估它&lt;/h2&gt;
+&lt;p&gt;人类的大脑是为线性思维设计的。&lt;/p&gt;
+&lt;p&gt;如果我每天走5公里，10天后我走了50公里。这很直观。&lt;/p&gt;
+&lt;p&gt;但复利是指数级的。&lt;/p&gt;
+&lt;p&gt;如果一张纸对折1次是2层，对折42次是多少层？&lt;/p&gt;
+&lt;p&gt;答案是：439,804,651,110,016层。大约是从地球到月球的距离。&lt;/p&gt;
+&lt;p&gt;没有人能直觉地预测这个数字。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这就是为什么我们系统性地低估复利——我们的大脑不是为指数设计的。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;时间的不对称性&#34;&gt;时间的不对称性&lt;/h2&gt;
+&lt;p&gt;复利揭示了时间的一个深刻性质：&lt;strong&gt;早期和晚期不等价&lt;/strong&gt;。这也是&lt;a href=&#34;http://localhost:1313/posts/path-dependence/&#34;&gt;路径依赖&lt;/a&gt;的一个表现——你的起点和早期决策对最终结果有不成比例的影响。&lt;/p&gt;
+&lt;p&gt;假设你从25岁开始每年投资1万元，年化10%，到65岁：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第1年的1万元，变成了45万元&lt;/li&gt;
+&lt;li&gt;第40年的1万元，只变成了1.1万元&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;同样的1万元，只因为投入时间不同，结果差了40倍。&lt;/p&gt;
+&lt;p&gt;这意味着什么？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你年轻时的每一块钱，都比年老时的每一块钱重要40倍。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;但我们的行为完全相反：年轻时挥霍，年老时节俭。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;中断的代价&#34;&gt;中断的代价&lt;/h2&gt;
+&lt;p&gt;复利最大的敌人是中断。&lt;/p&gt;
+&lt;p&gt;假设你的投资组合年化12%，持续30年：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不中断：1元变成30元&lt;/li&gt;
+&lt;li&gt;第15年取出一半：最终只有15元&lt;/li&gt;
+&lt;li&gt;每5年取出20%：最终只有8元&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;中断不是减法，是除法。&lt;/strong&gt; 它不只是拿走了本金，它拿走了那部分本金未来所有的复利。&lt;/p&gt;
+&lt;p&gt;这就是为什么：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;频繁交易是致命的（每次都打断复利）&lt;/li&gt;
+&lt;li&gt;市场择时是困难的（错过几个关键日子就毁掉复利）&lt;/li&gt;
+&lt;li&gt;最好的策略往往是&amp;quot;什么都不做&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;72法则一个直觉工具&#34;&gt;72法则：一个直觉工具&lt;/h2&gt;
+&lt;p&gt;72法则是复利的快速估算：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;翻倍时间 ≈ 72 ÷ 年化收益率&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;年化6%：12年翻倍&lt;/li&gt;
+&lt;li&gt;年化8%：9年翻倍&lt;/li&gt;
+&lt;li&gt;年化12%：6年翻倍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个简单的公式揭示了一些深刻的真相：&lt;/p&gt;
+&lt;h3 id=&#34;收益率差异被时间放大&#34;&gt;收益率差异被时间放大&lt;/h3&gt;
+&lt;p&gt;6%和12%看起来差6个百分点。&lt;/p&gt;
+&lt;p&gt;但30年后：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;6%：1元变成5.7元&lt;/li&gt;
+&lt;li&gt;12%：1元变成30元&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;差距不是6个百分点，是5倍。&lt;/p&gt;
+&lt;h3 id=&#34;时间比收益率更重要&#34;&gt;时间比收益率更重要&lt;/h3&gt;
+&lt;p&gt;10%年化，30年 = 17.4倍
+10%年化，40年 = 45.3倍&lt;/p&gt;
+&lt;p&gt;多10年，结果多2.6倍。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;时间是复利最重要的变量，而时间是不可购买的。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;复利的阴暗面&#34;&gt;复利的阴暗面&lt;/h2&gt;
+&lt;p&gt;复利不只是财富增长。它是一个对称的力量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;负面的东西也会复利。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;债务的复利&#34;&gt;债务的复利&lt;/h3&gt;
+&lt;p&gt;信用卡年化18%。
+1万元债务，不还的话：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>遍历性：为什么你的投资直觉是错的</title>
       <link>http://localhost:1313/posts/ergodicity/</link>
-      <pubDate>Sat, 20 Dec 2025 12:00:00 +0800</pubDate>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/ergodicity/</guid>
       <description>&lt;h2 id=&#34;一个改变一切的问题&#34;&gt;一个改变一切的问题&lt;/h2&gt;
 &lt;p&gt;假设有一个游戏：&lt;/p&gt;
@@ -30,18 +257,15 @@
 &lt;p&gt;但你不是100万人。你是一个人，要反复玩这个游戏。&lt;/p&gt;
 &lt;p&gt;对你来说，重要的是&lt;strong&gt;时间平均&lt;/strong&gt;：一个人反复玩这个游戏，长期结果是什么？&lt;/p&gt;
 &lt;p&gt;让我们算：&lt;/p&gt;
-&lt;p&gt;假设你有100元，玩两次。&lt;/p&gt;
-&lt;p&gt;一次正面一次反面（顺序无关）：&lt;/p&gt;
+&lt;p&gt;假设你有100元，玩两次，一次正面一次反面（顺序无关）：&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;100 × 1.5 × 0.6 = 90元
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你亏了10%。&lt;/p&gt;
-&lt;p&gt;再玩两次：&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;90 × 1.5 × 0.6 = 81元
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;又亏了10%。&lt;/p&gt;
-&lt;p&gt;每两次游戏，你的财富乘以 1.5 × 0.6 = 0.9。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;长期来看，你必然归零。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;但等等，期望值明明是正的？&lt;/p&gt;
-&lt;p&gt;问题在于：&lt;strong&gt;期望值假设你能无限次重复，并且每次独立。但财富是乘性的，不是加性的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;上一把的结果会影响下一把的本金。这改变了一切。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你亏了10%。关键在于&lt;strong&gt;几何平均&lt;/strong&gt;：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;每次的平均增长率 = √(1.5 × 0.6) = √0.9 ≈ 0.949
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;每次游戏，你的财富平均缩水5%。玩100次：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;100 × 0.949^100 ≈ 0.6元
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;玩1000次？你的财富是初始值的10^(-23)次方——比一个原子还小。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;期望值是正的，但你必然归零。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这就是加法和乘法的区别。期望值是加法思维，但财富是乘法累积的——上一把的结果就是下一把的本金。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;遍历性一个被忽视的关键概念&#34;&gt;遍历性：一个被忽视的关键概念&lt;/h2&gt;
 &lt;p&gt;当&amp;quot;集合平均&amp;quot;等于&amp;quot;时间平均&amp;quot;时，系统是&lt;strong&gt;遍历的（ergodic）&lt;/strong&gt;。&lt;/p&gt;
@@ -61,7 +285,891 @@
 &lt;p&gt;而是因为数学：在非遍历系统中，任何有破产概率的策略，长期期望值都是负无穷。&lt;/p&gt;
 &lt;p&gt;不管你的&amp;quot;期望收益&amp;quot;有多高，只要存在归零可能，长期必败。&lt;/p&gt;
 &lt;h3 id=&#34;2-为什么凯利公式有效&#34;&gt;2. 为什么凯利公式有效&lt;/h3&gt;
-&lt;p&gt;凯利公式不是最大化期望收益，而是最大化&lt;strong&gt;几何平均收益&lt;/strong&gt;——也就是时间平均。&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/kelly-criterion/&#34;&gt;凯利公式&lt;/a&gt;不是最大化期望收益，而是最大化&lt;strong&gt;几何平均收益&lt;/strong&gt;——也就是时间平均。&lt;/p&gt;
+&lt;p&gt;凯利公式自动考虑了遍历性问题，所以它永远不会让你全押。这也是为什么实践中要使用&amp;quot;半凯利&amp;rdquo;——因为你对概率的估计可能是错的，需要额外的&lt;a href=&#34;http://localhost:1313/posts/margin-of-safety/&#34;&gt;安全边际&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>尾部风险：为什么极端事件决定一切</title>
+      <link>http://localhost:1313/posts/tail-risk/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/tail-risk/</guid>
+      <description>&lt;h2 id=&#34;一个让统计学家破产的问题&#34;&gt;一个让统计学家破产的问题&lt;/h2&gt;
+&lt;p&gt;1998年，长期资本管理公司（LTCM）拥有两位诺贝尔经济学奖得主，管理着超过1000亿美元资产，使用最先进的数学模型。&lt;/p&gt;
+&lt;p&gt;他们的模型说：我们正在经历的亏损，在统计上是&amp;quot;不可能&amp;quot;的——概率小于10的负24次方。这种事件在宇宙年龄内都不应该发生一次。&lt;/p&gt;
+&lt;p&gt;然后他们破产了。&lt;/p&gt;
+&lt;p&gt;问题不在于他们运气不好。问题在于他们对&amp;quot;风险&amp;quot;的理解从根本上就是错的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;正态分布的谎言&#34;&gt;正态分布的谎言&lt;/h2&gt;
+&lt;p&gt;几乎所有传统金融模型都假设收益率服从正态分布（高斯分布）。&lt;/p&gt;
+&lt;p&gt;正态分布有一个美好的特性：极端事件极其罕见。超过3个标准差的事件，概率只有0.3%。超过6个标准差，概率是十亿分之一。&lt;/p&gt;
+&lt;p&gt;但现实中的金融市场不是这样的。&lt;/p&gt;
+&lt;p&gt;1987年10月19日，道琼斯指数单日下跌22.6%。如果收益率真的服从正态分布，这种事件的概率是10的负160次方——比宇宙中原子的数量还小得多。&lt;/p&gt;
+&lt;p&gt;这不是一次性的异常。2008年金融危机期间，类似的&amp;quot;不可能&amp;quot;事件反复发生。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;事实是：金融市场服从的是&amp;quot;肥尾分布&amp;quot;，不是正态分布。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是肥尾&#34;&gt;什么是肥尾&lt;/h2&gt;
+&lt;p&gt;在正态分布中，尾部（极端值区域）衰减得非常快——呈指数级下降。&lt;/p&gt;
+&lt;p&gt;在肥尾分布中，尾部衰减得慢得多——呈幂律下降。&lt;/p&gt;
+&lt;p&gt;这意味着什么？&lt;/p&gt;
+&lt;p&gt;假设正态分布下，某事件概率是百万分之一。
+在肥尾分布下，同样被认为&amp;quot;极端&amp;quot;的事件，概率可能是千分之一甚至百分之一。&lt;/p&gt;
+&lt;p&gt;差了1000到100000倍。&lt;/p&gt;
+&lt;p&gt;更重要的是：在肥尾世界里，&lt;strong&gt;大部分后果来自极端事件，而不是普通事件&lt;/strong&gt;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一个思想实验&#34;&gt;一个思想实验&lt;/h2&gt;
+&lt;p&gt;想象两个世界：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;世界A（正态世界）：&lt;/strong&gt; 100个人的平均身高。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;即使加入世界上最高的人（2.51米），平均值几乎不变&lt;/li&gt;
+&lt;li&gt;没有任何个体能显著影响整体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;世界B（肥尾世界）：&lt;/strong&gt; 100个人的平均财富。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;加入杰夫·贝索斯，平均值立刻变成20亿美元&lt;/li&gt;
+&lt;li&gt;一个个体可以完全主导整体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;身高是正态分布的。财富是肥尾分布的。&lt;/p&gt;
+&lt;p&gt;关键洞见：&lt;strong&gt;在肥尾世界里，平均值毫无意义，因为它被极端值主导。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么这对投资至关重要&#34;&gt;为什么这对投资至关重要&lt;/h2&gt;
+&lt;h3 id=&#34;1-大部分收益来自少数几天&#34;&gt;1. 大部分收益来自少数几天&lt;/h3&gt;
+&lt;p&gt;统计显示，如果你错过了股市表现最好的10天，你的长期收益会减少一半以上。&lt;/p&gt;
+&lt;p&gt;这不是巧合。在肥尾世界里，收益分布本身就是不均匀的。&lt;/p&gt;
+&lt;h3 id=&#34;2-大部分亏损来自少数几天&#34;&gt;2. 大部分亏损来自少数几天&lt;/h3&gt;
+&lt;p&gt;反过来也一样。2020年3月的几天，很多人亏掉了几年的收益。&lt;/p&gt;
+&lt;h3 id=&#34;3-平均收益是危险的概念&#34;&gt;3. &amp;ldquo;平均收益&amp;quot;是危险的概念&lt;/h3&gt;
+&lt;p&gt;当有人说&amp;quot;这个策略平均年化15%&amp;quot;，你应该问：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;收益分布是什么形状？&lt;/li&gt;
+&lt;li&gt;最大单次亏损是多少？&lt;/li&gt;
+&lt;li&gt;那些极端年份被包含在&amp;quot;平均&amp;quot;里了吗？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;var的致命缺陷&#34;&gt;VaR的致命缺陷&lt;/h2&gt;
+&lt;p&gt;金融界最常用的风险指标是VaR（Value at Risk，风险价值）。&lt;/p&gt;
+&lt;p&gt;VaR告诉你：在95%的情况下，你的最大损失是多少。&lt;/p&gt;
+&lt;p&gt;听起来很科学。但它有一个致命缺陷：&lt;strong&gt;它完全忽略了那5%&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;而在肥尾世界里，那5%才是真正重要的。那5%包含了可能让你破产的所有情况。&lt;/p&gt;
+&lt;p&gt;这就像说：&amp;ldquo;我的降落伞在95%的情况下都能打开。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;这不是安全，这是灾难的配方。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;塔勒布的洞见&#34;&gt;塔勒布的洞见&lt;/h2&gt;
+&lt;p&gt;纳西姆·塔勒布用&amp;quot;黑天鹅&amp;quot;这个比喻来描述这个问题。&lt;/p&gt;
+&lt;p&gt;但&amp;quot;黑天鹅&amp;quot;不是指&amp;quot;罕见事件&amp;rdquo;。它指的是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;事前不可预测&lt;/strong&gt;——在我们的模型之外&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;影响极大&lt;/strong&gt;——能改变一切&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;事后被合理化&lt;/strong&gt;——我们假装早就知道&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;重点是：&lt;strong&gt;你不能用概率来管理黑天鹅，因为你连它的概率分布都不知道。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;传统风险管理试图计算&amp;quot;极端事件的概率&amp;quot;。这在肥尾世界里是徒劳的——你不知道尾部有多肥。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;正确的应对方式&#34;&gt;正确的应对方式&lt;/h2&gt;
+&lt;h3 id=&#34;1-不要试图预测要确保生存&#34;&gt;1. 不要试图预测，要确保生存&lt;/h3&gt;
+&lt;p&gt;与其计算&amp;quot;崩盘概率是3%还是5%&amp;quot;，不如确保：&lt;strong&gt;即使发生最坏情况，我也不会出局。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是完全不同的思维方式。这也是&lt;a href=&#34;http://localhost:1313/posts/ergodicity/&#34;&gt;遍历性&lt;/a&gt;问题的核心：在乘性系统中，一次归零就是永远归零。&lt;/p&gt;
+&lt;h3 id=&#34;2-关注后果而不是概率&#34;&gt;2. 关注后果，而不是概率&lt;/h3&gt;
+&lt;p&gt;概率是不可知的。但后果是可以估算的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>幸存者偏差：为什么成功学是毒药</title>
+      <link>http://localhost:1313/posts/survivorship-bias/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/survivorship-bias/</guid>
+      <description>&lt;h2 id=&#34;二战中被忽视的洞见&#34;&gt;二战中被忽视的洞见&lt;/h2&gt;
+&lt;p&gt;1943年，美军面临一个问题：轰炸机被击落的比率太高。他们需要给飞机加装装甲，但装甲会增加重量、降低性能。所以只能加在最关键的位置。&lt;/p&gt;
+&lt;p&gt;工程师们统计了返航飞机上弹孔的分布，发现弹孔主要集中在机翼和机身。&lt;/p&gt;
+&lt;p&gt;结论似乎显然：应该在机翼和机身加装甲。&lt;/p&gt;
+&lt;p&gt;统计学家亚伯拉罕·瓦尔德（Abraham Wald）说：&lt;strong&gt;错了。应该在没有弹孔的地方加装甲——引擎和驾驶舱。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为什么？&lt;/p&gt;
+&lt;p&gt;因为他们只看到了&lt;strong&gt;返航的飞机&lt;/strong&gt;。那些引擎或驾驶舱中弹的飞机，根本没有机会返航。&lt;/p&gt;
+&lt;p&gt;这就是幸存者偏差：&lt;strong&gt;我们只能看到幸存者，看不到已经消失的失败者。这导致我们对成功原因的判断系统性地错误。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;成功学的致命谬误&#34;&gt;成功学的致命谬误&lt;/h2&gt;
+&lt;p&gt;现在市面上充斥着各种成功学：&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;我每天5点起床，所以我成功了。你也应该5点起床。&amp;rdquo;
+&amp;ldquo;我辍学创业，所以成功了。你也应该勇敢辍学。&amp;rdquo;
+&amp;ldquo;我相信自己，坚持了10年，所以成功了。你也应该坚持。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;这些故事有什么问题？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你只听到了成功者的故事。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;那些每天5点起床但失败的人呢？
+那些辍学创业但破产的人呢？
+那些坚持了10年最终放弃的人呢？&lt;/p&gt;
+&lt;p&gt;他们的故事没有出版价值，不会被采访，不会上TED演讲。&lt;/p&gt;
+&lt;p&gt;所以你系统性地高估了&amp;quot;5点起床&amp;quot;&amp;ldquo;辍学&amp;quot;&amp;ldquo;坚持&amp;quot;与成功的关联。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;数学上的理解&#34;&gt;数学上的理解&lt;/h2&gt;
+&lt;p&gt;假设：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1000人尝试某种策略&lt;/li&gt;
+&lt;li&gt;10人成功，990人失败&lt;/li&gt;
+&lt;li&gt;成功率是1%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但我们只采访成功的10人。他们都说：&amp;ldquo;我用了这个策略，所以成功了。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;一个不知道990人失败的观察者会得出结论：这个策略有效。&lt;/p&gt;
+&lt;p&gt;实际上，这个策略的成功率只有1%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更糟的是：如果这1000人什么都不做，可能也有1%会因为运气成功。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;所以这个策略可能根本没用。但我们永远无法从幸存者的故事中知道这一点。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基金经理的神话&#34;&gt;基金经理的神话&lt;/h2&gt;
+&lt;p&gt;每年都有基金经理&amp;quot;战胜市场&amp;rdquo;。&lt;/p&gt;
+&lt;p&gt;如果有1000个基金经理随机投资：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一年，约500人跑赢市场&lt;/li&gt;
+&lt;li&gt;第二年，约250人连续两年跑赢&lt;/li&gt;
+&lt;li&gt;第三年，约125人连续三年跑赢&lt;/li&gt;
+&lt;li&gt;第四年，约62人连续四年跑赢&lt;/li&gt;
+&lt;li&gt;第五年，约31人连续五年跑赢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;连续五年跑赢市场！这31人一定是天才！&lt;/p&gt;
+&lt;p&gt;不。如果他们是掷硬币，也会有31人连续五次正面朝上。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们把纯粹的概率当成了能力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;那些连续五年跑输市场的基金经理呢？他们的基金被关闭了，他们的职业生涯结束了。你永远不会听到他们的故事。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;公司的幸存者偏差&#34;&gt;公司的幸存者偏差&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;百年企业的成功秘诀是什么？&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;当你研究活了100年的公司，你找到了一些共同点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注重质量&lt;/li&gt;
+&lt;li&gt;关心员工&lt;/li&gt;
+&lt;li&gt;长期思维&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结论：这些特质让公司长寿。&lt;/p&gt;
+&lt;p&gt;但等等。&lt;/p&gt;
+&lt;p&gt;那些&lt;strong&gt;也有这些特质但已经消失的公司&lt;/strong&gt;呢？&lt;/p&gt;
+&lt;p&gt;也许100年前有1000家&amp;quot;注重质量、关心员工、长期思维&amp;quot;的公司，999家已经倒闭，只有1家活到今天。&lt;/p&gt;
+&lt;p&gt;你研究的不是&amp;quot;成功的原因&amp;rdquo;，你研究的是&amp;quot;幸存的结果&amp;quot;。&lt;/p&gt;
+&lt;p&gt;真正让公司长寿的可能是：运气、时代、位置、规模、网络效应——这些无法从幸存者身上学到的东西。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;历史的幸存者偏差&#34;&gt;历史的幸存者偏差&lt;/h2&gt;
+&lt;p&gt;我们读的历史是胜利者写的。&lt;/p&gt;
+&lt;p&gt;失败的帝国、消失的文明、被征服的民族——他们的故事很少流传。&lt;/p&gt;
+&lt;p&gt;这导致我们：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;高估军事征服的有效性（征服者的故事流传下来）&lt;/li&gt;
+&lt;li&gt;低估和平贸易的重要性（商人的故事很少被记录）&lt;/li&gt;
+&lt;li&gt;对历史进程产生系统性错误理解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;古代有多少思想家、科学家、艺术家？我们只知道那些作品恰好保存下来的人。&lt;/p&gt;
+&lt;p&gt;亚历山大图书馆烧毁时，消失了多少人类的智慧？&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;创业的真相&#34;&gt;创业的真相&lt;/h2&gt;
+&lt;p&gt;创业成功率大约是10%（宽泛定义的&amp;quot;成功&amp;quot;）。&lt;/p&gt;
+&lt;p&gt;如果定义为&amp;quot;赚到大钱&amp;quot;，成功率可能是1%。&lt;/p&gt;
+&lt;p&gt;如果定义为&amp;quot;成为独角兽&amp;quot;，成功率是0.01%。&lt;/p&gt;
+&lt;p&gt;但你听到的每一个创业故事都是成功的故事。&lt;/p&gt;
+&lt;p&gt;这意味着：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>杠铃策略：如何反脆弱</title>
+      <link>http://localhost:1313/posts/barbell-strategy/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/barbell-strategy/</guid>
+      <description>&lt;h2 id=&#34;一个反常识的配置方法&#34;&gt;一个反常识的配置方法&lt;/h2&gt;
+&lt;p&gt;传统智慧说：分散投资，不要把所有鸡蛋放在一个篮子里。&lt;/p&gt;
+&lt;p&gt;所以大多数人的投资组合是&amp;quot;中等风险&amp;quot;：一些股票、一些债券、也许一些房产。什么都有一点，风险&amp;quot;平衡&amp;quot;。&lt;/p&gt;
+&lt;p&gt;塔勒布说这是错的。&lt;/p&gt;
+&lt;p&gt;他提出了一个反直觉的配置方法：&lt;strong&gt;杠铃策略&lt;/strong&gt;——把资产分成两个极端，没有中间。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;80-90%放在极度安全的资产&lt;/strong&gt;（国债、现金）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10-20%放在极度高风险的资产&lt;/strong&gt;（期权、初创公司、高风险投机）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;不要放在中间。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么避开中间&#34;&gt;为什么避开中间&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;中等风险&amp;quot;的资产看起来很理性：承担一些风险，获取一些回报。&lt;/p&gt;
+&lt;p&gt;但塔勒布指出：&lt;strong&gt;中等风险可能是最差的位置&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;为什么？&lt;/p&gt;
+&lt;h3 id=&#34;1-隐藏的尾部风险&#34;&gt;1. 隐藏的尾部风险&lt;/h3&gt;
+&lt;p&gt;很多看起来&amp;quot;中等风险&amp;quot;的资产，其实有隐藏的尾部风险。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;稳健成长股&amp;rdquo;——听起来很安全。但在2008年，这些股票跌了50%。
+&amp;ldquo;投资级债券&amp;rdquo;——听起来很稳。但在极端情况下可能违约。
+&amp;ldquo;分散的股票组合&amp;rdquo;——似乎降低了风险。但在系统性崩盘时，相关性趋近于1，分散失效。&lt;/p&gt;
+&lt;p&gt;你以为自己在承担中等风险，其实你在承担隐藏的极端风险。&lt;/p&gt;
+&lt;h3 id=&#34;2-回报不够补偿风险&#34;&gt;2. 回报不够补偿风险&lt;/h3&gt;
+&lt;p&gt;中等风险的回报通常是中等的。&lt;/p&gt;
+&lt;p&gt;但如果你承担的是隐藏的尾部风险，中等回报不足以补偿这个风险。&lt;/p&gt;
+&lt;p&gt;你需要的是：&lt;strong&gt;确定性很高的安全，或者回报足够大来补偿风险的高风险&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;中间地带两者都没有。&lt;/p&gt;
+&lt;h3 id=&#34;3-凸性缺失&#34;&gt;3. 凸性缺失&lt;/h3&gt;
+&lt;p&gt;中间地带通常是凹的——上行有限，下行可能很大。&lt;/p&gt;
+&lt;p&gt;极端组合可以是凸的——安全部分限制下行，高风险部分提供上行。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;杠铃策略的逻辑&#34;&gt;杠铃策略的逻辑&lt;/h2&gt;
+&lt;p&gt;杠铃策略的核心是&lt;strong&gt;分离风险&lt;/strong&gt;。它是&lt;a href=&#34;http://localhost:1313/posts/convexity/&#34;&gt;凸性&lt;/a&gt;思想的直接应用：构建一个下行有限、上行开放的整体结构。&lt;/p&gt;
+&lt;h3 id=&#34;安全部分80-90&#34;&gt;安全部分（80-90%）&lt;/h3&gt;
+&lt;p&gt;这部分的目标是：&lt;strong&gt;绝对生存&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;不是&amp;quot;可能安全&amp;rdquo;，是&amp;quot;确定安全&amp;quot;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;短期国债（政府违约风险最低）&lt;/li&gt;
+&lt;li&gt;现金（虽然有通胀风险，但没有名义亏损风险）&lt;/li&gt;
+&lt;li&gt;也许是黄金（作为终极避险）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这部分不追求回报。它的作用是：&lt;strong&gt;确保无论发生什么，你都不会出局&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;高风险部分10-20&#34;&gt;高风险部分（10-20%）&lt;/h3&gt;
+&lt;p&gt;这部分的目标是：&lt;strong&gt;捕捉极端上行&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;因为你只用了10-20%的资金，最坏情况是亏掉这部分。你的安全部分确保你能活下来。&lt;/p&gt;
+&lt;p&gt;但上行呢？是开放的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;期权（最大亏损是期权费，最大收益无限）&lt;/li&gt;
+&lt;li&gt;初创公司投资（最大亏损是投入资金，最大收益可能是100倍）&lt;/li&gt;
+&lt;li&gt;高波动投机（在确保不会破产的前提下）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这部分本质上是一组&lt;a href=&#34;http://localhost:1313/posts/optionality/&#34;&gt;选择权&lt;/a&gt;：有限的下行，无限的上行。&lt;/p&gt;
+&lt;h3 id=&#34;组合效果&#34;&gt;组合效果&lt;/h3&gt;
+&lt;p&gt;整体组合变成了什么？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下行：最多亏掉10-20%（高风险部分全部损失）&lt;/li&gt;
+&lt;li&gt;上行：无限（高风险部分可能暴涨）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这是一个凸的组合。&lt;/p&gt;
+&lt;p&gt;即使高风险部分全部归零，你还有80-90%的安全资产。你活着。&lt;/p&gt;
+&lt;p&gt;但如果高风险部分有一个成功了（比如10倍），你的整体组合翻倍。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;与传统分散的对比&#34;&gt;与传统分散的对比&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;传统分散&lt;/th&gt;
+          &lt;th&gt;杠铃策略&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;配置&lt;/td&gt;
+          &lt;td&gt;均匀分布在各种风险水平&lt;/td&gt;
+          &lt;td&gt;集中在两个极端&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;下行&lt;/td&gt;
+          &lt;td&gt;可能很大（隐藏的尾部风险）&lt;/td&gt;
+          &lt;td&gt;有限（只有高风险部分）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;上行&lt;/td&gt;
+          &lt;td&gt;有限（中等回报）&lt;/td&gt;
+          &lt;td&gt;开放（高风险部分可能暴涨）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;凸性&lt;/td&gt;
+          &lt;td&gt;凹（或中性）&lt;/td&gt;
+          &lt;td&gt;凸&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;生存&lt;/td&gt;
+          &lt;td&gt;不确定&lt;/td&gt;
+          &lt;td&gt;确定（安全部分）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;传统分散是&amp;quot;不把鸡蛋放在一个篮子里&amp;quot;。
+杠铃策略是&amp;quot;把大部分鸡蛋放在最安全的篮子里，小部分放在可能孵出凤凰的篮子里&amp;quot;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>林迪效应：为什么老的更可靠</title>
+      <link>http://localhost:1313/posts/lindy-effect/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/lindy-effect/</guid>
+      <description>&lt;h2 id=&#34;一个反直觉的预测方法&#34;&gt;一个反直觉的预测方法&lt;/h2&gt;
+&lt;p&gt;一本书已经在印25年了。它还会在印多久？&lt;/p&gt;
+&lt;p&gt;直觉说：老了，快被淘汰了。
+林迪效应说：&lt;strong&gt;预期再印25年。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一家餐厅开了50年。它还会开多久？&lt;/p&gt;
+&lt;p&gt;直觉说：早晚要关。
+林迪效应说：&lt;strong&gt;预期再开50年。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;林迪效应是纳西姆·塔勒布推广的一个概念：&lt;strong&gt;对于不会自然死亡的事物，预期剩余寿命与已经存在的时间成正比。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这听起来荒谬。但它有深刻的数学和实证基础。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;林迪效应的起源&#34;&gt;林迪效应的起源&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;林迪&amp;quot;来自纽约的一家餐厅（Lindy&amp;rsquo;s），喜剧演员们常在那里讨论百老汇节目的寿命。&lt;/p&gt;
+&lt;p&gt;他们发现一个规律：&lt;strong&gt;已经演了很久的节目，往往会继续演很久。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;新节目很快下架。老节目一直在。&lt;/p&gt;
+&lt;p&gt;这不是因为老节目&amp;quot;更好&amp;rdquo;（虽然可能是）。这是因为：&lt;strong&gt;存活本身就是信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么林迪效应有效&#34;&gt;为什么林迪效应有效&lt;/h2&gt;
+&lt;h3 id=&#34;1-生存过滤&#34;&gt;1. 生存过滤&lt;/h3&gt;
+&lt;p&gt;一本书活了100年，意味着它经历了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;100年的读者检验&lt;/li&gt;
+&lt;li&gt;100年的市场竞争&lt;/li&gt;
+&lt;li&gt;100年的文化变迁&lt;/li&gt;
+&lt;li&gt;100年的淘汰过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;它仍然存在，说明它有某种&amp;quot;适应性&amp;quot;——不管是智慧、美感还是实用性。&lt;/p&gt;
+&lt;p&gt;新书没有经历这个过滤。它可能很好，也可能很快被淘汰。你不知道。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;老的东西已经证明了自己。新的东西还没有。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-幂律分布&#34;&gt;2. 幂律分布&lt;/h3&gt;
+&lt;p&gt;很多事物的寿命服从幂律分布，而不是正态分布。&lt;/p&gt;
+&lt;p&gt;在幂律分布中，存活时间越长的事物，预期剩余寿命越长。&lt;/p&gt;
+&lt;p&gt;这不是神秘的。这是数学性质。&lt;/p&gt;
+&lt;h3 id=&#34;3-适应性累积&#34;&gt;3. 适应性累积&lt;/h3&gt;
+&lt;p&gt;长寿的事物往往积累了适应性改进。&lt;/p&gt;
+&lt;p&gt;一个50年的配方，经历了无数次调整、优化、适应。
+一个新配方，还没有经历这个过程。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;林迪效应适用于什么&#34;&gt;林迪效应适用于什么&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;适用&lt;/strong&gt;：不会自然死亡的事物&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;想法、书籍、技术、制度、配方、传统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;不适用&lt;/strong&gt;：会自然死亡的事物&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;人、动物、机器、有保质期的东西&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一个人活到80岁，不意味着预期再活80年。人有生物学的寿命上限。&lt;/p&gt;
+&lt;p&gt;但一个想法&amp;quot;活&amp;quot;了2000年（比如欧几里得几何），可以预期再活2000年。想法没有生物学死亡。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;实践应用&#34;&gt;实践应用&lt;/h2&gt;
+&lt;h3 id=&#34;1-阅读选择&#34;&gt;1. 阅读选择&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;读老书。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;已经存在了100年的书，很可能再存在100年。
+今年出版的畅销书，很可能明年就被遗忘。&lt;/p&gt;
+&lt;p&gt;你的时间有限。为什么要赌在未经检验的新书上？这里存在巨大的&lt;a href=&#34;http://localhost:1313/posts/survivorship-bias/&#34;&gt;幸存者偏差&lt;/a&gt;——今年出版的1000本书，10年后可能只有10本还被记得。&lt;/p&gt;
+&lt;p&gt;这不是说新书没价值。而是说：&lt;strong&gt;如果你要读书，先读经典的风险收益比更好。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;《国富论》已经活了250年。《思考快与慢》活了15年。如果你只能读一本，选哪本？&lt;/p&gt;
+&lt;h3 id=&#34;2-技术选型&#34;&gt;2. 技术选型&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;选择老技术。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一个存在30年的编程语言（C），很可能再存在30年。
+一个存在3年的新框架，很可能3年后就消失了。&lt;/p&gt;
+&lt;p&gt;这不是保守主义。这是风险管理。你在老技术上投入的学习时间会持续&lt;a href=&#34;http://localhost:1313/posts/compounding/&#34;&gt;复利&lt;/a&gt;更长时间。&lt;/p&gt;
+&lt;p&gt;如果你在新框架上投入大量学习时间，而它3年后消失，你的投资归零。
+如果你在老技术上投入时间，你的投资大概率长期有效。&lt;/p&gt;
+&lt;h3 id=&#34;3-餐厅选择&#34;&gt;3. 餐厅选择&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;选择老餐厅。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;开了30年的餐厅，说明它经历了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;租金上涨&lt;/li&gt;
+&lt;li&gt;口味变迁&lt;/li&gt;
+&lt;li&gt;竞争对手&lt;/li&gt;
+&lt;li&gt;经济周期&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;它仍然存在，意味着它有某种持续的价值（可能是味道、可能是位置、可能是服务）。&lt;/p&gt;
+&lt;p&gt;新餐厅？你不知道。&lt;/p&gt;
+&lt;h3 id=&#34;4-投资决策&#34;&gt;4. 投资决策&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;警惕&amp;quot;创新&amp;quot;。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>凸性：为什么不对称比概率重要</title>
+      <link>http://localhost:1313/posts/convexity/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/convexity/</guid>
+      <description>&lt;h2 id=&#34;一个价值连城的不等式&#34;&gt;一个价值连城的不等式&lt;/h2&gt;
+&lt;p&gt;假设你面对一个投资机会：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;90%的概率亏10%&lt;/li&gt;
+&lt;li&gt;10%的概率赚100%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;期望值 = 0.9 × (-10%) + 0.1 × 100% = +1%&lt;/p&gt;
+&lt;p&gt;期望值是正的，但很小。值得做吗？&lt;/p&gt;
+&lt;p&gt;现在换一个：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;90%的概率赚10%&lt;/li&gt;
+&lt;li&gt;10%的概率亏50%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;期望值 = 0.9 × 10% + 0.1 × (-50%) = +4%&lt;/p&gt;
+&lt;p&gt;期望值更高。这个更值得做？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;错。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;第一个机会远比第二个好。原因不是期望值，而是&lt;strong&gt;凸性&lt;/strong&gt;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是凸性&#34;&gt;什么是凸性&lt;/h2&gt;
+&lt;p&gt;凸性描述的是收益曲线的形状。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;凸（Convex）&lt;/strong&gt;：上行空间大于下行空间。曲线向上弯曲。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;凹（Concave）&lt;/strong&gt;：下行空间大于上行空间。曲线向下弯曲。&lt;/p&gt;
+&lt;p&gt;第一个机会是凸的：最多亏10%，但可能赚100%。
+第二个机会是凹的：最多赚10%，但可能亏50%。&lt;/p&gt;
+&lt;p&gt;为什么凸性比期望值重要？&lt;/p&gt;
+&lt;p&gt;因为&lt;strong&gt;期望值假设你知道概率分布，但你通常不知道&lt;/strong&gt;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;概率的不可知性&#34;&gt;概率的不可知性&lt;/h2&gt;
+&lt;p&gt;让我们诚实：你怎么知道第一个机会&amp;quot;90%亏损&amp;quot;？这个90%是怎么来的？&lt;/p&gt;
+&lt;p&gt;现实中，概率几乎总是被错误估计。我们系统性地：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;高估能理解的风险&lt;/li&gt;
+&lt;li&gt;低估不能理解的风险&lt;/li&gt;
+&lt;li&gt;完全忽略未知的未知&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;既然概率不可靠，为什么要依赖它来做决策？&lt;/p&gt;
+&lt;p&gt;凸性提供了一个更好的框架：&lt;strong&gt;不管概率是什么，只要形状对，长期就是对的。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;期权的智慧&#34;&gt;期权的智慧&lt;/h2&gt;
+&lt;p&gt;期权是纯粹的凸性工具。&lt;/p&gt;
+&lt;p&gt;买入期权的回报曲线是凸的：最多亏掉期权费，但上行无限。&lt;/p&gt;
+&lt;p&gt;卖出期权的回报曲线是凹的：最多赚取期权费，但下行无限。&lt;/p&gt;
+&lt;p&gt;这就是为什么：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;期权买方大多数时候小亏，偶尔大赚&lt;/li&gt;
+&lt;li&gt;期权卖方大多数时候小赚，偶尔大亏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;长期来看，谁赢？&lt;/p&gt;
+&lt;p&gt;在正态世界（极端事件罕见），卖方赢。
+在&lt;a href=&#34;http://localhost:1313/posts/tail-risk/&#34;&gt;肥尾世界&lt;/a&gt;（极端事件频繁），买方赢。&lt;/p&gt;
+&lt;p&gt;我们活在哪个世界？&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;风投模式的本质&#34;&gt;风投模式的本质&lt;/h2&gt;
+&lt;p&gt;风险投资的商业模式是纯粹的凸性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;投10个公司&lt;/li&gt;
+&lt;li&gt;9个失败，各亏100%投资额&lt;/li&gt;
+&lt;li&gt;1个成功，赚50倍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;期望值 = 0.9 × (-100%) + 0.1 × 5000% = +410%&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>均值回归：最被误解的统计概念</title>
+      <link>http://localhost:1313/posts/mean-reversion/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/mean-reversion/</guid>
+      <description>&lt;h2 id=&#34;一个让天才困惑的现象&#34;&gt;一个让天才困惑的现象&lt;/h2&gt;
+&lt;p&gt;弗朗西斯·高尔顿（Francis Galton）是达尔文的表弟，统计学的奠基人之一。&lt;/p&gt;
+&lt;p&gt;1886年，他研究了一个简单问题：高个子父母的孩子有多高？&lt;/p&gt;
+&lt;p&gt;结果令他困惑：&lt;strong&gt;高个子父母的孩子，平均来说比父母矮。矮个子父母的孩子，平均来说比父母高。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;似乎所有人都在向平均值&amp;quot;回归&amp;quot;。&lt;/p&gt;
+&lt;p&gt;高尔顿担心这意味着人类会越来越趋同，最终变成一模一样。&lt;/p&gt;
+&lt;p&gt;他错了。这不是因为任何神秘力量在拉动人们向中间靠拢。&lt;/p&gt;
+&lt;p&gt;这只是统计现象。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;均值回归的本质&#34;&gt;均值回归的本质&lt;/h2&gt;
+&lt;p&gt;任何测量结果都包含两部分：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;测量值 = 真实值 + 随机误差&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;高个子父母之所以被观察为&amp;quot;高个子&amp;quot;，部分原因是他们的真实遗传身高较高，部分原因是测量时的随机因素（营养、测量误差、运气等）恰好是正向的。&lt;/p&gt;
+&lt;p&gt;他们的孩子继承了真实的遗传因素，但随机因素被重新抽样。&lt;/p&gt;
+&lt;p&gt;由于随机因素的期望值是零，孩子的测量值&lt;strong&gt;在统计上&lt;/strong&gt;会更接近平均。&lt;/p&gt;
+&lt;p&gt;这不是任何力量在&amp;quot;拉回&amp;quot;。这只是：&lt;strong&gt;极端值更可能包含极端的随机成分，而随机成分在下一次测量时会回归平均。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一个关键的思想实验&#34;&gt;一个关键的思想实验&lt;/h2&gt;
+&lt;p&gt;想象一场考试：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;学生的&amp;quot;真实能力&amp;quot;服从某种分布&lt;/li&gt;
+&lt;li&gt;考试成绩 = 真实能力 + 随机因素（当天状态、运气等）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在，选出考试最高分的那些学生，让他们再考一次。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;他们的第二次成绩会更低。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不是因为他们变笨了。是因为他们第一次的高分中包含了正向的随机因素，而随机因素在第二次考试中被重新抽样。&lt;/p&gt;
+&lt;p&gt;同样，选出最低分的学生再考一次，他们的成绩会提高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这与能力变化无关，与任何干预无关，这是纯粹的统计现象。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;被误解的因果关系&#34;&gt;被误解的因果关系&lt;/h2&gt;
+&lt;p&gt;均值回归最危险的地方是：它创造了虚假的因果关系。&lt;/p&gt;
+&lt;h3 id=&#34;例子1训斥与表扬&#34;&gt;例子1：训斥与表扬&lt;/h3&gt;
+&lt;p&gt;以色列空军的飞行教官发现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当飞行员表现好，教官表扬后，下次表现往往变差&lt;/li&gt;
+&lt;li&gt;当飞行员表现差，教官训斥后，下次表现往往变好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结论：训斥有效，表扬有害。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这是错的。&lt;/strong&gt; 表现好的飞行员下次变差，是因为他们这次表现包含了正向的随机因素。表现差的飞行员下次变好，是因为他们这次表现包含了负向的随机因素。&lt;/p&gt;
+&lt;p&gt;教官的训斥和表扬&lt;strong&gt;完全没有作用&lt;/strong&gt;，但教官误以为是自己的干预产生了效果。&lt;/p&gt;
+&lt;h3 id=&#34;例子2替代医学&#34;&gt;例子2：替代医学&lt;/h3&gt;
+&lt;p&gt;病人在最难受的时候去尝试替代疗法。然后他们感觉好了一些。&lt;/p&gt;
+&lt;p&gt;结论：替代疗法有效。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不一定。&lt;/strong&gt; 病人选择在症状最极端的时候就医。症状最极端意味着包含了极端的随机因素。即使什么都不做，下一次测量也很可能更接近平均——即感觉好一些。&lt;/p&gt;
+&lt;p&gt;这就是为什么需要随机对照实验，而不是靠&amp;quot;我用了然后好了&amp;quot;的叙事。&lt;/p&gt;
+&lt;h3 id=&#34;例子3sports-illustrated封面魔咒&#34;&gt;例子3：Sports Illustrated封面魔咒&lt;/h3&gt;
+&lt;p&gt;登上《体育画报》封面的运动员，往往在接下来表现下滑。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;封面魔咒&amp;rdquo;？&lt;/p&gt;
+&lt;p&gt;不。运动员登上封面是因为他们最近表现极好。极好的表现包含正向随机因素。随机因素回归，表现自然下滑。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;投资中的均值回归&#34;&gt;投资中的均值回归&lt;/h2&gt;
+&lt;h3 id=&#34;表现最好的基金&#34;&gt;表现最好的基金&lt;/h3&gt;
+&lt;p&gt;去年表现最好的基金，今年往往表现平平。&lt;/p&gt;
+&lt;p&gt;这不是因为基金经理变笨了。这是因为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;去年的好表现包含了运气成分&lt;/li&gt;
+&lt;li&gt;运气成分在今年被重新抽样&lt;/li&gt;
+&lt;li&gt;期望值回归平均&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;追逐去年的&amp;quot;明星基金&amp;quot;是典型的均值回归陷阱。&lt;/p&gt;
+&lt;h3 id=&#34;估值的回归&#34;&gt;估值的回归&lt;/h3&gt;
+&lt;p&gt;市盈率极高的股票，长期平均来看表现差于市盈率低的股票。&lt;/p&gt;
+&lt;p&gt;部分原因是均值回归：极高估值意味着极端乐观预期。极端预期更可能包含错误。错误修正时，估值回归。&lt;/p&gt;
+&lt;h3 id=&#34;盈利的回归&#34;&gt;盈利的回归&lt;/h3&gt;
+&lt;p&gt;公司盈利增长率也会均值回归。&lt;/p&gt;
+&lt;p&gt;极高增长的公司往往增速放缓。极低增长的公司往往增速回升（如果它们能活下去）。&lt;/p&gt;
+&lt;p&gt;这不是神秘力量，这是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基数效应&lt;/li&gt;
+&lt;li&gt;竞争压力&lt;/li&gt;
+&lt;li&gt;管理层能力的真实值更接近平均&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;均值回归的陷阱&#34;&gt;均值回归的陷阱&lt;/h2&gt;
+&lt;h3 id=&#34;陷阱1忽略结构性变化&#34;&gt;陷阱1：忽略结构性变化&lt;/h3&gt;
+&lt;p&gt;均值回归假设&amp;quot;真实值&amp;quot;不变，只是随机因素在波动。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>机会成本：看不见的代价</title>
+      <link>http://localhost:1313/posts/opportunity-cost/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/opportunity-cost/</guid>
+      <description>&lt;h2 id=&#34;经济学最重要的概念&#34;&gt;经济学最重要的概念&lt;/h2&gt;
+&lt;p&gt;如果让经济学家只选一个概念教给所有人，很多人会选择：机会成本。&lt;/p&gt;
+&lt;p&gt;机会成本的定义很简单：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;做某事的机会成本，是你为此放弃的最佳替代选择的价值。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;听起来显而易见。但这个&amp;quot;显而易见&amp;quot;的概念，大多数人在大多数时候都会忽略。&lt;/p&gt;
+&lt;p&gt;这种忽略的代价是巨大的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一个思想实验&#34;&gt;一个思想实验&lt;/h2&gt;
+&lt;p&gt;你花100元买了一张电影票。电影开场后，你发现电影非常无聊。&lt;/p&gt;
+&lt;p&gt;你应该继续看下去，还是离开？&lt;/p&gt;
+&lt;p&gt;很多人会想：&amp;ldquo;我已经花了100元，不看完就浪费了。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;这是错的。&lt;/p&gt;
+&lt;p&gt;那100元已经花了，无论你看不看电影，都拿不回来。这是&amp;quot;沉没成本&amp;quot;。&lt;/p&gt;
+&lt;p&gt;真正的问题是：&lt;strong&gt;接下来的2小时，你可以做什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果你继续看无聊电影，你失去的是这2小时本可以做的其他事情——睡觉、和朋友聊天、做有意义的工作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机会成本关注的不是你已经付出什么，而是你正在放弃什么。&lt;/strong&gt; 沉没成本是过去，机会成本是未来。混淆两者是常见的决策错误。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么机会成本难以看见&#34;&gt;为什么机会成本难以看见&lt;/h2&gt;
+&lt;p&gt;机会成本的问题在于：它是&lt;strong&gt;看不见的&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;当你花100元买票，你看见了100元的支出。
+但当你看无聊电影的2小时，你没有看见那2小时本可以创造的价值。&lt;/p&gt;
+&lt;p&gt;当你买了一辆车，你看见了车的价格。
+但你没有看见这笔钱如果投资，20年后可能变成多少。&lt;/p&gt;
+&lt;p&gt;当你选择一份工作，你看见了工资。
+但你没有看见你放弃的其他工作机会，或者创业机会。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们的大脑天生对可见的成本敏感，对不可见的成本迟钝。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是一种系统性的认知偏差。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;时间的机会成本&#34;&gt;时间的机会成本&lt;/h2&gt;
+&lt;p&gt;时间可能是机会成本被低估最严重的资源。&lt;/p&gt;
+&lt;p&gt;你花1小时刷社交媒体。这1小时的机会成本是什么？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;读30页书&lt;/li&gt;
+&lt;li&gt;学习新技能&lt;/li&gt;
+&lt;li&gt;和重要的人交流&lt;/li&gt;
+&lt;li&gt;深度思考一个问题&lt;/li&gt;
+&lt;li&gt;休息恢复精力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你选择刷社交媒体，意味着你放弃了上述所有。&lt;/p&gt;
+&lt;p&gt;如果你把&amp;quot;刷1小时社交媒体&amp;quot;标价——比如说，这1小时本可以用来工作赚100元——你可能会更谨慎。&lt;/p&gt;
+&lt;p&gt;但因为时间的机会成本是不可见的，我们浪费它时毫无痛感。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;投资中的机会成本&#34;&gt;投资中的机会成本&lt;/h2&gt;
+&lt;h3 id=&#34;持有现金的机会成本&#34;&gt;持有现金的机会成本&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;我把钱放在银行，很安全。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;安全是真的。但机会成本是什么？（不过要记住，现金也是&lt;a href=&#34;http://localhost:1313/posts/optionality/&#34;&gt;选择权&lt;/a&gt;——当危机来临时，有现金的人可以买入廉价资产。）&lt;/p&gt;
+&lt;p&gt;假设银行利率1%，股市长期平均8%。
+持有现金的机会成本是每年7%的预期差异。&lt;/p&gt;
+&lt;p&gt;10万元放银行30年，变成13万。
+10万元投资股市30年（8%），变成100万。&lt;/p&gt;
+&lt;p&gt;差距87万。这是你&amp;quot;安全&amp;quot;的代价。&lt;/p&gt;
+&lt;p&gt;当然，这不意味着你应该全投股市。但你应该&lt;strong&gt;意识到&lt;/strong&gt;安全是有代价的，然后做出知情的选择。&lt;/p&gt;
+&lt;h3 id=&#34;持有亏损股票的机会成本&#34;&gt;持有亏损股票的机会成本&lt;/h3&gt;
+&lt;p&gt;你买了一只股票，亏了30%。你不想卖，因为&amp;quot;卖了就真的亏了&amp;quot;。&lt;/p&gt;
+&lt;p&gt;但那只股票的未来表现，和你是否亏损无关。&lt;/p&gt;
+&lt;p&gt;真正的问题是：&lt;strong&gt;这笔钱如果投到其他地方，预期回报是多少？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果其他机会的预期回报更高，你应该切换。你的买入成本是沉没成本，不应该影响决策。&lt;/p&gt;
+&lt;p&gt;你持有亏损股票的每一天，你都在支付机会成本——这笔钱本可以投到更好的地方。&lt;/p&gt;
+&lt;h3 id=&#34;优秀公司的机会成本&#34;&gt;优秀公司的机会成本&lt;/h3&gt;
+&lt;p&gt;你持有一只年化15%的好股票。应该卖吗？&lt;/p&gt;
+&lt;p&gt;机会成本思维问：有没有更好的选择？&lt;/p&gt;
+&lt;p&gt;如果市场上有年化20%的机会，你持有15%的股票就是在支付5%的机会成本。&lt;/p&gt;
+&lt;p&gt;但要注意：这里&amp;quot;更好的选择&amp;quot;必须是&lt;strong&gt;风险调整后&lt;/strong&gt;更好。更高回报伴随更高风险可能不是真正的&amp;quot;更好&amp;quot;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;职业中的机会成本&#34;&gt;职业中的机会成本&lt;/h2&gt;
+&lt;h3 id=&#34;工作-vs-学习&#34;&gt;工作 vs 学习&lt;/h3&gt;
+&lt;p&gt;你现在可以工作赚钱，或者花时间学习提升技能。&lt;/p&gt;
+&lt;p&gt;工作的直接收益是工资。
+学习的直接收益是零（甚至是负的，如果有学费）。&lt;/p&gt;
+&lt;p&gt;但学习可能提高你未来的收入。机会成本分析需要考虑这个长期影响。&lt;/p&gt;
+&lt;p&gt;年轻时学习的机会成本相对低（收入本来就不高），潜在收益高（有更多时间享受技能提升带来的回报）。&lt;/p&gt;
+&lt;p&gt;这是为什么早期投资学习通常是值得的。&lt;/p&gt;
+&lt;h3 id=&#34;稳定-vs-风险&#34;&gt;稳定 vs 风险&lt;/h3&gt;
+&lt;p&gt;稳定工作的机会成本是：放弃的创业机会、跳槽机会、冒险机会。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>路径依赖：为什么历史不可逆</title>
+      <link>http://localhost:1313/posts/path-dependence/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/path-dependence/</guid>
+      <description>&lt;h2 id=&#34;为什么我们用qwerty键盘&#34;&gt;为什么我们用QWERTY键盘&lt;/h2&gt;
+&lt;p&gt;你面前的键盘，字母排列是QWERTY。&lt;/p&gt;
+&lt;p&gt;这是最优排列吗？不是。研究表明，Dvorak排列打字效率更高，手指移动更少。&lt;/p&gt;
+&lt;p&gt;那为什么我们用QWERTY？&lt;/p&gt;
+&lt;p&gt;因为1873年，打字机发明者为了防止机械卡键，故意把常用字母分开。这个设计是为了机械限制，不是为了人体工程学。&lt;/p&gt;
+&lt;p&gt;但一旦人们学会了QWERTY，打字机制造商采用了QWERTY，打字学校教授QWERTY，社会就被锁定在这个标准上。&lt;/p&gt;
+&lt;p&gt;150年后，机械卡键问题早已消失。但我们仍然用QWERTY。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这就是路径依赖：早期的偶然选择，锁定了长期的结果。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是路径依赖&#34;&gt;什么是路径依赖&lt;/h2&gt;
+&lt;p&gt;路径依赖意味着：&lt;strong&gt;当前的状态不仅取决于当前的条件，还取决于到达这个状态的历史路径。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;换句话说：历史重要。起点重要。顺序重要。&lt;/p&gt;
+&lt;p&gt;在一个路径依赖的系统中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同样的条件可能导致完全不同的结果（取决于历史）&lt;/li&gt;
+&lt;li&gt;早期的小差异可能被放大成巨大差异&lt;/li&gt;
+&lt;li&gt;改变变得越来越困难&lt;/li&gt;
+&lt;li&gt;锁定效应使得次优解可能长期持续&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;路径依赖的机制&#34;&gt;路径依赖的机制&lt;/h2&gt;
+&lt;h3 id=&#34;1-正反馈收益递增&#34;&gt;1. 正反馈（收益递增）&lt;/h3&gt;
+&lt;p&gt;越多人使用某个标准，使用它的价值越高。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;越多人用微信，微信的价值越大&lt;/li&gt;
+&lt;li&gt;越多人学英语，英语的价值越大&lt;/li&gt;
+&lt;li&gt;越多人用美元，美元的价值越大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这导致&amp;quot;赢者通吃&amp;quot;：早期的小优势被放大成绝对优势。&lt;/p&gt;
+&lt;h3 id=&#34;2-学习效应&#34;&gt;2. 学习效应&lt;/h3&gt;
+&lt;p&gt;投入学习成本后，切换到其他选项的成本变高。这也是&lt;a href=&#34;http://localhost:1313/posts/compounding/&#34;&gt;复利&lt;/a&gt;的阴暗面——你在某条路径上积累的越多，偏离的&lt;a href=&#34;http://localhost:1313/posts/opportunity-cost/&#34;&gt;机会成本&lt;/a&gt;越高。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你花了1000小时学Python，切换到Go的成本不只是学习Go，还包括放弃Python的沉没成本&lt;/li&gt;
+&lt;li&gt;公司花了3年建立某个系统，切换的成本不只是新系统，还包括迁移、重新培训、风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-协调效应&#34;&gt;3. 协调效应&lt;/h3&gt;
+&lt;p&gt;当多方需要协调时，已有的标准获得额外优势。&lt;/p&gt;
+&lt;p&gt;改变键盘布局，需要：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所有键盘制造商改变&lt;/li&gt;
+&lt;li&gt;所有用户重新学习&lt;/li&gt;
+&lt;li&gt;所有培训机构更新课程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;没有人愿意第一个改变，因为改变只有在大家都改变时才有价值。&lt;/p&gt;
+&lt;h3 id=&#34;4-适应性预期&#34;&gt;4. 适应性预期&lt;/h3&gt;
+&lt;p&gt;人们基于&amp;quot;这个会继续存在&amp;quot;的预期做决策，这个预期本身强化了它的存在。&lt;/p&gt;
+&lt;p&gt;你学英语是因为预期它继续是国际语言。这个预期导致更多人学英语，使它真的继续是国际语言。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;历史的分叉点&#34;&gt;历史的分叉点&lt;/h2&gt;
+&lt;p&gt;路径依赖意味着历史有&amp;quot;分叉点&amp;quot;——某些关键时刻的决定，锁定了长期路径。&lt;/p&gt;
+&lt;h3 id=&#34;vhs-vs-betamax&#34;&gt;VHS vs Betamax&lt;/h3&gt;
+&lt;p&gt;1980年代，两种录像带格式竞争。Betamax技术上更好，但VHS赢了。&lt;/p&gt;
+&lt;p&gt;为什么？JVC愿意授权VHS给其他制造商，索尼不愿意授权Betamax。更多制造商 → 更低价格 → 更多内容 → 更多用户 → 锁定。&lt;/p&gt;
+&lt;p&gt;技术优势输给了网络效应。&lt;/p&gt;
+&lt;h3 id=&#34;美国的铁路轨距&#34;&gt;美国的铁路轨距&lt;/h3&gt;
+&lt;p&gt;美国铁路轨距是4英尺8.5英寸。为什么是这个奇怪的数字？&lt;/p&gt;
+&lt;p&gt;因为英国铁路是这个轨距。为什么英国是这个？因为建铁路的人之前建电车，电车是这个轨距。为什么电车是这个？因为建电车的人用的是马车的轮距。为什么马车是这个？因为路上的车辙是这个宽度。为什么车辙是这个？因为古罗马战车是这个宽度。&lt;/p&gt;
+&lt;p&gt;一个2000年前的罗马决定，影响了今天的美国铁路。&lt;/p&gt;
+&lt;h3 id=&#34;社会制度的路径依赖&#34;&gt;社会制度的路径依赖&lt;/h3&gt;
+&lt;p&gt;为什么英国是君主立宪，美国是总统制，瑞士是直接民主？&lt;/p&gt;
+&lt;p&gt;不是因为这些制度对这些国家&amp;quot;最优&amp;quot;。而是因为历史的偶然——殖民历史、革命方式、地理条件——在关键时刻把这些国家推向了不同的路径。&lt;/p&gt;
+&lt;p&gt;一旦走上某条路径，制度会自我强化：利益集团形成、文化适应、法律建立。改变变得越来越难。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;投资中的路径依赖&#34;&gt;投资中的路径依赖&lt;/h2&gt;
+&lt;h3 id=&#34;1-市场的路径依赖&#34;&gt;1. 市场的路径依赖&lt;/h3&gt;
+&lt;p&gt;今天的股价不只取决于基本面，还取决于昨天的股价。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;恐慌导致卖出&lt;/li&gt;
+&lt;li&gt;卖出导致更低价格&lt;/li&gt;
+&lt;li&gt;更低价格导致更多恐慌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;同样的基本面，不同的历史路径，可能导致完全不同的价格。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>二阶思维：聪明人为什么会犯蠢</title>
+      <link>http://localhost:1313/posts/second-order-thinking/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/second-order-thinking/</guid>
+      <description>&lt;h2 id=&#34;一个关于眼镜蛇的故事&#34;&gt;一个关于眼镜蛇的故事&lt;/h2&gt;
+&lt;p&gt;英国殖民印度时期，德里有严重的眼镜蛇问题。&lt;/p&gt;
+&lt;p&gt;政府想了一个&amp;quot;聪明&amp;quot;的办法：悬赏捕蛇。每上交一条死蛇，就能获得奖金。&lt;/p&gt;
+&lt;p&gt;一阶思维：人们会捕蛇 → 蛇减少。&lt;/p&gt;
+&lt;p&gt;发生了什么？&lt;/p&gt;
+&lt;p&gt;人们开始养蛇。&lt;/p&gt;
+&lt;p&gt;当政府发现并取消悬赏时，养蛇人把蛇放归野外。&lt;/p&gt;
+&lt;p&gt;结果：眼镜蛇比之前更多了。&lt;/p&gt;
+&lt;p&gt;这就是只用一阶思维的代价。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是二阶思维&#34;&gt;什么是二阶思维&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;一阶思维&lt;/strong&gt;：这个行动的直接后果是什么？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二阶思维&lt;/strong&gt;：这个直接后果会引发什么反应？那些反应又会导致什么？&lt;/p&gt;
+&lt;p&gt;一阶思维是线性的：A → B。
+二阶思维是循环的：A → B → C → 可能回到A。&lt;/p&gt;
+&lt;p&gt;大多数人只做一阶思考。这就是为什么政策经常失败、投资经常亏损、聪明人经常做出愚蠢的决定。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一阶思维的陷阱&#34;&gt;一阶思维的陷阱&lt;/h2&gt;
+&lt;h3 id=&#34;案例1租金管制&#34;&gt;案例1：租金管制&lt;/h3&gt;
+&lt;p&gt;一阶思维：限制房租 → 租户受益。&lt;/p&gt;
+&lt;p&gt;二阶效应：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;房东收益下降 → 减少维护投入 → 房屋质量下降&lt;/li&gt;
+&lt;li&gt;建新房不划算 → 供应减少 → 住房短缺加剧&lt;/li&gt;
+&lt;li&gt;有房者不愿搬走 → 流动性下降 → 新来者更难找房&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;长期结果：租户反而受害。&lt;/p&gt;
+&lt;p&gt;几乎所有研究都显示，长期租金管制会恶化住房问题。但它仍然是流行的政策，因为一阶效应是直观的，二阶效应是隐蔽的。&lt;/p&gt;
+&lt;h3 id=&#34;案例2禁酒令&#34;&gt;案例2：禁酒令&lt;/h3&gt;
+&lt;p&gt;一阶思维：禁止酒精 → 人们不再喝酒。&lt;/p&gt;
+&lt;p&gt;二阶效应：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;合法供应消失 → 黑市兴起 → 有组织犯罪获利&lt;/li&gt;
+&lt;li&gt;无法监管 → 质量无法保证 → 更多人因假酒中毒&lt;/li&gt;
+&lt;li&gt;执法成本巨大 → 腐败滋生 → 法治受损&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;长期结果：社会问题比禁酒前更严重。&lt;/p&gt;
+&lt;h3 id=&#34;案例3降低利率&#34;&gt;案例3：降低利率&lt;/h3&gt;
+&lt;p&gt;一阶思维：利率降低 → 借贷成本下降 → 经济活动增加。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>安全边际：为什么&#34;差不多对&#34;还不够</title>
+      <link>http://localhost:1313/posts/margin-of-safety/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/margin-of-safety/</guid>
+      <description>&lt;h2 id=&#34;一个改变投资史的概念&#34;&gt;一个改变投资史的概念&lt;/h2&gt;
+&lt;p&gt;1934年，本杰明·格雷厄姆在大萧条的废墟中写下了《证券分析》。&lt;/p&gt;
+&lt;p&gt;他提出了一个简单但深刻的概念：&lt;strong&gt;安全边际&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;什么是安全边际？&lt;/p&gt;
+&lt;p&gt;如果你估算一座桥能承重10吨，你不会开一辆9.5吨的卡车过去。你会留有余地——也许只开5吨的车。&lt;/p&gt;
+&lt;p&gt;那5吨的差距就是安全边际。&lt;/p&gt;
+&lt;p&gt;投资也一样：如果你估算一只股票值100元，你不应该在99元买入。你应该等到它跌到60元或70元。&lt;/p&gt;
+&lt;p&gt;那30-40元的差距就是安全边际。&lt;/p&gt;
+&lt;p&gt;这听起来显而易见。但大多数人不这样做——他们在价格&amp;quot;差不多合理&amp;quot;时就买入。&lt;/p&gt;
+&lt;p&gt;格雷厄姆认为这是灾难的配方。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么需要安全边际&#34;&gt;为什么需要安全边际&lt;/h2&gt;
+&lt;h3 id=&#34;1-你的估值一定是错的&#34;&gt;1. 你的估值一定是错的&lt;/h3&gt;
+&lt;p&gt;没有人能准确估算一家公司的&amp;quot;真实价值&amp;quot;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;未来收益是预测，预测必然有误差&lt;/li&gt;
+&lt;li&gt;折现率是假设，假设可能是错的&lt;/li&gt;
+&lt;li&gt;竞争格局会变化，你无法完全预见&lt;/li&gt;
+&lt;li&gt;管理层可能犯错、欺骗或离职&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你的估值不是一个点，是一个范围。而且你不知道范围有多宽。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安全边际承认了这个事实：既然估值必然有误差，就应该只在价格远低于估值时行动。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-坏事比你想象的更常发生&#34;&gt;2. 坏事比你想象的更常发生&lt;/h3&gt;
+&lt;p&gt;这和&lt;a href=&#34;http://localhost:1313/posts/tail-risk/&#34;&gt;尾部风险&lt;/a&gt;那篇文章的洞见一致：极端事件比正态分布预测的更常见。&lt;/p&gt;
+&lt;p&gt;公司可能遭遇：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;意外的监管打击&lt;/li&gt;
+&lt;li&gt;关键客户流失&lt;/li&gt;
+&lt;li&gt;技术颠覆&lt;/li&gt;
+&lt;li&gt;财务欺诈曝光&lt;/li&gt;
+&lt;li&gt;黑天鹅事件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些不是&amp;quot;不可能&amp;quot;的事件，而是你的模型没有考虑的事件。&lt;/p&gt;
+&lt;p&gt;安全边际是对这些未知风险的缓冲。&lt;/p&gt;
+&lt;h3 id=&#34;3-时机永远无法精确&#34;&gt;3. 时机永远无法精确&lt;/h3&gt;
+&lt;p&gt;即使你对价值的判断是对的，你也无法预测价格什么时候会回归价值。&lt;/p&gt;
+&lt;p&gt;可能需要几个月，也可能需要几年。在这期间，你需要有耐心持有——而安全边际给了你这个耐心。&lt;/p&gt;
+&lt;p&gt;如果你在&amp;quot;差不多对&amp;quot;的价格买入，小幅下跌就会让你怀疑自己。如果你在远低于价值的价格买入，即使继续下跌，你也知道自己的判断有足够的缓冲。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;安全边际与其他概念的联系&#34;&gt;安全边际与其他概念的联系&lt;/h2&gt;
+&lt;h3 id=&#34;与遍历性&#34;&gt;与遍历性&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/ergodicity/&#34;&gt;遍历性&lt;/a&gt;告诉我们：在乘性系统中，一次归零就是永远归零。&lt;/p&gt;
+&lt;p&gt;安全边际是对这个洞见的实践应用：&lt;strong&gt;永远不要让自己处于&amp;quot;只要估值稍微错一点就会破产&amp;quot;的位置。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;凯利公式建议不要全押，安全边际建议不要在&amp;quot;刚好合理&amp;quot;的价格买入。两者都是在为误差留空间。&lt;/p&gt;
+&lt;h3 id=&#34;与凯利公式&#34;&gt;与凯利公式&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/kelly-criterion/&#34;&gt;凯利公式&lt;/a&gt;的核心洞见是：过度激进比过度保守更危险。&lt;/p&gt;
+&lt;p&gt;安全边际是同样的精神：宁可错过&amp;quot;差不多&amp;quot;的机会，也不要在缓冲不足时冒险。&lt;/p&gt;
+&lt;p&gt;实践中的&amp;quot;半凯利&amp;quot;和&amp;quot;只在安全边际足够时买入&amp;quot;，是同一个原则的两种表达。&lt;/p&gt;
+&lt;h3 id=&#34;与尾部风险&#34;&gt;与尾部风险&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/posts/tail-risk/&#34;&gt;尾部风险&lt;/a&gt;告诉我们：极端事件比模型预测的更常见。&lt;/p&gt;
+&lt;p&gt;安全边际是对尾部风险的防御：既然最坏情况比你想象的更可能发生，就应该确保即使最坏情况发生，你也不会出局。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;安全边际的数学&#34;&gt;安全边际的数学&lt;/h2&gt;
+&lt;p&gt;假设你估算一只股票的内在价值在80-120元之间（你不确定具体数字）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;没有安全边际&lt;/strong&gt;：在100元买入。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果真实价值是120元，你赚20%&lt;/li&gt;
+&lt;li&gt;如果真实价值是80元，你亏20%&lt;/li&gt;
+&lt;li&gt;如果真实价值是60元（你估错了），你亏40%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;有安全边际&lt;/strong&gt;：只在60元买入。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果真实价值是120元，你赚100%&lt;/li&gt;
+&lt;li&gt;如果真实价值是80元，你赚33%&lt;/li&gt;
+&lt;li&gt;如果真实价值是60元（你估错了），你不赚不亏&lt;/li&gt;
+&lt;li&gt;如果真实价值是40元（严重估错），你亏33%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安全边际把你的赔率从对称变成不对称：上行空间大，下行空间小。&lt;/p&gt;
+&lt;p&gt;这正是&lt;a href=&#34;http://localhost:1313/posts/convexity/&#34;&gt;凸性&lt;/a&gt;的定义。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么大多数人不用安全边际&#34;&gt;为什么大多数人不用安全边际&lt;/h2&gt;
+&lt;h3 id=&#34;1-等待是痛苦的&#34;&gt;1. 等待是痛苦的&lt;/h3&gt;
+&lt;p&gt;安全边际意味着很多时候你什么都不做。&lt;/p&gt;
+&lt;p&gt;当别人在赚钱，你在等待。当市场&amp;quot;感觉&amp;quot;很好，你在等待。当机会&amp;quot;差不多&amp;quot;够好，你还在等待。&lt;/p&gt;
+&lt;p&gt;这在心理上极其困难。&lt;/p&gt;
+&lt;h3 id=&#34;2-机会成本的幻觉&#34;&gt;2. 机会成本的幻觉&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;如果我等待更低的价格，可能永远等不到。&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>选择权：为什么保留选项比做出选择更重要</title>
+      <link>http://localhost:1313/posts/optionality/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/optionality/</guid>
+      <description>&lt;h2 id=&#34;一个被低估的概念&#34;&gt;一个被低估的概念&lt;/h2&gt;
+&lt;p&gt;塔勒布有一个观察：历史上最重要的发明，大多不是计划出来的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;青霉素是培养皿被污染后的意外发现&lt;/li&gt;
+&lt;li&gt;X光是研究阴极射线时的偶然观察&lt;/li&gt;
+&lt;li&gt;微波炉是雷达工程师口袋里的巧克力融化后的灵感&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些发现者有一个共同点：&lt;strong&gt;他们保持着足够的选择权，所以当意外出现时，他们能够抓住它。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果弗莱明的实验室只研究一种特定的假设，他不会注意到被污染的培养皿。正是因为他保持开放，他才能看到意外的价值。&lt;/p&gt;
+&lt;p&gt;这就是选择权的力量。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是选择权&#34;&gt;什么是选择权&lt;/h2&gt;
+&lt;p&gt;金融中的期权（option）给你一个权利，但不是义务，在未来以特定价格买入或卖出某个资产。&lt;/p&gt;
+&lt;p&gt;你付出期权费，获得的是&lt;strong&gt;选择的权利&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果情况有利，你行使期权。如果情况不利，你让期权过期。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下行是有限的（最多亏掉期权费），上行是开放的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个结构不只存在于金融市场。它是一种普遍的策略：&lt;strong&gt;付出小的代价，保留大的可能性。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;选择权与凸性&#34;&gt;选择权与凸性&lt;/h2&gt;
+&lt;p&gt;选择权的本质是&lt;a href=&#34;http://localhost:1313/posts/convexity/&#34;&gt;凸性&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;回忆凸性的定义：从波动中获益。&lt;/p&gt;
+&lt;p&gt;当你持有选择权时：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果事情变好，你获得上行收益&lt;/li&gt;
+&lt;li&gt;如果事情变差，你的损失被限制在已付出的成本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这是凸函数的形状：上行大于下行。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;选择权是凸性的具体实现方式。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;生活中的选择权&#34;&gt;生活中的选择权&lt;/h2&gt;
+&lt;h3 id=&#34;教育&#34;&gt;教育&lt;/h3&gt;
+&lt;p&gt;为什么要接受广泛的教育，而不是早早专精一个领域？&lt;/p&gt;
+&lt;p&gt;因为你不知道未来什么会有价值。广泛的教育给你选择权——当机会出现时，你有更多可能抓住它。&lt;/p&gt;
+&lt;p&gt;过早专精是卖出选择权：你获得了即时的深度，但失去了未来的灵活性。&lt;/p&gt;
+&lt;h3 id=&#34;技能&#34;&gt;技能&lt;/h3&gt;
+&lt;p&gt;学习多种技能 vs 只精通一种技能。&lt;/p&gt;
+&lt;p&gt;单一技能可能让你在当前市场更有竞争力。但如果这个技能被淘汰呢？&lt;/p&gt;
+&lt;p&gt;多种技能是选择权：它们可能不会全部用上，但当环境变化时，你有更多选择。&lt;/p&gt;
+&lt;h3 id=&#34;财务&#34;&gt;财务&lt;/h3&gt;
+&lt;p&gt;为什么要保持流动性，而不是把所有钱都投入&amp;quot;最好&amp;quot;的机会？&lt;/p&gt;
+&lt;p&gt;因为流动性是选择权。&lt;/p&gt;
+&lt;p&gt;当市场崩盘时，有现金的人可以买入廉价资产。全仓的人没有这个选择。&lt;/p&gt;
+&lt;p&gt;2008年危机后，巴菲特用现金储备进行了多笔划算的投资。那些现金的&amp;quot;机会成本&amp;quot;被危机中的机会超额弥补。&lt;/p&gt;
+&lt;h3 id=&#34;职业&#34;&gt;职业&lt;/h3&gt;
+&lt;p&gt;为什么不应该把所有筹码押在一家公司或一个老板身上？&lt;/p&gt;
+&lt;p&gt;因为备选方案是选择权。&lt;/p&gt;
+&lt;p&gt;保持市场竞争力、维护职业关系网、拥有可转移的技能——这些都是选择权。当你需要离开时，你有选择。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;选择权的成本&#34;&gt;选择权的成本&lt;/h2&gt;
+&lt;p&gt;选择权不是免费的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;持有现金的选择权成本是：放弃的投资回报&lt;/li&gt;
+&lt;li&gt;学习多种技能的选择权成本是：没有在单一技能上达到顶尖&lt;/li&gt;
+&lt;li&gt;保持职业灵活性的选择权成本是：没有全心投入当前工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这就是&lt;a href=&#34;http://localhost:1313/posts/opportunity-cost/&#34;&gt;机会成本&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;关键问题是：&lt;strong&gt;选择权的价值是否超过它的成本？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;答案取决于不确定性。&lt;/p&gt;
+&lt;p&gt;不确定性越高，选择权越有价值。
+不确定性越低，选择权越像&amp;quot;浪费&amp;quot;。&lt;/p&gt;
+&lt;p&gt;在一个变化缓慢的世界，深度专精可能是最优策略。
+在一个变化剧烈的世界，保留选择权可能更重要。&lt;/p&gt;
+&lt;p&gt;我们活在哪种世界？&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;选择权思维的应用&#34;&gt;选择权思维的应用&lt;/h2&gt;
+&lt;h3 id=&#34;1-买入选择权而不是卖出选择权&#34;&gt;1. 买入选择权，而不是卖出选择权&lt;/h3&gt;
+&lt;p&gt;很多决策可以分为两类：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;买入选择权&lt;/strong&gt;：付出小成本，保留大可能&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;小规模实验&lt;/li&gt;
+&lt;li&gt;保持学习&lt;/li&gt;
+&lt;li&gt;维护关系网&lt;/li&gt;
+&lt;li&gt;持有现金储备&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;卖出选择权&lt;/strong&gt;：获得即时收益，放弃未来灵活性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;过早承诺&lt;/li&gt;
+&lt;li&gt;烧掉退路&lt;/li&gt;
+&lt;li&gt;全仓押注&lt;/li&gt;
+&lt;li&gt;签订限制性合同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这不是说永远不要卖出选择权。有时候承诺是必要的。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

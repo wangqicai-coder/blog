@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>认知与现实 on Wang Qicai</title>
+    <title>认知与现实 on 不确定性的智慧</title>
     <link>http://localhost:1313/categories/%E8%AE%A4%E7%9F%A5%E4%B8%8E%E7%8E%B0%E5%AE%9E/</link>
-    <description>Recent content in 认知与现实 on Wang Qicai</description>
+    <description>Recent content in 认知与现实 on 不确定性的智慧</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Dec 2025 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/%E8%AE%A4%E7%9F%A5%E4%B8%8E%E7%8E%B0%E5%AE%9E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>反身性：信念如何创造现实</title>
       <link>http://localhost:1313/posts/reflexivity/</link>
-      <pubDate>Sat, 20 Dec 2025 12:00:00 +0800</pubDate>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/reflexivity/</guid>
       <description>&lt;h2 id=&#34;一个让经济学失效的现象&#34;&gt;一个让经济学失效的现象&lt;/h2&gt;
 &lt;p&gt;1992年9月16日，乔治·索罗斯做空英镑，一天赚了10亿美元。&lt;/p&gt;
@@ -92,6 +92,222 @@
 &lt;li&gt;&lt;strong&gt;底部&lt;/strong&gt;：需要极端的悲观才能继续下跌&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;注意这个过程的关键特征：&lt;strong&gt;价格不是被动反映基本面，价格主动改变基本面。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>幸存者偏差：为什么成功学是毒药</title>
+      <link>http://localhost:1313/posts/survivorship-bias/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/survivorship-bias/</guid>
+      <description>&lt;h2 id=&#34;二战中被忽视的洞见&#34;&gt;二战中被忽视的洞见&lt;/h2&gt;
+&lt;p&gt;1943年，美军面临一个问题：轰炸机被击落的比率太高。他们需要给飞机加装装甲，但装甲会增加重量、降低性能。所以只能加在最关键的位置。&lt;/p&gt;
+&lt;p&gt;工程师们统计了返航飞机上弹孔的分布，发现弹孔主要集中在机翼和机身。&lt;/p&gt;
+&lt;p&gt;结论似乎显然：应该在机翼和机身加装甲。&lt;/p&gt;
+&lt;p&gt;统计学家亚伯拉罕·瓦尔德（Abraham Wald）说：&lt;strong&gt;错了。应该在没有弹孔的地方加装甲——引擎和驾驶舱。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为什么？&lt;/p&gt;
+&lt;p&gt;因为他们只看到了&lt;strong&gt;返航的飞机&lt;/strong&gt;。那些引擎或驾驶舱中弹的飞机，根本没有机会返航。&lt;/p&gt;
+&lt;p&gt;这就是幸存者偏差：&lt;strong&gt;我们只能看到幸存者，看不到已经消失的失败者。这导致我们对成功原因的判断系统性地错误。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;成功学的致命谬误&#34;&gt;成功学的致命谬误&lt;/h2&gt;
+&lt;p&gt;现在市面上充斥着各种成功学：&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;我每天5点起床，所以我成功了。你也应该5点起床。&amp;rdquo;
+&amp;ldquo;我辍学创业，所以成功了。你也应该勇敢辍学。&amp;rdquo;
+&amp;ldquo;我相信自己，坚持了10年，所以成功了。你也应该坚持。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;这些故事有什么问题？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你只听到了成功者的故事。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;那些每天5点起床但失败的人呢？
+那些辍学创业但破产的人呢？
+那些坚持了10年最终放弃的人呢？&lt;/p&gt;
+&lt;p&gt;他们的故事没有出版价值，不会被采访，不会上TED演讲。&lt;/p&gt;
+&lt;p&gt;所以你系统性地高估了&amp;quot;5点起床&amp;quot;&amp;ldquo;辍学&amp;quot;&amp;ldquo;坚持&amp;quot;与成功的关联。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;数学上的理解&#34;&gt;数学上的理解&lt;/h2&gt;
+&lt;p&gt;假设：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1000人尝试某种策略&lt;/li&gt;
+&lt;li&gt;10人成功，990人失败&lt;/li&gt;
+&lt;li&gt;成功率是1%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但我们只采访成功的10人。他们都说：&amp;ldquo;我用了这个策略，所以成功了。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;一个不知道990人失败的观察者会得出结论：这个策略有效。&lt;/p&gt;
+&lt;p&gt;实际上，这个策略的成功率只有1%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更糟的是：如果这1000人什么都不做，可能也有1%会因为运气成功。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;所以这个策略可能根本没用。但我们永远无法从幸存者的故事中知道这一点。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基金经理的神话&#34;&gt;基金经理的神话&lt;/h2&gt;
+&lt;p&gt;每年都有基金经理&amp;quot;战胜市场&amp;rdquo;。&lt;/p&gt;
+&lt;p&gt;如果有1000个基金经理随机投资：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一年，约500人跑赢市场&lt;/li&gt;
+&lt;li&gt;第二年，约250人连续两年跑赢&lt;/li&gt;
+&lt;li&gt;第三年，约125人连续三年跑赢&lt;/li&gt;
+&lt;li&gt;第四年，约62人连续四年跑赢&lt;/li&gt;
+&lt;li&gt;第五年，约31人连续五年跑赢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;连续五年跑赢市场！这31人一定是天才！&lt;/p&gt;
+&lt;p&gt;不。如果他们是掷硬币，也会有31人连续五次正面朝上。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们把纯粹的概率当成了能力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;那些连续五年跑输市场的基金经理呢？他们的基金被关闭了，他们的职业生涯结束了。你永远不会听到他们的故事。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;公司的幸存者偏差&#34;&gt;公司的幸存者偏差&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;百年企业的成功秘诀是什么？&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;当你研究活了100年的公司，你找到了一些共同点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注重质量&lt;/li&gt;
+&lt;li&gt;关心员工&lt;/li&gt;
+&lt;li&gt;长期思维&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结论：这些特质让公司长寿。&lt;/p&gt;
+&lt;p&gt;但等等。&lt;/p&gt;
+&lt;p&gt;那些&lt;strong&gt;也有这些特质但已经消失的公司&lt;/strong&gt;呢？&lt;/p&gt;
+&lt;p&gt;也许100年前有1000家&amp;quot;注重质量、关心员工、长期思维&amp;quot;的公司，999家已经倒闭，只有1家活到今天。&lt;/p&gt;
+&lt;p&gt;你研究的不是&amp;quot;成功的原因&amp;rdquo;，你研究的是&amp;quot;幸存的结果&amp;quot;。&lt;/p&gt;
+&lt;p&gt;真正让公司长寿的可能是：运气、时代、位置、规模、网络效应——这些无法从幸存者身上学到的东西。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;历史的幸存者偏差&#34;&gt;历史的幸存者偏差&lt;/h2&gt;
+&lt;p&gt;我们读的历史是胜利者写的。&lt;/p&gt;
+&lt;p&gt;失败的帝国、消失的文明、被征服的民族——他们的故事很少流传。&lt;/p&gt;
+&lt;p&gt;这导致我们：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;高估军事征服的有效性（征服者的故事流传下来）&lt;/li&gt;
+&lt;li&gt;低估和平贸易的重要性（商人的故事很少被记录）&lt;/li&gt;
+&lt;li&gt;对历史进程产生系统性错误理解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;古代有多少思想家、科学家、艺术家？我们只知道那些作品恰好保存下来的人。&lt;/p&gt;
+&lt;p&gt;亚历山大图书馆烧毁时，消失了多少人类的智慧？&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;创业的真相&#34;&gt;创业的真相&lt;/h2&gt;
+&lt;p&gt;创业成功率大约是10%（宽泛定义的&amp;quot;成功&amp;quot;）。&lt;/p&gt;
+&lt;p&gt;如果定义为&amp;quot;赚到大钱&amp;quot;，成功率可能是1%。&lt;/p&gt;
+&lt;p&gt;如果定义为&amp;quot;成为独角兽&amp;quot;，成功率是0.01%。&lt;/p&gt;
+&lt;p&gt;但你听到的每一个创业故事都是成功的故事。&lt;/p&gt;
+&lt;p&gt;这意味着：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>均值回归：最被误解的统计概念</title>
+      <link>http://localhost:1313/posts/mean-reversion/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/mean-reversion/</guid>
+      <description>&lt;h2 id=&#34;一个让天才困惑的现象&#34;&gt;一个让天才困惑的现象&lt;/h2&gt;
+&lt;p&gt;弗朗西斯·高尔顿（Francis Galton）是达尔文的表弟，统计学的奠基人之一。&lt;/p&gt;
+&lt;p&gt;1886年，他研究了一个简单问题：高个子父母的孩子有多高？&lt;/p&gt;
+&lt;p&gt;结果令他困惑：&lt;strong&gt;高个子父母的孩子，平均来说比父母矮。矮个子父母的孩子，平均来说比父母高。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;似乎所有人都在向平均值&amp;quot;回归&amp;quot;。&lt;/p&gt;
+&lt;p&gt;高尔顿担心这意味着人类会越来越趋同，最终变成一模一样。&lt;/p&gt;
+&lt;p&gt;他错了。这不是因为任何神秘力量在拉动人们向中间靠拢。&lt;/p&gt;
+&lt;p&gt;这只是统计现象。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;均值回归的本质&#34;&gt;均值回归的本质&lt;/h2&gt;
+&lt;p&gt;任何测量结果都包含两部分：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;测量值 = 真实值 + 随机误差&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;高个子父母之所以被观察为&amp;quot;高个子&amp;quot;，部分原因是他们的真实遗传身高较高，部分原因是测量时的随机因素（营养、测量误差、运气等）恰好是正向的。&lt;/p&gt;
+&lt;p&gt;他们的孩子继承了真实的遗传因素，但随机因素被重新抽样。&lt;/p&gt;
+&lt;p&gt;由于随机因素的期望值是零，孩子的测量值&lt;strong&gt;在统计上&lt;/strong&gt;会更接近平均。&lt;/p&gt;
+&lt;p&gt;这不是任何力量在&amp;quot;拉回&amp;quot;。这只是：&lt;strong&gt;极端值更可能包含极端的随机成分，而随机成分在下一次测量时会回归平均。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一个关键的思想实验&#34;&gt;一个关键的思想实验&lt;/h2&gt;
+&lt;p&gt;想象一场考试：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;学生的&amp;quot;真实能力&amp;quot;服从某种分布&lt;/li&gt;
+&lt;li&gt;考试成绩 = 真实能力 + 随机因素（当天状态、运气等）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在，选出考试最高分的那些学生，让他们再考一次。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;他们的第二次成绩会更低。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不是因为他们变笨了。是因为他们第一次的高分中包含了正向的随机因素，而随机因素在第二次考试中被重新抽样。&lt;/p&gt;
+&lt;p&gt;同样，选出最低分的学生再考一次，他们的成绩会提高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这与能力变化无关，与任何干预无关，这是纯粹的统计现象。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;被误解的因果关系&#34;&gt;被误解的因果关系&lt;/h2&gt;
+&lt;p&gt;均值回归最危险的地方是：它创造了虚假的因果关系。&lt;/p&gt;
+&lt;h3 id=&#34;例子1训斥与表扬&#34;&gt;例子1：训斥与表扬&lt;/h3&gt;
+&lt;p&gt;以色列空军的飞行教官发现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当飞行员表现好，教官表扬后，下次表现往往变差&lt;/li&gt;
+&lt;li&gt;当飞行员表现差，教官训斥后，下次表现往往变好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结论：训斥有效，表扬有害。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这是错的。&lt;/strong&gt; 表现好的飞行员下次变差，是因为他们这次表现包含了正向的随机因素。表现差的飞行员下次变好，是因为他们这次表现包含了负向的随机因素。&lt;/p&gt;
+&lt;p&gt;教官的训斥和表扬&lt;strong&gt;完全没有作用&lt;/strong&gt;，但教官误以为是自己的干预产生了效果。&lt;/p&gt;
+&lt;h3 id=&#34;例子2替代医学&#34;&gt;例子2：替代医学&lt;/h3&gt;
+&lt;p&gt;病人在最难受的时候去尝试替代疗法。然后他们感觉好了一些。&lt;/p&gt;
+&lt;p&gt;结论：替代疗法有效。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不一定。&lt;/strong&gt; 病人选择在症状最极端的时候就医。症状最极端意味着包含了极端的随机因素。即使什么都不做，下一次测量也很可能更接近平均——即感觉好一些。&lt;/p&gt;
+&lt;p&gt;这就是为什么需要随机对照实验，而不是靠&amp;quot;我用了然后好了&amp;quot;的叙事。&lt;/p&gt;
+&lt;h3 id=&#34;例子3sports-illustrated封面魔咒&#34;&gt;例子3：Sports Illustrated封面魔咒&lt;/h3&gt;
+&lt;p&gt;登上《体育画报》封面的运动员，往往在接下来表现下滑。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;封面魔咒&amp;rdquo;？&lt;/p&gt;
+&lt;p&gt;不。运动员登上封面是因为他们最近表现极好。极好的表现包含正向随机因素。随机因素回归，表现自然下滑。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;投资中的均值回归&#34;&gt;投资中的均值回归&lt;/h2&gt;
+&lt;h3 id=&#34;表现最好的基金&#34;&gt;表现最好的基金&lt;/h3&gt;
+&lt;p&gt;去年表现最好的基金，今年往往表现平平。&lt;/p&gt;
+&lt;p&gt;这不是因为基金经理变笨了。这是因为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;去年的好表现包含了运气成分&lt;/li&gt;
+&lt;li&gt;运气成分在今年被重新抽样&lt;/li&gt;
+&lt;li&gt;期望值回归平均&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;追逐去年的&amp;quot;明星基金&amp;quot;是典型的均值回归陷阱。&lt;/p&gt;
+&lt;h3 id=&#34;估值的回归&#34;&gt;估值的回归&lt;/h3&gt;
+&lt;p&gt;市盈率极高的股票，长期平均来看表现差于市盈率低的股票。&lt;/p&gt;
+&lt;p&gt;部分原因是均值回归：极高估值意味着极端乐观预期。极端预期更可能包含错误。错误修正时，估值回归。&lt;/p&gt;
+&lt;h3 id=&#34;盈利的回归&#34;&gt;盈利的回归&lt;/h3&gt;
+&lt;p&gt;公司盈利增长率也会均值回归。&lt;/p&gt;
+&lt;p&gt;极高增长的公司往往增速放缓。极低增长的公司往往增速回升（如果它们能活下去）。&lt;/p&gt;
+&lt;p&gt;这不是神秘力量，这是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基数效应&lt;/li&gt;
+&lt;li&gt;竞争压力&lt;/li&gt;
+&lt;li&gt;管理层能力的真实值更接近平均&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;均值回归的陷阱&#34;&gt;均值回归的陷阱&lt;/h2&gt;
+&lt;h3 id=&#34;陷阱1忽略结构性变化&#34;&gt;陷阱1：忽略结构性变化&lt;/h3&gt;
+&lt;p&gt;均值回归假设&amp;quot;真实值&amp;quot;不变，只是随机因素在波动。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>二阶思维：聪明人为什么会犯蠢</title>
+      <link>http://localhost:1313/posts/second-order-thinking/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/second-order-thinking/</guid>
+      <description>&lt;h2 id=&#34;一个关于眼镜蛇的故事&#34;&gt;一个关于眼镜蛇的故事&lt;/h2&gt;
+&lt;p&gt;英国殖民印度时期，德里有严重的眼镜蛇问题。&lt;/p&gt;
+&lt;p&gt;政府想了一个&amp;quot;聪明&amp;quot;的办法：悬赏捕蛇。每上交一条死蛇，就能获得奖金。&lt;/p&gt;
+&lt;p&gt;一阶思维：人们会捕蛇 → 蛇减少。&lt;/p&gt;
+&lt;p&gt;发生了什么？&lt;/p&gt;
+&lt;p&gt;人们开始养蛇。&lt;/p&gt;
+&lt;p&gt;当政府发现并取消悬赏时，养蛇人把蛇放归野外。&lt;/p&gt;
+&lt;p&gt;结果：眼镜蛇比之前更多了。&lt;/p&gt;
+&lt;p&gt;这就是只用一阶思维的代价。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是二阶思维&#34;&gt;什么是二阶思维&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;一阶思维&lt;/strong&gt;：这个行动的直接后果是什么？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二阶思维&lt;/strong&gt;：这个直接后果会引发什么反应？那些反应又会导致什么？&lt;/p&gt;
+&lt;p&gt;一阶思维是线性的：A → B。
+二阶思维是循环的：A → B → C → 可能回到A。&lt;/p&gt;
+&lt;p&gt;大多数人只做一阶思考。这就是为什么政策经常失败、投资经常亏损、聪明人经常做出愚蠢的决定。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一阶思维的陷阱&#34;&gt;一阶思维的陷阱&lt;/h2&gt;
+&lt;h3 id=&#34;案例1租金管制&#34;&gt;案例1：租金管制&lt;/h3&gt;
+&lt;p&gt;一阶思维：限制房租 → 租户受益。&lt;/p&gt;
+&lt;p&gt;二阶效应：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;房东收益下降 → 减少维护投入 → 房屋质量下降&lt;/li&gt;
+&lt;li&gt;建新房不划算 → 供应减少 → 住房短缺加剧&lt;/li&gt;
+&lt;li&gt;有房者不愿搬走 → 流动性下降 → 新来者更难找房&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;长期结果：租户反而受害。&lt;/p&gt;
+&lt;p&gt;几乎所有研究都显示，长期租金管制会恶化住房问题。但它仍然是流行的政策，因为一阶效应是直观的，二阶效应是隐蔽的。&lt;/p&gt;
+&lt;h3 id=&#34;案例2禁酒令&#34;&gt;案例2：禁酒令&lt;/h3&gt;
+&lt;p&gt;一阶思维：禁止酒精 → 人们不再喝酒。&lt;/p&gt;
+&lt;p&gt;二阶效应：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;合法供应消失 → 黑市兴起 → 有组织犯罪获利&lt;/li&gt;
+&lt;li&gt;无法监管 → 质量无法保证 → 更多人因假酒中毒&lt;/li&gt;
+&lt;li&gt;执法成本巨大 → 腐败滋生 → 法治受损&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;长期结果：社会问题比禁酒前更严重。&lt;/p&gt;
+&lt;h3 id=&#34;案例3降低利率&#34;&gt;案例3：降低利率&lt;/h3&gt;
+&lt;p&gt;一阶思维：利率降低 → 借贷成本下降 → 经济活动增加。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

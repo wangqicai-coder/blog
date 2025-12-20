@@ -2,20 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/kelly-criterion/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/reflexivity/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/compounding/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/ergodicity/</loc>
-    <lastmod>2025-12-20T12:00:00+08:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/tail-risk/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/survivorship-bias/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/barbell-strategy/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/lindy-effect/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/convexity/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/mean-reversion/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/opportunity-cost/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/path-dependence/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/second-order-thinking/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/margin-of-safety/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/optionality/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-12-20T12:00:00+08:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-12-20T12:00:00+08:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-20T12:00:00+08:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E5%86%B3%E7%AD%96%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%97%B6%E9%97%B4%E7%9A%84%E5%8A%9B%E9%87%8F/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E8%AE%A4%E7%9F%A5%E4%B8%8E%E7%8E%B0%E5%AE%9E/</loc>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/%E9%A3%8E%E9%99%A9%E7%9A%84%E6%9C%AC%E8%B4%A8/</loc>
-    <lastmod>2025-12-20T12:00:00+08:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
