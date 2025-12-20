@@ -10,7 +10,9 @@ weight = 3
 
 弗朗西斯·高尔顿（Francis Galton）是达尔文的表弟，统计学的奠基人之一。
 
-1886年，他研究了一个简单问题：高个子父母的孩子有多高？
+1886年，他研究了一个简单问题：高个子父母的孩子有多高？[^1]
+
+[^1]: Francis Galton, "Regression Towards Mediocrity in Hereditary Stature", *Journal of the Anthropological Institute*, 15, 1886, pp. 246-263.
 
 结果令他困惑：**高个子父母的孩子，平均来说比父母矮。矮个子父母的孩子，平均来说比父母高。**
 
@@ -65,11 +67,13 @@ weight = 3
 
 ### 例子1：训斥与表扬
 
-以色列空军的飞行教官发现：
+丹尼尔·卡尼曼（Daniel Kahneman）在《思考，快与慢》中讲述了一个经典案例。[^2] 以色列空军的飞行教官发现：
 - 当飞行员表现好，教官表扬后，下次表现往往变差
 - 当飞行员表现差，教官训斥后，下次表现往往变好
 
 结论：训斥有效，表扬有害。
+
+[^2]: Daniel Kahneman,《Thinking, Fast and Slow》, Farrar, Straus and Giroux, 2011. 中文版：《思考，快与慢》。
 
 **这是错的。** 表现好的飞行员下次变差，是因为他们这次表现包含了正向的随机因素。表现差的飞行员下次变好，是因为他们这次表现包含了负向的随机因素。
 

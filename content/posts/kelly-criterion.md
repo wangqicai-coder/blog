@@ -8,7 +8,9 @@ weight = 1
 
 ## 一个改变赌博和投资的公式
 
-1956年，贝尔实验室的物理学家约翰·凯利（John Kelly）发表了一篇论文，标题是《信息率的新解释》（A New Interpretation of Information Rate）。
+1956年，贝尔实验室的物理学家约翰·凯利（John Kelly）发表了一篇论文，标题是《信息率的新解释》（A New Interpretation of Information Rate）。[^1]
+
+[^1]: J. L. Kelly Jr., "A New Interpretation of Information Rate", *Bell System Technical Journal*, 35(4), 1956, pp. 917-926.
 
 这篇论文本来是关于信息论的。但它包含了一个公式，后来改变了职业赌徒和专业投资者的思考方式。
 
