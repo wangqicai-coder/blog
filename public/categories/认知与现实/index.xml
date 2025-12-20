@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>认知与现实 on Wang Qicai</title>
+    <link>http://localhost:1313/categories/%E8%AE%A4%E7%9F%A5%E4%B8%8E%E7%8E%B0%E5%AE%9E/</link>
+    <description>Recent content in 认知与现实 on Wang Qicai</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Dec 2025 12:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E8%AE%A4%E7%9F%A5%E4%B8%8E%E7%8E%B0%E5%AE%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>反身性：信念如何创造现实</title>
+      <link>http://localhost:1313/posts/reflexivity/</link>
+      <pubDate>Sat, 20 Dec 2025 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/reflexivity/</guid>
+      <description>&lt;h2 id=&#34;一个让经济学失效的现象&#34;&gt;一个让经济学失效的现象&lt;/h2&gt;
+&lt;p&gt;1992年9月16日，乔治·索罗斯做空英镑，一天赚了10亿美元。&lt;/p&gt;
+&lt;p&gt;他是怎么知道英镑会崩溃的？&lt;/p&gt;
+&lt;p&gt;传统金融理论说：市场价格反映所有可用信息，价格会回归&amp;quot;基本面&amp;quot;。如果英镑被高估，套利者会逐渐把价格拉回合理水平。&lt;/p&gt;
+&lt;p&gt;但索罗斯的理论完全不同：&lt;strong&gt;价格不是被动反映现实，价格主动创造现实。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当足够多的人相信英镑会贬值，他们会卖出英镑。卖出行为导致英镑真的贬值。贬值证实了预期，引发更多卖出。这个循环可以自我强化，直到系统崩溃。&lt;/p&gt;
+&lt;p&gt;索罗斯不是在预测&amp;quot;真实价值&amp;quot;。他是在识别一个&lt;strong&gt;反身性过程&lt;/strong&gt;——一个信念自我实现的循环。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;什么是反身性&#34;&gt;什么是反身性&lt;/h2&gt;
+&lt;p&gt;反身性（Reflexivity）是索罗斯哲学的核心概念：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在有思考参与者的系统中，认知和现实之间存在双向反馈。&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;认知 → 影响行动 → 改变现实 → 改变认知 → ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这打破了传统科学的基本假设：观察者独立于被观察对象。&lt;/p&gt;
+&lt;p&gt;在物理学中，你观察一个苹果不会改变苹果。
+在金融市场中，你观察（并交易）一只股票会改变这只股票的价格。&lt;/p&gt;
+&lt;p&gt;这不是缺陷，这是社会现实的本质特征。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;自我实现与自我挫败&#34;&gt;自我实现与自我挫败&lt;/h2&gt;
+&lt;p&gt;反身性可以走两个方向：&lt;/p&gt;
+&lt;h3 id=&#34;自我实现的预言&#34;&gt;自我实现的预言&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;银行挤兑&lt;/strong&gt;是经典案例：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;谣言说银行可能倒闭&lt;/li&gt;
+&lt;li&gt;担忧的储户提取存款&lt;/li&gt;
+&lt;li&gt;银行因流动性危机真的陷入困境&lt;/li&gt;
+&lt;li&gt;更多人恐慌提款&lt;/li&gt;
+&lt;li&gt;银行真的倒闭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;银行原本可能是健康的。但预言本身创造了它预言的结果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;股票泡沫&lt;/strong&gt;是另一个案例：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;人们相信某股票会涨&lt;/li&gt;
+&lt;li&gt;买入推高价格&lt;/li&gt;
+&lt;li&gt;上涨&amp;quot;证明&amp;quot;了预期正确&lt;/li&gt;
+&lt;li&gt;更多人买入&lt;/li&gt;
+&lt;li&gt;价格远超基本面&lt;/li&gt;
+&lt;li&gt;直到信念崩塌&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;自我挫败的预言&#34;&gt;自我挫败的预言&lt;/h3&gt;
+&lt;p&gt;有时候，预言本身会阻止它预言的事情发生。&lt;/p&gt;
+&lt;p&gt;如果所有人都预测明天会堵车，一些人会提前出发或选择其他路线。结果，堵车可能没有发生。&lt;/p&gt;
+&lt;p&gt;在金融市场中，如果一个套利机会被广泛知晓，套利行为本身会消除这个机会。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;反身性的结构&#34;&gt;反身性的结构&lt;/h2&gt;
+&lt;p&gt;索罗斯区分了两个功能：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;认知功能&lt;/strong&gt;：参与者试图理解现实
+&lt;strong&gt;参与功能&lt;/strong&gt;：参与者试图改变现实&lt;/p&gt;
+&lt;p&gt;在反身性过程中，这两个功能同时作用并相互干扰：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你对市场的理解影响你的行动&lt;/li&gt;
+&lt;li&gt;你的行动影响市场&lt;/li&gt;
+&lt;li&gt;市场的变化改变你的理解&lt;/li&gt;
+&lt;li&gt;你的新理解又影响你的新行动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这创造了一个&lt;strong&gt;不稳定的动态系统&lt;/strong&gt;，而不是趋向均衡的稳定系统。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;繁荣-萧条周期&#34;&gt;繁荣-萧条周期&lt;/h2&gt;
+&lt;p&gt;反身性最重要的应用是解释市场周期。&lt;/p&gt;
+&lt;h3 id=&#34;繁荣阶段自我强化的上升&#34;&gt;繁荣阶段（自我强化的上升）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;启动&lt;/strong&gt;：某种基本面改善（真实的）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;认知&lt;/strong&gt;：投资者注意到改善&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;行动&lt;/strong&gt;：买入推高价格&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;强化&lt;/strong&gt;：价格上涨改善基本面（公司更容易融资、信心提升、消费增加）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加速&lt;/strong&gt;：更高的价格吸引更多买家&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;泡沫&lt;/strong&gt;：价格增长远超基本面&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高峰&lt;/strong&gt;：需要越来越大的信念才能支撑价格&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;萧条阶段自我强化的下降&#34;&gt;萧条阶段（自我强化的下降）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;触发&lt;/strong&gt;：某个事件动摇信念&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;质疑&lt;/strong&gt;：投资者开始怀疑&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;卖出&lt;/strong&gt;：价格下跌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;恶化&lt;/strong&gt;：价格下跌恶化基本面（融资困难、信心崩溃、消费收缩）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;恐慌&lt;/strong&gt;：更低的价格引发更多卖出&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;崩溃&lt;/strong&gt;：价格远低于基本面&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;底部&lt;/strong&gt;：需要极端的悲观才能继续下跌&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注意这个过程的关键特征：&lt;strong&gt;价格不是被动反映基本面，价格主动改变基本面。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

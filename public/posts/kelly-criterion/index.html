@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>凯利公式：如何下注 | Wang Qicai</title>
+<meta name="keywords" content="">
+<meta name="description" content="一个改变赌博和投资的公式
+1956年，贝尔实验室的物理学家约翰·凯利发表了一篇论文，标题是《信息率的新解释》。
+这篇论文本来是关于信息论的。但它包含了一个公式，后来改变了职业赌徒和专业投资者的思考方式。
+这个公式回答了一个简单但深刻的问题：
+当你有优势时，应该下注多少？
+
+为什么这个问题重要
+假设你发现了一个有利可图的机会：
+
+60%的概率赢，赢了翻倍
+40%的概率输，输了归零
+
+你有100元。你应该下注多少？
+直觉可能说：机会这么好，全押！
+但如果你全押，只要输一次，你就出局了。即使你有60%的胜率，连续玩10次全押，归零的概率是99.99%。
+那下注1元？太保守了。你有优势，应该利用它。
+问题是：有没有一个&quot;最优&quot;的下注比例？
+有。这就是凯利公式。
+
+凯利公式
+对于简单的赢/输赌注，凯利公式是：
+f* = (bp - q) / b
+其中：
+
+f* = 最优下注比例（占总资金的百分比）
+b = 赔率（赢了能赚多少倍）
+p = 获胜概率
+q = 失败概率（= 1 - p）
+
+对于上面的例子（60%胜率，1:1赔率）：
+f* = (1 × 0.6 - 0.4) / 1 = 0.2 = 20%
+你应该每次下注总资金的20%。
+
+凯利公式的直觉
+凯利公式在做什么？它在最大化长期财富的几何增长率。
+回忆遍历性那篇文章：投资是乘性的，不是加性的。你的财富是一连串乘法的结果。
+凯利公式找到的是：让这一连串乘法的长期结果最大化的下注比例。
+它自动平衡了两个力量：
+
+利用优势：下注太少，优势没有被充分利用
+避免毁灭：下注太多，一次失败可能摧毁你
+
+凯利比例是这两个力量的最优平衡点。
+
+凯利公式的数学性质
+1. 永远不会让你全押
+不管优势多大，凯利公式永远不会建议100%下注（除非胜率是100%）。
+为什么？因为全押有归零风险，而归零在乘性系统中是无法恢复的。
+2. 没有优势时建议不下注
+如果 bp ≤ q（期望值为负或零），凯利公式建议 f* ≤ 0。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/kelly-criterion/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3186279669d450af77810193be820f29f69d3d053f1dcb4188d4cf5196dacf93.css" integrity="sha256-MYYnlmnUUK93gQGTvoIPKfadPQU/HctBiNTPUZbaz5M=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/kelly-criterion/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Wang Qicai (Alt + H)">Wang Qicai</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://x.com/realWangQicai" title="X">
+                    <span>X</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <a href="/" class="back-to-home">&larr; 返回目录</a>
+    <h1 class="post-title entry-hint-parent">
+      凯利公式：如何下注
+    </h1>
+  </header>
+  <div class="post-content"><h2 id="一个改变赌博和投资的公式">一个改变赌博和投资的公式<a hidden class="anchor" aria-hidden="true" href="#一个改变赌博和投资的公式">#</a></h2>
+<p>1956年，贝尔实验室的物理学家约翰·凯利发表了一篇论文，标题是《信息率的新解释》。</p>
+<p>这篇论文本来是关于信息论的。但它包含了一个公式，后来改变了职业赌徒和专业投资者的思考方式。</p>
+<p>这个公式回答了一个简单但深刻的问题：</p>
+<p><strong>当你有优势时，应该下注多少？</strong></p>
+<hr>
+<h2 id="为什么这个问题重要">为什么这个问题重要<a hidden class="anchor" aria-hidden="true" href="#为什么这个问题重要">#</a></h2>
+<p>假设你发现了一个有利可图的机会：</p>
+<ul>
+<li>60%的概率赢，赢了翻倍</li>
+<li>40%的概率输，输了归零</li>
+</ul>
+<p>你有100元。你应该下注多少？</p>
+<p>直觉可能说：机会这么好，全押！</p>
+<p>但如果你全押，只要输一次，你就出局了。即使你有60%的胜率，连续玩10次全押，归零的概率是99.99%。</p>
+<p>那下注1元？太保守了。你有优势，应该利用它。</p>
+<p><strong>问题是：有没有一个&quot;最优&quot;的下注比例？</strong></p>
+<p>有。这就是凯利公式。</p>
+<hr>
+<h2 id="凯利公式">凯利公式<a hidden class="anchor" aria-hidden="true" href="#凯利公式">#</a></h2>
+<p>对于简单的赢/输赌注，凯利公式是：</p>
+<pre tabindex="0"><code>f* = (bp - q) / b
+</code></pre><p>其中：</p>
+<ul>
+<li>f* = 最优下注比例（占总资金的百分比）</li>
+<li>b = 赔率（赢了能赚多少倍）</li>
+<li>p = 获胜概率</li>
+<li>q = 失败概率（= 1 - p）</li>
+</ul>
+<p>对于上面的例子（60%胜率，1:1赔率）：</p>
+<pre tabindex="0"><code>f* = (1 × 0.6 - 0.4) / 1 = 0.2 = 20%
+</code></pre><p>你应该每次下注总资金的20%。</p>
+<hr>
+<h2 id="凯利公式的直觉">凯利公式的直觉<a hidden class="anchor" aria-hidden="true" href="#凯利公式的直觉">#</a></h2>
+<p>凯利公式在做什么？它在<strong>最大化长期财富的几何增长率</strong>。</p>
+<p>回忆遍历性那篇文章：投资是乘性的，不是加性的。你的财富是一连串乘法的结果。</p>
+<p>凯利公式找到的是：<strong>让这一连串乘法的长期结果最大化的下注比例</strong>。</p>
+<p>它自动平衡了两个力量：</p>
+<ul>
+<li><strong>利用优势</strong>：下注太少，优势没有被充分利用</li>
+<li><strong>避免毁灭</strong>：下注太多，一次失败可能摧毁你</li>
+</ul>
+<p>凯利比例是这两个力量的最优平衡点。</p>
+<hr>
+<h2 id="凯利公式的数学性质">凯利公式的数学性质<a hidden class="anchor" aria-hidden="true" href="#凯利公式的数学性质">#</a></h2>
+<h3 id="1-永远不会让你全押">1. 永远不会让你全押<a hidden class="anchor" aria-hidden="true" href="#1-永远不会让你全押">#</a></h3>
+<p>不管优势多大，凯利公式永远不会建议100%下注（除非胜率是100%）。</p>
+<p>为什么？因为全押有归零风险，而归零在乘性系统中是无法恢复的。</p>
+<h3 id="2-没有优势时建议不下注">2. 没有优势时建议不下注<a hidden class="anchor" aria-hidden="true" href="#2-没有优势时建议不下注">#</a></h3>
+<p>如果 bp ≤ q（期望值为负或零），凯利公式建议 f* ≤ 0。</p>
+<p>不要下注。没有优势的游戏，最优策略是不玩。</p>
+<h3 id="3-优势越大下注越多">3. 优势越大，下注越多<a hidden class="anchor" aria-hidden="true" href="#3-优势越大下注越多">#</a></h3>
+<p>这是直觉的：胜率越高、赔率越好，应该下注越多。</p>
+<p>凯利公式量化了这个关系。</p>
+<h3 id="4-对概率估计敏感">4. 对概率估计敏感<a hidden class="anchor" aria-hidden="true" href="#4-对概率估计敏感">#</a></h3>
+<p>如果你把60%的胜率错估为70%，你的下注比例会显著偏离最优。</p>
+<p>这是凯利公式的实际限制：<strong>它只有在你能准确估计概率时才有效</strong>。</p>
+<hr>
+<h2 id="超过凯利的危险">超过凯利的危险<a hidden class="anchor" aria-hidden="true" href="#超过凯利的危险">#</a></h2>
+<p>下注比凯利比例少，结果是增长较慢，但风险也较低。这是保守策略。</p>
+<p>下注比凯利比例多呢？</p>
+<p><strong>超过凯利比例会导致长期财富的期望值下降。</strong></p>
+<p>这是反直觉的。你可能以为&quot;下注更多 = 赚更多&quot;。但在乘性系统中，过度下注的波动会侵蚀长期收益。</p>
+<p>更糟的是：超过凯利2倍，长期预期收益是零。
+超过凯利更多，你的长期预期是亏损。</p>
+<p><strong>过度激进比过度保守更危险。</strong></p>
+<hr>
+<h2 id="实际应用">实际应用<a hidden class="anchor" aria-hidden="true" href="#实际应用">#</a></h2>
+<h3 id="1-投资组合配置">1. 投资组合配置<a hidden class="anchor" aria-hidden="true" href="#1-投资组合配置">#</a></h3>
+<p>凯利公式可以用于决定在某个投资机会上配置多少资金。</p>
+<p>假设你认为某股票：</p>
+<ul>
+<li>50%概率涨40%</li>
+<li>50%概率跌20%</li>
+</ul>
+<p>预期收益 = 0.5 × 40% + 0.5 × (-20%) = 10%</p>
+<p>凯利比例 = (0.5 × 2 - 0.5) / 2 = 25%</p>
+<p>这意味着你应该把25%的资金配置在这个股票上。</p>
+<h3 id="2-分散凯利">2. 分散凯利<a hidden class="anchor" aria-hidden="true" href="#2-分散凯利">#</a></h3>
+<p>如果你有多个独立的投资机会，每个都可以用凯利公式计算。</p>
+<p>但要注意：如果机会不是独立的（比如都受市场整体影响），你需要考虑相关性。</p>
+<h3 id="3-部分凯利">3. 部分凯利<a hidden class="anchor" aria-hidden="true" href="#3-部分凯利">#</a></h3>
+<p>很多实践者使用&quot;半凯利&quot;或&quot;四分之一凯利&quot;——即凯利建议比例的一半或四分之一。</p>
+<p>为什么？</p>
+<ul>
+<li>概率估计不确定</li>
+<li>降低波动</li>
+<li>心理舒适</li>
+</ul>
+<p>部分凯利牺牲了一些期望收益，换取更平稳的路径和更大的安全边际。</p>
+<hr>
+<h2 id="凯利公式的局限">凯利公式的局限<a hidden class="anchor" aria-hidden="true" href="#凯利公式的局限">#</a></h2>
+<h3 id="1-概率必须准确">1. 概率必须准确<a hidden class="anchor" aria-hidden="true" href="#1-概率必须准确">#</a></h3>
+<p>凯利公式假设你知道真实概率。</p>
+<p>现实中，你的概率估计往往是错的。高估胜率会导致过度下注。</p>
+<p><strong>当不确定时，使用部分凯利。</strong></p>
+<h3 id="2-独立性假设">2. 独立性假设<a hidden class="anchor" aria-hidden="true" href="#2-独立性假设">#</a></h3>
+<p>基本凯利公式假设每次下注独立。</p>
+<p>如果下注之间有相关性（比如都受同一因素影响），需要更复杂的分析。</p>
+<h3 id="3-只优化最终财富">3. 只优化最终财富<a hidden class="anchor" aria-hidden="true" href="#3-只优化最终财富">#</a></h3>
+<p>凯利公式只关心长期财富的几何增长率。</p>
+<p>它不关心：</p>
+<ul>
+<li>路径的波动</li>
+<li>短期内的最大回撤</li>
+<li>你的心理承受能力</li>
+</ul>
+<p>凯利最优路径可能非常波动。很多人在到达长期最优之前就放弃了。</p>
+<h3 id="4-不适用于负期望游戏">4. 不适用于负期望游戏<a hidden class="anchor" aria-hidden="true" href="#4-不适用于负期望游戏">#</a></h3>
+<p>如果没有正期望，凯利公式无能为力。</p>
+<p>它告诉你如何利用优势，但不能创造优势。</p>
+<hr>
+<h2 id="凯利公式与遍历性的联系">凯利公式与遍历性的联系<a hidden class="anchor" aria-hidden="true" href="#凯利公式与遍历性的联系">#</a></h2>
+<p>凯利公式是对遍历性问题的数学回答。</p>
+<p>传统金融学最大化&quot;期望收益&quot;——集合平均。
+凯利公式最大化&quot;几何平均收益&quot;——时间平均。</p>
+<p>两者的差别在遍历性文章中已经解释过：在乘性系统中，时间平均才是你真正经历的。</p>
+<p><strong>凯利公式是第一个严肃对待这个问题的数学框架。</strong></p>
+<hr>
+<h2 id="职业赌徒的智慧">职业赌徒的智慧<a hidden class="anchor" aria-hidden="true" href="#职业赌徒的智慧">#</a></h2>
+<p>凯利公式在职业赌徒和扑克玩家中广泛使用。</p>
+<p>他们从经验中学到：</p>
+<ul>
+<li>不管优势多大，永远不要全押</li>
+<li>更愿意牺牲收益来降低破产风险</li>
+<li>资金管理和找到优势一样重要</li>
+<li>能够持续玩下去，比单次赢大更重要</li>
+</ul>
+<p>这些直觉，凯利公式给出了数学基础。</p>
+<hr>
+<h2 id="给普通投资者的启示">给普通投资者的启示<a hidden class="anchor" aria-hidden="true" href="#给普通投资者的启示">#</a></h2>
+<h3 id="1-仓位比方向更重要">1. 仓位比方向更重要<a hidden class="anchor" aria-hidden="true" href="#1-仓位比方向更重要">#</a></h3>
+<p>很多投资者只关心&quot;买什么&quot;，不关心&quot;买多少&quot;。</p>
+<p>凯利公式说：<strong>仓位决策和方向决策一样重要</strong>。</p>
+<p>即使方向对了，仓位错了也可能亏钱。</p>
+<h3 id="2-谦逊地对待概率">2. 谦逊地对待概率<a hidden class="anchor" aria-hidden="true" href="#2-谦逊地对待概率">#</a></h3>
+<p>你对任何投资的概率估计都可能是错的。</p>
+<p>使用部分凯利。给不确定性留空间。</p>
+<h3 id="3-永远不要全押">3. 永远不要全押<a hidden class="anchor" aria-hidden="true" href="#3-永远不要全押">#</a></h3>
+<p>不管机会多好，永远保留东山再起的能力。</p>
+<p>一个让你可能归零的仓位，不管期望值多高，长期都是错的。</p>
+<h3 id="4-关注生存其次是增长">4. 关注生存，其次是增长<a hidden class="anchor" aria-hidden="true" href="#4-关注生存其次是增长">#</a></h3>
+<p>凯利公式的核心洞见是：<strong>长期最大化增长的策略，同时也是确保生存的策略</strong>。</p>
+<p>这两个目标不是冲突的，而是同一个目标的两面。</p>
+<hr>
+<h2 id="最后">最后<a hidden class="anchor" aria-hidden="true" href="#最后">#</a></h2>
+<p>凯利公式不是交易策略。它是一个思维框架。</p>
+<p>它告诉你：</p>
+<ul>
+<li>有优势时应该下注，但不应该全押</li>
+<li>下注比例应该与优势成正比</li>
+<li>过度激进比过度保守更危险</li>
+<li>长期财富最大化和生存是同一件事</li>
+</ul>
+<p>在一个充满不确定性的世界里，凯利公式提供了一个锚点：<strong>一种平衡利用机会和管理风险的数学方法</strong>。</p>
+<p>理解它不会让你成为更好的预测者。但它会让你成为更好的资金管理者。</p>
+<p>在投资中，这可能比预测更重要。</p>
+<hr>
+<p><em>参考阅读：</em></p>
+<ul>
+<li>John Kelly: &ldquo;A New Interpretation of Information Rate&rdquo; (1956)</li>
+<li>Edward Thorp: &ldquo;Beat the Dealer&rdquo; 和 &ldquo;A Man for All Markets&rdquo;</li>
+<li>William Poundstone: &ldquo;Fortune&rsquo;s Formula&rdquo;</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

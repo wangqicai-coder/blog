@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>路径依赖：为什么历史不可逆 | Wang Qicai</title>
+<meta name="keywords" content="">
+<meta name="description" content="为什么我们用QWERTY键盘
+你面前的键盘，字母排列是QWERTY。
+这是最优排列吗？不是。研究表明，Dvorak排列打字效率更高，手指移动更少。
+那为什么我们用QWERTY？
+因为1873年，打字机发明者为了防止机械卡键，故意把常用字母分开。这个设计是为了机械限制，不是为了人体工程学。
+但一旦人们学会了QWERTY，打字机制造商采用了QWERTY，打字学校教授QWERTY，社会就被锁定在这个标准上。
+150年后，机械卡键问题早已消失。但我们仍然用QWERTY。
+这就是路径依赖：早期的偶然选择，锁定了长期的结果。
+
+什么是路径依赖
+路径依赖意味着：当前的状态不仅取决于当前的条件，还取决于到达这个状态的历史路径。
+换句话说：历史重要。起点重要。顺序重要。
+在一个路径依赖的系统中：
+
+同样的条件可能导致完全不同的结果（取决于历史）
+早期的小差异可能被放大成巨大差异
+改变变得越来越困难
+锁定效应使得次优解可能长期持续
+
+
+路径依赖的机制
+1. 正反馈（收益递增）
+越多人使用某个标准，使用它的价值越高。
+
+越多人用微信，微信的价值越大
+越多人学英语，英语的价值越大
+越多人用美元，美元的价值越大
+
+这导致&quot;赢者通吃&quot;：早期的小优势被放大成绝对优势。
+2. 学习效应
+投入学习成本后，切换到其他选项的成本变高。
+
+你花了1000小时学Python，切换到Go的成本不只是学习Go，还包括放弃Python的沉没成本
+公司花了3年建立某个系统，切换的成本不只是新系统，还包括迁移、重新培训、风险
+
+3. 协调效应
+当多方需要协调时，已有的标准获得额外优势。
+改变键盘布局，需要：
+
+所有键盘制造商改变
+所有用户重新学习
+所有培训机构更新课程
+
+没有人愿意第一个改变，因为改变只有在大家都改变时才有价值。
+4. 适应性预期
+人们基于&quot;这个会继续存在&quot;的预期做决策，这个预期本身强化了它的存在。
+你学英语是因为预期它继续是国际语言。这个预期导致更多人学英语，使它真的继续是国际语言。
+
+历史的分叉点
+路径依赖意味着历史有&quot;分叉点&quot;——某些关键时刻的决定，锁定了长期路径。
+VHS vs Betamax
+1980年代，两种录像带格式竞争。Betamax技术上更好，但VHS赢了。
+为什么？JVC愿意授权VHS给其他制造商，索尼不愿意授权Betamax。更多制造商 → 更低价格 → 更多内容 → 更多用户 → 锁定。
+技术优势输给了网络效应。
+美国的铁路轨距
+美国铁路轨距是4英尺8.5英寸。为什么是这个奇怪的数字？
+因为英国铁路是这个轨距。为什么英国是这个？因为建铁路的人之前建电车，电车是这个轨距。为什么电车是这个？因为建电车的人用的是马车的轮距。为什么马车是这个？因为路上的车辙是这个宽度。为什么车辙是这个？因为古罗马战车是这个宽度。
+一个2000年前的罗马决定，影响了今天的美国铁路。
+社会制度的路径依赖
+为什么英国是君主立宪，美国是总统制，瑞士是直接民主？
+不是因为这些制度对这些国家&quot;最优&quot;。而是因为历史的偶然——殖民历史、革命方式、地理条件——在关键时刻把这些国家推向了不同的路径。
+一旦走上某条路径，制度会自我强化：利益集团形成、文化适应、法律建立。改变变得越来越难。
+
+投资中的路径依赖
+1. 市场的路径依赖
+今天的股价不只取决于基本面，还取决于昨天的股价。
+
+恐慌导致卖出
+卖出导致更低价格
+更低价格导致更多恐慌
+
+同样的基本面，不同的历史路径，可能导致完全不同的价格。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/path-dependence/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3186279669d450af77810193be820f29f69d3d053f1dcb4188d4cf5196dacf93.css" integrity="sha256-MYYnlmnUUK93gQGTvoIPKfadPQU/HctBiNTPUZbaz5M=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/path-dependence/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Wang Qicai (Alt + H)">Wang Qicai</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://x.com/realWangQicai" title="X">
+                    <span>X</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <a href="/" class="back-to-home">&larr; 返回目录</a>
+    <h1 class="post-title entry-hint-parent">
+      路径依赖：为什么历史不可逆
+    </h1>
+  </header>
+  <div class="post-content"><h2 id="为什么我们用qwerty键盘">为什么我们用QWERTY键盘<a hidden class="anchor" aria-hidden="true" href="#为什么我们用qwerty键盘">#</a></h2>
+<p>你面前的键盘，字母排列是QWERTY。</p>
+<p>这是最优排列吗？不是。研究表明，Dvorak排列打字效率更高，手指移动更少。</p>
+<p>那为什么我们用QWERTY？</p>
+<p>因为1873年，打字机发明者为了防止机械卡键，故意把常用字母分开。这个设计是为了机械限制，不是为了人体工程学。</p>
+<p>但一旦人们学会了QWERTY，打字机制造商采用了QWERTY，打字学校教授QWERTY，社会就被锁定在这个标准上。</p>
+<p>150年后，机械卡键问题早已消失。但我们仍然用QWERTY。</p>
+<p><strong>这就是路径依赖：早期的偶然选择，锁定了长期的结果。</strong></p>
+<hr>
+<h2 id="什么是路径依赖">什么是路径依赖<a hidden class="anchor" aria-hidden="true" href="#什么是路径依赖">#</a></h2>
+<p>路径依赖意味着：<strong>当前的状态不仅取决于当前的条件，还取决于到达这个状态的历史路径。</strong></p>
+<p>换句话说：历史重要。起点重要。顺序重要。</p>
+<p>在一个路径依赖的系统中：</p>
+<ul>
+<li>同样的条件可能导致完全不同的结果（取决于历史）</li>
+<li>早期的小差异可能被放大成巨大差异</li>
+<li>改变变得越来越困难</li>
+<li>锁定效应使得次优解可能长期持续</li>
+</ul>
+<hr>
+<h2 id="路径依赖的机制">路径依赖的机制<a hidden class="anchor" aria-hidden="true" href="#路径依赖的机制">#</a></h2>
+<h3 id="1-正反馈收益递增">1. 正反馈（收益递增）<a hidden class="anchor" aria-hidden="true" href="#1-正反馈收益递增">#</a></h3>
+<p>越多人使用某个标准，使用它的价值越高。</p>
+<ul>
+<li>越多人用微信，微信的价值越大</li>
+<li>越多人学英语，英语的价值越大</li>
+<li>越多人用美元，美元的价值越大</li>
+</ul>
+<p>这导致&quot;赢者通吃&quot;：早期的小优势被放大成绝对优势。</p>
+<h3 id="2-学习效应">2. 学习效应<a hidden class="anchor" aria-hidden="true" href="#2-学习效应">#</a></h3>
+<p>投入学习成本后，切换到其他选项的成本变高。</p>
+<ul>
+<li>你花了1000小时学Python，切换到Go的成本不只是学习Go，还包括放弃Python的沉没成本</li>
+<li>公司花了3年建立某个系统，切换的成本不只是新系统，还包括迁移、重新培训、风险</li>
+</ul>
+<h3 id="3-协调效应">3. 协调效应<a hidden class="anchor" aria-hidden="true" href="#3-协调效应">#</a></h3>
+<p>当多方需要协调时，已有的标准获得额外优势。</p>
+<p>改变键盘布局，需要：</p>
+<ul>
+<li>所有键盘制造商改变</li>
+<li>所有用户重新学习</li>
+<li>所有培训机构更新课程</li>
+</ul>
+<p>没有人愿意第一个改变，因为改变只有在大家都改变时才有价值。</p>
+<h3 id="4-适应性预期">4. 适应性预期<a hidden class="anchor" aria-hidden="true" href="#4-适应性预期">#</a></h3>
+<p>人们基于&quot;这个会继续存在&quot;的预期做决策，这个预期本身强化了它的存在。</p>
+<p>你学英语是因为预期它继续是国际语言。这个预期导致更多人学英语，使它真的继续是国际语言。</p>
+<hr>
+<h2 id="历史的分叉点">历史的分叉点<a hidden class="anchor" aria-hidden="true" href="#历史的分叉点">#</a></h2>
+<p>路径依赖意味着历史有&quot;分叉点&quot;——某些关键时刻的决定，锁定了长期路径。</p>
+<h3 id="vhs-vs-betamax">VHS vs Betamax<a hidden class="anchor" aria-hidden="true" href="#vhs-vs-betamax">#</a></h3>
+<p>1980年代，两种录像带格式竞争。Betamax技术上更好，但VHS赢了。</p>
+<p>为什么？JVC愿意授权VHS给其他制造商，索尼不愿意授权Betamax。更多制造商 → 更低价格 → 更多内容 → 更多用户 → 锁定。</p>
+<p>技术优势输给了网络效应。</p>
+<h3 id="美国的铁路轨距">美国的铁路轨距<a hidden class="anchor" aria-hidden="true" href="#美国的铁路轨距">#</a></h3>
+<p>美国铁路轨距是4英尺8.5英寸。为什么是这个奇怪的数字？</p>
+<p>因为英国铁路是这个轨距。为什么英国是这个？因为建铁路的人之前建电车，电车是这个轨距。为什么电车是这个？因为建电车的人用的是马车的轮距。为什么马车是这个？因为路上的车辙是这个宽度。为什么车辙是这个？因为古罗马战车是这个宽度。</p>
+<p>一个2000年前的罗马决定，影响了今天的美国铁路。</p>
+<h3 id="社会制度的路径依赖">社会制度的路径依赖<a hidden class="anchor" aria-hidden="true" href="#社会制度的路径依赖">#</a></h3>
+<p>为什么英国是君主立宪，美国是总统制，瑞士是直接民主？</p>
+<p>不是因为这些制度对这些国家&quot;最优&quot;。而是因为历史的偶然——殖民历史、革命方式、地理条件——在关键时刻把这些国家推向了不同的路径。</p>
+<p>一旦走上某条路径，制度会自我强化：利益集团形成、文化适应、法律建立。改变变得越来越难。</p>
+<hr>
+<h2 id="投资中的路径依赖">投资中的路径依赖<a hidden class="anchor" aria-hidden="true" href="#投资中的路径依赖">#</a></h2>
+<h3 id="1-市场的路径依赖">1. 市场的路径依赖<a hidden class="anchor" aria-hidden="true" href="#1-市场的路径依赖">#</a></h3>
+<p>今天的股价不只取决于基本面，还取决于昨天的股价。</p>
+<ul>
+<li>恐慌导致卖出</li>
+<li>卖出导致更低价格</li>
+<li>更低价格导致更多恐慌</li>
+</ul>
+<p>同样的基本面，不同的历史路径，可能导致完全不同的价格。</p>
+<p>这就是为什么&quot;价值&quot;是一个模糊的概念。价格不只反映价值，还反映历史。</p>
+<h3 id="2-公司的路径依赖">2. 公司的路径依赖<a hidden class="anchor" aria-hidden="true" href="#2-公司的路径依赖">#</a></h3>
+<p>公司的当前能力高度依赖其历史路径。</p>
+<ul>
+<li>亚马逊成为云计算巨头，是因为它先是电商巨头，需要大规模计算设施</li>
+<li>苹果成为移动设备公司，是因为它先是电脑公司和iPod公司</li>
+</ul>
+<p>公司不能随意&quot;选择&quot;成为什么。它的选项被历史限定。</p>
+<h3 id="3-投资者的路径依赖">3. 投资者的路径依赖<a hidden class="anchor" aria-hidden="true" href="#3-投资者的路径依赖">#</a></h3>
+<p>你的投资决策受你的历史影响：</p>
+<ul>
+<li>你在什么市场环境入市</li>
+<li>你早期赚钱还是亏钱</li>
+<li>你学习了什么投资方法</li>
+</ul>
+<p>两个人面对同样的市场，可能做出完全不同的决策，因为他们的路径不同。</p>
+<hr>
+<h2 id="路径依赖的投资含义">路径依赖的投资含义<a hidden class="anchor" aria-hidden="true" href="#路径依赖的投资含义">#</a></h2>
+<h3 id="1-早期决策权重极大">1. 早期决策权重极大<a hidden class="anchor" aria-hidden="true" href="#1-早期决策权重极大">#</a></h3>
+<p>在路径依赖系统中，早期决策的影响被放大。</p>
+<ul>
+<li>早期选择的行业</li>
+<li>早期建立的关系</li>
+<li>早期形成的思维框架</li>
+</ul>
+<p>这些不只是&quot;起点&quot;，它们锁定了后续的路径。</p>
+<h3 id="2-不可逆性">2. 不可逆性<a hidden class="anchor" aria-hidden="true" href="#2-不可逆性">#</a></h3>
+<p>很多决策一旦做出，就难以逆转。</p>
+<ul>
+<li>卖掉的股票，可能买不回来了</li>
+<li>错过的机会，可能不会再来</li>
+<li>建立的习惯，很难改变</li>
+</ul>
+<p><strong>认识到决策的不可逆性，会让你在做决策时更谨慎。</strong></p>
+<h3 id="3-预测的局限">3. 预测的局限<a hidden class="anchor" aria-hidden="true" href="#3-预测的局限">#</a></h3>
+<p>如果系统是路径依赖的，预测就变得困难。</p>
+<p>你不只需要预测&quot;条件会是什么&quot;，还需要预测&quot;历史路径会是什么&quot;。</p>
+<p>这增加了预测的复杂度和不确定性。</p>
+<h3 id="4-关注趋势的早期">4. 关注趋势的早期<a hidden class="anchor" aria-hidden="true" href="#4-关注趋势的早期">#</a></h3>
+<p>路径依赖意味着趋势一旦形成，会自我强化。</p>
+<p>识别趋势的早期阶段，比识别它什么时候反转更重要。</p>
+<hr>
+<h2 id="打破路径依赖">打破路径依赖<a hidden class="anchor" aria-hidden="true" href="#打破路径依赖">#</a></h2>
+<p>路径依赖不是宿命。它可以被打破，但代价很高。</p>
+<h3 id="1-外部冲击">1. 外部冲击<a hidden class="anchor" aria-hidden="true" href="#1-外部冲击">#</a></h3>
+<p>战争、革命、技术颠覆——这些外部冲击可以打破路径依赖。</p>
+<p>智能手机打破了诺基亚的路径。
+互联网打破了传统媒体的路径。</p>
+<h3 id="2-有意识的协调">2. 有意识的协调<a hidden class="anchor" aria-hidden="true" href="#2-有意识的协调">#</a></h3>
+<p>如果多方同意一起改变，路径依赖可以被克服。</p>
+<p>但这需要：</p>
+<ul>
+<li>领导力</li>
+<li>信任</li>
+<li>承诺机制</li>
+</ul>
+<p>这就是为什么技术标准的改变通常需要政府或行业联盟的推动。</p>
+<h3 id="3-足够大的激励">3. 足够大的激励<a hidden class="anchor" aria-hidden="true" href="#3-足够大的激励">#</a></h3>
+<p>当继续旧路径的代价足够高时，改变会发生。</p>
+<p>气候变化可能迫使能源系统的路径改变。
+老龄化可能迫使退休制度的路径改变。</p>
+<p><strong>但这种改变通常来得太晚，代价太高。</strong></p>
+<hr>
+<h2 id="人生的路径依赖">人生的路径依赖<a hidden class="anchor" aria-hidden="true" href="#人生的路径依赖">#</a></h2>
+<p>个人的人生也是路径依赖的。</p>
+<h3 id="教育">教育<a hidden class="anchor" aria-hidden="true" href="#教育">#</a></h3>
+<p>你选择学什么专业，影响你认识什么人，获得什么机会，形成什么思维方式。</p>
+<p>这些不只是&quot;学历&quot;，它们锁定了你的人生路径。</p>
+<h3 id="第一份工作">第一份工作<a hidden class="anchor" aria-hidden="true" href="#第一份工作">#</a></h3>
+<p>第一份工作不只是&quot;起点&quot;：</p>
+<ul>
+<li>它决定你学会什么技能</li>
+<li>它决定你进入什么圈子</li>
+<li>它影响你的第二份工作选择</li>
+</ul>
+<p>第一份工作的影响可能持续整个职业生涯。</p>
+<h3 id="关系">关系<a hidden class="anchor" aria-hidden="true" href="#关系">#</a></h3>
+<p>你和谁建立关系，影响你接触什么信息，获得什么机会，形成什么价值观。</p>
+<p>关系的路径依赖性很强：早期的关系影响后期的关系选择。</p>
+<hr>
+<h2 id="最后">最后<a hidden class="anchor" aria-hidden="true" href="#最后">#</a></h2>
+<p>路径依赖揭示了一个深刻的真相：</p>
+<p><strong>历史不是装饰，历史是结构的一部分。</strong></p>
+<p>你无法理解一个系统的当前状态，而不理解它如何到达这个状态。</p>
+<p>你无法预测一个系统的未来，而不考虑路径的自我强化效应。</p>
+<p>你无法改变一个系统，而不付出克服锁定效应的巨大代价。</p>
+<p>理解路径依赖，会让你：</p>
+<ul>
+<li>更重视早期决策</li>
+<li>更理解为什么&quot;次优解&quot;可以长期存在</li>
+<li>更谦逊地面对预测</li>
+<li>更清醒地认识改变的困难</li>
+</ul>
+<p><strong>我们不是在白纸上做选择。我们是在历史已经写下的草稿上做选择。</strong></p>
+<p>这既是约束，也是理解世界的钥匙。</p>
+<hr>
+<p><em>参考阅读：</em></p>
+<ul>
+<li>Brian Arthur: &ldquo;Increasing Returns and Path Dependence in the Economy&rdquo;</li>
+<li>Paul David: &ldquo;Clio and the Economics of QWERTY&rdquo;</li>
+<li>Douglass North: 关于制度路径依赖的研究</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

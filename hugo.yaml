@@ -14,8 +14,9 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   DateFormat: "2006年1月2日"
-  ShowPostNavLinks: true
+  ShowPostNavLinks: false
   ShowBreadCrumbs: false
+  hideMeta: true
 
 
 outputs:

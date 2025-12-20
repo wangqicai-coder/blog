@@ -1,24 +1,106 @@
 {{- define "main" }}
 
 {{- $posts := where site.RegularPages "Section" "posts" }}
-{{- $firstYear := (index (last 1 $posts) 0).Date.Format "2006" }}
-{{- $lastYear := (index (first 1 $posts) 0).Date.Format "2006" }}
-{{- $yearCount := sub (int $lastYear) (int $firstYear) }}
 
 <div class="home-content">
-    <h1 class="home-title">{{ $yearCount }}年投资反思</h1>
-    <p class="home-subtitle">{{ $firstYear }} - {{ $lastYear }}</p>
+    <h1 class="home-title">投资与思考</h1>
+    <p class="home-subtitle">关于风险、认知与决策的深度文章</p>
 
-    <ul class="year-list">
-        {{- range $posts }}
-        <li class="year-item">
-            <a href="{{ .Permalink }}">
-                <span class="year">{{ .Date.Format "2006" }}</span>
-                <span class="title">{{ .Title | replaceRE "^\\d{4}年[：:：]\\s*" "" }}</span>
-            </a>
-        </li>
+
+    {{- if gt (len $posts) 0 }}
+
+    {{- /* Group posts by category */ -}}
+    {{- $risk := slice }}
+    {{- $cognition := slice }}
+    {{- $time := slice }}
+    {{- $decision := slice }}
+    {{- $other := slice }}
+
+    {{- range $posts }}
+        {{- $cats := .Params.categories }}
+        {{- if $cats }}
+            {{- if in $cats "风险的本质" }}
+                {{- $risk = $risk | append . }}
+            {{- else if in $cats "认知与现实" }}
+                {{- $cognition = $cognition | append . }}
+            {{- else if in $cats "时间的力量" }}
+                {{- $time = $time | append . }}
+            {{- else if in $cats "决策框架" }}
+                {{- $decision = $decision | append . }}
+            {{- else }}
+                {{- $other = $other | append . }}
+            {{- end }}
+        {{- else }}
+            {{- $other = $other | append . }}
         {{- end }}
-    </ul>
+    {{- end }}
+
+    {{- if gt (len $risk) 0 }}
+    <div class="category-section">
+        <h2 class="category-title">风险的本质</h2>
+        <ul class="post-list">
+            {{- range $risk }}
+            <li class="post-item">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
+    {{- end }}
+
+    {{- if gt (len $cognition) 0 }}
+    <div class="category-section">
+        <h2 class="category-title">认知与现实</h2>
+        <ul class="post-list">
+            {{- range $cognition }}
+            <li class="post-item">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
+    {{- end }}
+
+    {{- if gt (len $time) 0 }}
+    <div class="category-section">
+        <h2 class="category-title">时间的力量</h2>
+        <ul class="post-list">
+            {{- range $time }}
+            <li class="post-item">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
+    {{- end }}
+
+    {{- if gt (len $decision) 0 }}
+    <div class="category-section">
+        <h2 class="category-title">决策框架</h2>
+        <ul class="post-list">
+            {{- range $decision }}
+            <li class="post-item">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
+    {{- end }}
+
+    {{- if gt (len $other) 0 }}
+    <div class="category-section">
+        <h2 class="category-title">其他</h2>
+        <ul class="post-list">
+            {{- range $other }}
+            <li class="post-item">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
+    {{- end }}
+
+    {{- end }}
 </div>
 
 {{- end }}

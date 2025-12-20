@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>决策框架 on Wang Qicai</title>
+    <link>http://localhost:1313/categories/%E5%86%B3%E7%AD%96%E6%A1%86%E6%9E%B6/</link>
+    <description>Recent content in 决策框架 on Wang Qicai</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Dec 2025 12:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E5%86%B3%E7%AD%96%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>凯利公式：如何下注</title>
+      <link>http://localhost:1313/posts/kelly-criterion/</link>
+      <pubDate>Sat, 20 Dec 2025 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/kelly-criterion/</guid>
+      <description>&lt;h2 id=&#34;一个改变赌博和投资的公式&#34;&gt;一个改变赌博和投资的公式&lt;/h2&gt;
+&lt;p&gt;1956年，贝尔实验室的物理学家约翰·凯利发表了一篇论文，标题是《信息率的新解释》。&lt;/p&gt;
+&lt;p&gt;这篇论文本来是关于信息论的。但它包含了一个公式，后来改变了职业赌徒和专业投资者的思考方式。&lt;/p&gt;
+&lt;p&gt;这个公式回答了一个简单但深刻的问题：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当你有优势时，应该下注多少？&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么这个问题重要&#34;&gt;为什么这个问题重要&lt;/h2&gt;
+&lt;p&gt;假设你发现了一个有利可图的机会：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;60%的概率赢，赢了翻倍&lt;/li&gt;
+&lt;li&gt;40%的概率输，输了归零&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你有100元。你应该下注多少？&lt;/p&gt;
+&lt;p&gt;直觉可能说：机会这么好，全押！&lt;/p&gt;
+&lt;p&gt;但如果你全押，只要输一次，你就出局了。即使你有60%的胜率，连续玩10次全押，归零的概率是99.99%。&lt;/p&gt;
+&lt;p&gt;那下注1元？太保守了。你有优势，应该利用它。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题是：有没有一个&amp;quot;最优&amp;quot;的下注比例？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;有。这就是凯利公式。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;凯利公式&#34;&gt;凯利公式&lt;/h2&gt;
+&lt;p&gt;对于简单的赢/输赌注，凯利公式是：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;f* = (bp - q) / b
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;f* = 最优下注比例（占总资金的百分比）&lt;/li&gt;
+&lt;li&gt;b = 赔率（赢了能赚多少倍）&lt;/li&gt;
+&lt;li&gt;p = 获胜概率&lt;/li&gt;
+&lt;li&gt;q = 失败概率（= 1 - p）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对于上面的例子（60%胜率，1:1赔率）：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;f* = (1 × 0.6 - 0.4) / 1 = 0.2 = 20%
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你应该每次下注总资金的20%。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;凯利公式的直觉&#34;&gt;凯利公式的直觉&lt;/h2&gt;
+&lt;p&gt;凯利公式在做什么？它在&lt;strong&gt;最大化长期财富的几何增长率&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;回忆遍历性那篇文章：投资是乘性的，不是加性的。你的财富是一连串乘法的结果。&lt;/p&gt;
+&lt;p&gt;凯利公式找到的是：&lt;strong&gt;让这一连串乘法的长期结果最大化的下注比例&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;它自动平衡了两个力量：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;利用优势&lt;/strong&gt;：下注太少，优势没有被充分利用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免毁灭&lt;/strong&gt;：下注太多，一次失败可能摧毁你&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;凯利比例是这两个力量的最优平衡点。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;凯利公式的数学性质&#34;&gt;凯利公式的数学性质&lt;/h2&gt;
+&lt;h3 id=&#34;1-永远不会让你全押&#34;&gt;1. 永远不会让你全押&lt;/h3&gt;
+&lt;p&gt;不管优势多大，凯利公式永远不会建议100%下注（除非胜率是100%）。&lt;/p&gt;
+&lt;p&gt;为什么？因为全押有归零风险，而归零在乘性系统中是无法恢复的。&lt;/p&gt;
+&lt;h3 id=&#34;2-没有优势时建议不下注&#34;&gt;2. 没有优势时建议不下注&lt;/h3&gt;
+&lt;p&gt;如果 bp ≤ q（期望值为负或零），凯利公式建议 f* ≤ 0。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

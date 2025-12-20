@@ -36,43 +36,45 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.year-list {
+/* 分类区块 */
+.category-section {
+    margin-bottom: 2.5rem;
+}
+
+.category-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.post-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.year-item {
+.post-item {
     border-bottom: 1px solid var(--border-color);
 }
 
-.year-item:last-child {
+.post-item:last-child {
     border-bottom: none;
 }
 
-.year-item a {
-    display: flex;
-    align-items: baseline;
+.post-item a {
+    display: block;
     padding: 0.9rem 0;
     text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.95rem;
     transition: opacity 0.15s;
 }
 
-.year-item a:hover {
+.post-item a:hover {
     opacity: 0.6;
-}
-
-.year-item .year {
-    font-size: 0.95rem;
-    font-weight: 400;
-    color: var(--text-secondary);
-    width: 55px;
-    flex-shrink: 0;
-}
-
-.year-item .title {
-    font-size: 0.95rem;
-    color: var(--text-color);
 }
 
 /* 文章页优化 */
